@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="PSo6-Videos" persistent="PSo6-Videos.cywrk" platform="NOT_USED">
+<current_project name=".\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj" />
+<wrkspc_folders />
+<files />
+<projects>
+<v>.\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj</v>
+<v>.\Capsense-metal.cydsn\Capsense-metal.cyprj</v>
+<v>.\Capsense-RTOS.cydsn\Capsense-RTOS.cyprj</v>
+<v>.\Capsense-metal_motor.cydsn\Capsense-metal_motor.cyprj</v>
+<v>.\UART_Interrupt.cydsn\UART_Interrupt.cyprj</v>
+<v>.\SimpleBLE.cydsn\SimpleBLE.cyprj</v>
+<v>.\BasicI2C.cydsn\BasicI2C.cyprj</v>
+<v>.\BasicTCPWM.cydsn\BasicTCPWM.cyprj</v>
+<v>.\BasicUART.cydsn\BasicUART.cyprj</v>
+<v>.\HelloWorld_PWM.cydsn\HelloWorld_PWM.cyprj</v>
+<v>.\HelloWorldCM0p.cydsn\HelloWorldCM0p.cyprj</v>
+<v>.\HelloWorldFreeRTOS.cydsn\HelloWorldFreeRTOS.cyprj</v>
+<v>.\HelloWorldCM4.cydsn\HelloWorldCM4.cyprj</v>
+<v>.\BasicTracelyzer.cydsn\BasicTracelyzer.cyprj</v>
+</projects>
+<workspace_id v="968ac9b5-7e7b-44cd-b2be-3c9b3ad59fa9" />
+<WriteAppVersionLastSavedWith v="4.2.0.220" />
+<WriteAppMarketingVersionLastSavedWith v="4.2" />
+<CyGuid_dcbd9771-0334-43dc-9cc3-fe99dc3c5316 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize+CyPrjDependencyList" version="4">
+<wrkspc_dependencies />
+</CyGuid_dcbd9771-0334-43dc-9cc3-fe99dc3c5316>
+<CyGuid_63b68103-67f5-4406-8da6-5c8625765b82 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize+CyIgnoredSystemDepsList" version="1">
+<wrkspc_dependencies />
+</CyGuid_63b68103-67f5-4406-8da6-5c8625765b82>
+</CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd>
+</CyXmlSerializer>
