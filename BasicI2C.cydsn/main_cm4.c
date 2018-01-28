@@ -19,7 +19,7 @@ int main(void)
     volatile uint8_t myBuffer;
     
     EZI2C_Start();
-    EZI2C_SetBuffer1(&myBuffer,1,1);
+    EZI2C_SetBuffer1((uint8_t *)&myBuffer,1,1);
     
     PWM_1_Start();
     

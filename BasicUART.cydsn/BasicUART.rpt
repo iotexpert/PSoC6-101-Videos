@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.128ms
+Loading plugins phase: Elapsed time ==> 0s.247ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\BasicUART.cydsn\BasicUART.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\BasicUART.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 0s.931ms
+Elaboration phase: Elapsed time ==> 1s.465ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.037ms
+HDL generation phase: Elapsed time ==> 0s.115ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Doc
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Aug 03 13:47:00 2017
+Sat Jan 27 16:33:57 2018
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 BasicUART.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Aug 03 13:47:00 2017
+Sat Jan 27 16:33:57 2018
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -83,7 +83,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Doc
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Aug 03 13:47:00 2017
+Sat Jan 27 16:33:57 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -110,7 +110,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Doc
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Aug 03 13:47:00 2017
+Sat Jan 27 16:33:57 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -177,14 +177,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\BasicUART.cydsn\BasicUART.cyprj -dcpsoc3 BasicUART.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.415ms
+Warp synthesis phase: Elapsed time ==> 0s.470ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.220, Family: PSoC3, Started at: Thursday, 03 August 2017 13:47:00
+cyp3fit: V4.2.0.607, Family: PSoC3, Started at: Saturday, 27 January 2018 16:33:57
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\BasicUART.cydsn\BasicUART.cyprj -d CY8C6347BZI-BLD53 BasicUART.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.131ms
+Design parsing phase: Elapsed time ==> 0s.220ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -413,7 +413,7 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
-Interrupts [CM0+]             :    4 :   28 :   32 : 12.50 %
+Interrupts [CM0+]             :    5 :   27 :   32 : 15.63 %
 Interrupts [CM4]              :    1 :  146 :  147 :  0.68 %
 IO                            :    4 :   74 :   78 :  5.13 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
@@ -445,8 +445,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.115ms
-Tech Mapping phase: Elapsed time ==> 0s.184ms
+Technology Mapping: Elapsed time ==> 0s.322ms
+Tech Mapping phase: Elapsed time ==> 0s.502ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -465,13 +465,13 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.2662378s
+Elapsed time ==> 0.3247089s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.868ms
+Analog Placement phase: Elapsed time ==> 1s.216ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0007569 secs
+Route success=True, Iterations=1 Elapsed=0.0045984 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
@@ -484,10 +484,11 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.031ms
+Analog Code Generation phase: Elapsed time ==> 0s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
+I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
 I2076: Total run-time: 0.3 sec.
 
 </CYPRESSTAG>
@@ -495,14 +496,14 @@ I2076: Total run-time: 0.3 sec.
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.000ms
+PLD Packing: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.015ms
+Partitioning: Elapsed time ==> 0s.068ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -759,6 +760,9 @@ SCB group 0:
         Properties:
         {
             cy_registers = ""
+            master = 0
+            mode = 2
+            requires_io_preconfigure = 0
         }
 CSD group 0: empty
 CSIDAC7 group 0: empty
@@ -818,33 +822,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.084ms
-Digital Placement phase: Elapsed time ==> 0s.485ms
+Digital component placer commit/Report: Elapsed time ==> 0s.131ms
+Digital Placement phase: Elapsed time ==> 5s.905ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
-"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "BasicUART_r.vh2" --pcf-path "BasicUART.pco" --des-name "BasicUART" --dsf-path "BasicUART.dsf"
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "BasicUART_r.vh2" --pcf-path "BasicUART.pco" --des-name "BasicUART" --dsf-path "BasicUART.dsf" --sdc-path "BasicUART.sdc" --lib-path "BasicUART_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.616ms
+Digital Routing phase: Elapsed time ==> 0s.954ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.631ms
+Bitstream Generation phase: Elapsed time ==> 0s.917ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.000ms
+Bitstream Verification phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
-Static timing analysis is not available for the selected device.
-Static timing analysis phase: Elapsed time ==> 0s.000ms
+Timing report is in BasicUART_timing.html.
+Static timing analysis phase: Elapsed time ==> 9s.011ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.146ms
+Design database save phase: Elapsed time ==> 0s.178ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 3s.149ms
+cydsfit: Elapsed time ==> 19s.069ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 3s.149ms
-API generation phase: Elapsed time ==> 0s.853ms
-Dependency generation phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 19s.100ms
+API generation phase: Elapsed time ==> 1s.186ms
+Dependency generation phase: Elapsed time ==> 0s.037ms
 Cleanup phase: Elapsed time ==> 0s.000ms

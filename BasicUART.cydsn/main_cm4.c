@@ -20,6 +20,7 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     UART_Start();
 
+    Cy_SCB_UART_PutString(UART_HW,"Started\r\n");
     
     for(;;)
     {

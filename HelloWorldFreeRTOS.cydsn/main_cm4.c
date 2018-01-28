@@ -10,6 +10,8 @@
  * ========================================
 */
 #include "project.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 void ledTask(void *arg)
 {
