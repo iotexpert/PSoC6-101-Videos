@@ -3,25 +3,35 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="PSo6-Videos" persistent="PSo6-Videos.cywrk" platform="NOT_USED">
-<current_project name=".\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj" />
+<current_project name=".\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
 <v>.\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj</v>
-<v>.\Capsense-metal.cydsn\Capsense-metal.cyprj</v>
-<v>.\Capsense-RTOS.cydsn\Capsense-RTOS.cyprj</v>
-<v>.\Capsense-metal_motor.cydsn\Capsense-metal_motor.cyprj</v>
+<v>.\2-5-BasicCapsense.cydsn\2-5-BasicCapsense.cyprj</v>
+<v>.\2-5-CapsenseRTOS.cydsn\2-5-CapsenseRTOS.cyprj</v>
+<v>.\2-5-CapsenseMotor.cydsn\2-5-CapsenseMotor.cyprj</v>
 <v>.\UART_Interrupt.cydsn\UART_Interrupt.cyprj</v>
-<v>.\SimpleBLEPeripheral.cydsn\SimpleBLEPeripheral.cyprj</v>
-<v>.\BasicI2C.cydsn\BasicI2C.cyprj</v>
-<v>.\BasicTCPWM.cydsn\BasicTCPWM.cyprj</v>
-<v>.\BasicUART.cydsn\BasicUART.cyprj</v>
-<v>.\HelloWorld_PWM.cydsn\HelloWorld_PWM.cyprj</v>
-<v>.\HelloWorldCM0p.cydsn\HelloWorldCM0p.cyprj</v>
-<v>.\HelloWorldFreeRTOS.cydsn\HelloWorldFreeRTOS.cyprj</v>
-<v>.\HelloWorldCM4.cydsn\HelloWorldCM4.cyprj</v>
-<v>.\BasicTracelyzer.cydsn\BasicTracelyzer.cyprj</v>
-<v>.\SimpleBLECentral.cydsn\SimpleBLECentral.cyprj</v>
+<v>.\3-2-SimpleBLEPeripheral.cydsn\3-2-SimpleBLEPeripheral.cyprj</v>
+<v>.\2-3-BasicI2C.cydsn\2-3-BasicI2C.cyprj</v>
+<v>.\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj</v>
+<v>.\1-3-HelloWorld_PWM.cydsn\1-3-HelloWorld_PWM.cyprj</v>
+<v>.\1-3-HelloWorldCM0p.cydsn\1-3-HelloWorldCM0p.cyprj</v>
+<v>.\1-4-HelloWorldFreeRTOS.cydsn\1-4-HelloWorldFreeRTOS.cyprj</v>
+<v>.\1-3-HelloWorldCM4.cydsn\1-3-HelloWorldCM4.cyprj</v>
+<v>.\2-6-BasicTracelyzer.cydsn\2-6-BasicTracelyzer.cyprj</v>
+<v>.\3-3-SimpleBLECentral.cydsn\3-3-SimpleBLECentral.cyprj</v>
+<v>.\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj</v>
+<v>.\2-1-BasicUART.cydsn\2-1-BasicUART.cyprj</v>
+<v>.\2-4-BasicKillSwitch.cydsn\2-4-BasicKillSwitch.cyprj</v>
+<v>.\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cyprj</v>
+<v>.\RemoteControlFinal.cydsn\RemoteControlFinal.cyprj</v>
+<v>.\3-4-CapsenseRemoteControl.cydsn\3-4-CapsenseRemoteControl.cyprj</v>
+<v>.\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cyprj</v>
+<v>.\4-1-AFEShieldPot.cydsn\4-1-AFEShieldPot.cyprj</v>
+<v>.\4-2-AFEShieldOLED.cydsn\4-2-AFEShieldOLED.cyprj</v>
+<v>.\4-3-AFEShieldAmbientLight.cydsn\4-3-AFEShieldAmbientLight.cyprj</v>
+<v>.\4-4-AFESensorHub.cydsn\4-4-AFESensorHub.cyprj</v>
 </projects>
 <workspace_id v="968ac9b5-7e7b-44cd-b2be-3c9b3ad59fa9" />
 <WriteAppVersionLastSavedWith v="4.2.0.607" />

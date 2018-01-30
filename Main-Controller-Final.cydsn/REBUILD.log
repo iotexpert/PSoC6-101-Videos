@@ -1,4 +1,4 @@
---------------- Rebuild Started: 01/29/2018 07:15:30 Project: Main-Controller-Final, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 01/29/2018 15:14:07 Project: Main-Controller-Final, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o"
@@ -32,6 +32,7 @@ Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_counter.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_pwm.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ancs.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ans.o"
@@ -94,7 +95,9 @@ Deleting file ".\CortexM0p\ARM_GCC_541\Debug\Main-Controller-Final.hex"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\Main-Controller-Final.elf"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\Main-Controller-Final.map"
 Deleting file ".\Main-Controller-Final.cycdx"
+Deleting file ".\Main-Controller-Final.svd"
 Deleting file ".\Main-Controller-Final.rpt"
+Deleting file ".\Main-Controller-Final_timing.html"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\main_cm4.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o"
@@ -133,6 +136,7 @@ Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_lvd.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_pwm.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_quaddec.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_efuse.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ancs.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ans.o"
@@ -332,47 +336,13 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/main_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c main_cm4.c -o .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from global.h:13,
-                 from main_cm4.c:4:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/startup_psoc63_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c armgcc\startup\startup_psoc63_cm4.S -o .\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/system_psoc63_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c system_psoc63_cm4.c -o .\CortexM4\ARM_GCC_541\Debug\system_psoc63_cm4.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/bleTask.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c bleTask.c -o .\CortexM4\ARM_GCC_541\Debug\bleTask.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from global.h:13,
-                 from bleTask.c:10:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/pwmTask.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c pwmTask.c -o .\CortexM4\ARM_GCC_541\Debug\pwmTask.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from global.h:13,
-                 from pwmTask.c:3:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/uartTask.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c uartTask.c -o .\CortexM4\ARM_GCC_541\Debug\uartTask.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from uartTask.c:2:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/capsenseTask.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c capsenseTask.c -o .\CortexM4\ARM_GCC_541\Debug\capsenseTask.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from global.h:13,
-                 from capsenseTask.c:2:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/ezi2cTask.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c ezi2cTask.c -o .\CortexM4\ARM_GCC_541\Debug\ezi2cTask.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from ezi2cTask.c:3:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/cy_ipc_config.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c cy_ipc_config.c -o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/cyfitter_sysint_cfg.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\cyfitter_sysint_cfg.c -o .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/cymetadata.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\cymetadata.c -o .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
@@ -445,53 +415,13 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthu
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/cy_ble_wss.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_wss.c -o .\CortexM4\ARM_GCC_541\Debug\cy_ble_wss.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/cy_ble.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\middleware\ble\cy_ble.c -o .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/croutine.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\croutine.c -o .\CortexM4\ARM_GCC_541\Debug\croutine.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\croutine.c:70:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/event_groups.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\event_groups.c -o .\CortexM4\ARM_GCC_541\Debug\event_groups.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\event_groups.c:79:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/list.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\list.c -o .\CortexM4\ARM_GCC_541\Debug\list.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\list.c:72:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/queue.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\queue.c -o .\CortexM4\ARM_GCC_541\Debug\queue.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\queue.c:78:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/tasks.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\tasks.c -o .\CortexM4\ARM_GCC_541\Debug\tasks.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\tasks.c:80:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/timers.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\timers.c -o .\CortexM4\ARM_GCC_541\Debug\timers.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\timers.c:78:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/port.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\portable\GCC\CM4F\port.c -o .\CortexM4\ARM_GCC_541\Debug\port.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\portable\GCC\CM4F\port.c:75:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/heap_1.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\portable\MemMang\heap_1.c -o .\CortexM4\ARM_GCC_541\Debug\heap_1.o
-In file included from Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/FreeRTOS.h:98:0,
-                 from Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\portable\MemMang\heap_1.c:85:
-./FreeRTOSConfig.h:83:2: warning: #warning This is a template. Modify it according to your project and remove this line. [-Wcpp]
- #warning This is a template. Modify it according to your project and remove this line. 
-  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/PWM_1.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\PWM_1.c -o .\CortexM4\ARM_GCC_541\Debug\PWM_1.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/PWM_2.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\PWM_2.c -o .\CortexM4\ARM_GCC_541\Debug\PWM_2.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/EZI2C.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347FMI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\EZI2C.c -o .\CortexM4\ARM_GCC_541\Debug\EZI2C.o
@@ -518,5 +448,5 @@ Checksum calculated and stored in ELF section .cymeta
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 "C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" -A \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Main-Controller-Final.cydsn\CortexM4\ARM_GCC_541\Debug\Main-Controller-Final.elf
-code:209247	sram:28344
---------------- Rebuild Succeeded: 01/29/2018 07:18:26 ---------------
+code:209679	sram:67256
+--------------- Rebuild Succeeded: 01/29/2018 15:16:35 ---------------

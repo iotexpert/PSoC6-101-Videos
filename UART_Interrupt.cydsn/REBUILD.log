@@ -1,4 +1,4 @@
---------------- Rebuild Started: 01/27/2018 17:00:45 Project: UART_Interrupt, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 01/29/2018 15:11:03 Project: UART_Interrupt, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o"
@@ -29,12 +29,14 @@ Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_systick.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_profile.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_prot.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\UART_Interrupt.hex"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\UART_Interrupt.elf"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\UART_Interrupt.map"
 Deleting file ".\UART_Interrupt.cycdx"
 Deleting file ".\UART_Interrupt.rpt"
+Deleting file ".\UART_Interrupt_timing.html"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\main_cm4.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o"
@@ -65,6 +67,7 @@ Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_systick.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_profile.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_prot.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_lvd.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_efuse.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\UART_Interrupt.hex"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\UART_Interrupt.elf"
@@ -171,4 +174,4 @@ Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 "C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" -A \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\CortexM4\ARM_GCC_541\Debug\UART_Interrupt.elf
 code:12844	sram:2508
---------------- Rebuild Succeeded: 01/27/2018 17:02:02 ---------------
+--------------- Rebuild Succeeded: 01/29/2018 15:12:18 ---------------
