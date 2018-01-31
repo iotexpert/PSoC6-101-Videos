@@ -88,6 +88,7 @@ void updateMotorsGatt(motors_t motor,uint8_t percent,uint8_t flags)
 void customEventHandler(uint32_t event, void *eventParameter)
 {
     cy_stc_ble_gatts_write_cmd_req_param_t   *writeReqParameter;   
+    Cy_SCB_UART_PutString(UART_HW,"BLE Event\n");
     
     /* Take an action based on the current event */
     switch (event)
@@ -176,6 +177,7 @@ void bleTask(void *arg)
     (void)arg;
     
     Cy_BLE_Start(customEventHandler);
+    Cy_SCB_UART_PutString(UART_HW,"Started BLE\n");
     
     for(;;)
     {
@@ -189,6 +191,7 @@ void bleTask(void *arg)
             updateMotorsGatt(M1,getMotorPercent(M1),CY_BLE_GATT_DB_LOCALLY_INITIATED);
             updateMotorsGatt(M2,getMotorPercent(M2),CY_BLE_GATT_DB_LOCALLY_INITIATED);
         }
+        //taskYIELD();
         vTaskDelay(5); // not very happy about this 5.. not sure what the right thing to do is
     }
 }

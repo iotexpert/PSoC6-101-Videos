@@ -25,6 +25,8 @@ int main(void)
     Cy_GPIO_Write(RED_PORT,RED_NUM,1);
     Cy_GPIO_Write(GREEN_PORT,GREEN_NUM,1);
     
+    UART_Start();
+    
     
     RED_PWM_Start();
     
@@ -41,8 +43,12 @@ int main(void)
     xTaskCreate( uartTask, "UART Task",400,0,2,0);
     xTaskCreate( pwmTask, "PWM Task",400,0,2,0);
     xTaskCreate( ezi2cTask, "EZI2C Task",400,0,2,0);
-    xTaskCreate( capsenseTask, "Capsense Task",2048,0,3,0);
-    xTaskCreate( bleTask, "BLE Task",4096,0,3,0);
+    xTaskCreate( capsenseTask, "Capsense Task",(2*1024),0,3,0);
+    if(xTaskCreate( bleTask, "BLE Task",(4*1024),0,3,0) != pdPASS)
+    {
+        UART_PutString("Failed\n");
+        while(1);
+    }
     
     vTaskStartScheduler(); // this function never returns
 

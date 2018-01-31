@@ -34,7 +34,9 @@ void uartTask(void *arg)
     PWM_Message_t myMessage;
     UART_Start();
     
-    (void) Cy_SCB_UART_Init(UART_HW, &UART_config, &UART_context);
+    UART_PutString("Started UART\r\n");
+    
+    //(void) Cy_SCB_UART_Init(UART_HW, &UART_config, &UART_context);
 
     /* Hook interrupt service routine and enable interrupt */
     Cy_SysInt_Init(&SysInt_UART_cfg, &UART_Isr);
@@ -60,7 +62,6 @@ void uartTask(void *arg)
                 break;
                   
                 case 's':
-                       
                     sprintf(buff,"M1=%d M2=%d\n",getMotorPercent(M1),getMotorPercent(M2));
                     Cy_SCB_UART_PutString(UART_HW,buff);
                       
@@ -75,7 +76,6 @@ void uartTask(void *arg)
                 case 'o':
                     myMessage.motor = M1; myMessage.percent=-1; myMessage.percentChange=-10;
                     xQueueSend(pwmQueue,&myMessage,0);
-                
                 break;
                     
                 case 'l': // Make Motor 2 +10%

@@ -23,6 +23,7 @@ void capsenseTask(void *arg)
             pos=CapSense_GetCentroidPos(CapSense_LINEARSLIDER0_WDGT_ID);
             if(pos<0xFFFF)
             {
+                
                 myMessage.motor = currentMotor;
                 myMessage.percent = pos;
                 xQueueSend(pwmQueue,&myMessage,0);
@@ -41,6 +42,6 @@ void capsenseTask(void *arg)
             CapSense_ScanAllWidgets();
         }
         else
-            vTaskDelay(5);
+            vTaskDelay(50);
     }
 }
