@@ -170,8 +170,14 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html
 #define configMAX_SYSCALL_INTERRUPT_PRIORITY    0xBF
 /* configMAX_API_CALL_INTERRUPT_PRIORITY is a new name for configMAX_SYSCALL_INTERRUPT_PRIORITY
  that is used by newer ports only. The two are equivalent. */
-#define configMAX_API_CALL_INTERRUPT_PRIORITY 	configMAX_SYSCALL_INTERRUPT_PRIORITY
+#ifdef __NVIC_PRIO_BITS
+      /* __BVIC_PRIO_BITS will be specified when CMSIS is being used. */
+      #define configPRIO_BITS                   __NVIC_PRIO_BITS
+#else
+      #define configPRIO_BITS                   4        /* 15 priority levels */
+#endif    
 
+#define configMAX_SYSCALL_INTERRUPT_PRIORITY    ( 1 << (8 - configPRIO_BITS) )  
 
 /* Set the following definitions to 1 to include the API function, or zero
 to exclude the API function. */

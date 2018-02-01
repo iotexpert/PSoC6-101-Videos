@@ -94,7 +94,7 @@
 #define configUSE_TASK_NOTIFICATIONS            1
 #define configUSE_MUTEXES                       0
 #define configUSE_RECURSIVE_MUTEXES             0
-#define configUSE_COUNTING_SEMAPHORES           0
+#define configUSE_COUNTING_SEMAPHORES           1
 #define configQUEUE_REGISTRY_SIZE               10
 #define configUSE_QUEUE_SETS                    0
 #define configUSE_TIME_SLICING                  0
@@ -167,7 +167,17 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html
 /* Put KERNEL_INTERRUPT_PRIORITY in top __NVIC_PRIO_BITS bits of CM4 register */
 #define configKERNEL_INTERRUPT_PRIORITY         0xFF
 /* Put MAX_SYSCALL_INTERRUPT_PRIORITY in top __NVIC_PRIO_BITS bits of CM4 register */
-#define configMAX_SYSCALL_INTERRUPT_PRIORITY    0xBF
+    
+#ifdef __NVIC_PRIO_BITS
+      /* __BVIC_PRIO_BITS will be specified when CMSIS is being used. */
+      #define configPRIO_BITS                   __NVIC_PRIO_BITS
+#else
+      #define configPRIO_BITS                   4        /* 15 priority levels */
+#endif    
+
+#define configMAX_SYSCALL_INTERRUPT_PRIORITY    ( 1 << (8 - configPRIO_BITS) )    
+    
+    
 /* configMAX_API_CALL_INTERRUPT_PRIORITY is a new name for configMAX_SYSCALL_INTERRUPT_PRIORITY
  that is used by newer ports only. The two are equivalent. */
 #define configMAX_API_CALL_INTERRUPT_PRIORITY 	configMAX_SYSCALL_INTERRUPT_PRIORITY

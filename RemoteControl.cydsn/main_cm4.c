@@ -3,29 +3,31 @@
 #include "task.h"
 #include <stdio.h>
 #include "bmi160.h"
+#include "semphr.h"
 
 TaskHandle_t bleTaskHandle;
+SemaphoreHandle_t bleSemaphore;
 
 #define P6ROBOT_NAME "P6Robot"
 #define P6ROBOT_NAME_OFFET 5
 #define P6ROBOT_ATT_LEN 30
 #define P6ROBOT_SERVICE_OFFSET 14
 
-#define THRESHOLD 5
+#define THRESHOLD 1
 
 void writeMotor(uint8_t motor, uint8_t pos)
 {
+    
     static int prev_m1 = 500;
     static int prev_m2 = 500;
-   
-    if(Cy_BLE_GATT_GetBusyStatus(0) == CY_BLE_STACK_STATE_BUSY)
-        return;
-
     
     if(Cy_BLE_GetConnectionState( cy_ble_connHandle[0]) != CY_BLE_CONN_STATE_CLIENT_DISCOVERED)
     {
         return;
     }
+    
+    if(Cy_BLE_GATT_GetBusyStatus(cy_ble_connHandle[0].attId) == CY_BLE_STACK_STATE_BUSY)
+        return;
    
     
     cy_stc_ble_gattc_write_req_t myVal;
@@ -45,8 +47,9 @@ void writeMotor(uint8_t motor, uint8_t pos)
         myVal.handleValPair.attrHandle = cy_ble_customCServ [CY_BLE_CUSTOMC_MOTOR_SERVICE_INDEX].customServChar[CY_BLE_CUSTOMC_MOTOR_M2_CHAR_INDEX].customServCharHandle[0];
     }
     
+    printf("Motor %d Val = %d\r\n",motor,pos);
+    
     myVal.handleValPair.value.val = &pos;
-    myVal.handleValPair.value.actualLen = 1;
     myVal.handleValPair.value.len = 1;
     myVal.connHandle = cy_ble_connHandle[0];
     
@@ -96,12 +99,16 @@ void capsenseTask(void *arg)
 void customEventHandler(uint32_t event, void *eventParameter)
 {   
     cy_stc_ble_gapc_adv_report_param_t  *scanProgressParam;
-    
+    static cy_stc_ble_bd_addr_t connectAddr;
+                
     switch (event)
     {
         /* This event is received when the BLE stack is Started */
         case CY_BLE_EVT_STACK_ON:
+            printf("Stack On\r\n");
+            break;
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED:
+            Cy_GPIO_Write(LED8_PORT,LED8_0_NUM,1);
             printf("Started Scanning\r\n");
             Cy_BLE_GAPC_StartScan(CY_BLE_SCANNING_FAST,0);  
         
@@ -117,14 +124,26 @@ void customEventHandler(uint32_t event, void *eventParameter)
                && memcmp(cy_ble_customCServ [CY_BLE_CUSTOMC_MOTOR_SERVICE_INDEX].uuid,&scanProgressParam->data[P6ROBOT_SERVICE_OFFSET],16) == 0)
             {
                 printf("Found %s\r\n",P6ROBOT_NAME);
-                // make a connection
-                cy_stc_ble_bd_addr_t connectAddr;
+                
                 memcpy(&connectAddr.bdAddr[0], &scanProgressParam->peerBdAddr[0] , CY_BLE_BD_ADDR_SIZE);
                 connectAddr.type = scanProgressParam->peerAddrType;
-                Cy_BLE_GAPC_ConnectDevice(&connectAddr,0);
+                
                 Cy_BLE_GAPC_StopScan();
             }
         break;
+            
+        case CY_BLE_EVT_GAPC_SCAN_START_STOP:
+            if(Cy_BLE_GetScanState() == CY_BLE_SCAN_STATE_STOPPED)
+            {
+                printf("Started connection\n");
+                Cy_BLE_GAPC_ConnectDevice(&connectAddr,0);
+            }
+            else
+            {
+                printf("Started scan\n");
+            }
+        break;
+            
 
         case CY_BLE_EVT_GATT_CONNECT_IND:
             Cy_BLE_GATTC_StartDiscovery(cy_ble_connHandle[0]);
@@ -132,6 +151,7 @@ void customEventHandler(uint32_t event, void *eventParameter)
         break;
             
         case CY_BLE_EVT_GATTC_DISCOVERY_COMPLETE:
+            Cy_GPIO_Write(LED8_PORT,LED8_0_NUM,0);
             printf("Discovery Complete\r\n" );
         break;
               
@@ -144,9 +164,7 @@ void bleInterruptNotify()
 {
     BaseType_t xHigherPriorityTaskWoken;
     xHigherPriorityTaskWoken = pdFALSE;
-    //vTaskNotifyGiveFromISR(bleTaskHandle,&xHigherPriorityTaskWoken);
-    xTaskNotifyFromISR(bleTaskHandle, 0x0001, eSetBits, &xHigherPriorityTaskWoken);
-    
+    xSemaphoreGiveFromISR(bleSemaphore, &xHigherPriorityTaskWoken); 
     portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
 }
 
@@ -155,27 +173,31 @@ void bleTask(void *arg)
     (void)arg;
     uint32 flags = 0;
     printf("Started BLE Task\r\n");
+    bleSemaphore = xSemaphoreCreateCounting(0xFFFFFFFF,0);
 
-    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+    
     Cy_BLE_Start(customEventHandler);
-  
-    Cy_BLE_ProcessEvents();
+    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
 
-//    Cy_BLE_GAPC_StartScan(CY_BLE_SCANNING_FAST,0);  
+    while(Cy_BLE_GetState() != CY_BLE_STATE_ON)
+    {
+        Cy_BLE_ProcessEvents();
+    }
+ 
+    
+    Cy_BLE_GAPC_StartScan(CY_BLE_SCANNING_FAST,0);  
    
     for(;;)
     {
-        //ulTaskNotifyTake( pdTRUE, portMAX_DELAY );
-        xTaskNotifyWait(pdTRUE, 0xFFFFFFFF, &flags, 0xFFFFFFFF);
-        printf("task\r\n");
-        Cy_BLE_ProcessEvents();      
+        xSemaphoreTake(bleSemaphore,portMAX_DELAY);
+        Cy_BLE_ProcessEvents();         
     }
 }
 
 
 static struct bmi160_dev bmi160Dev;
 
-static int8_t BMI160BurstWrite(uint8_t dev_addr, uint8_t reg_addr,uint8_t *data, uint16_t len)
+int8_t BMI160BurstWrite(uint8_t dev_addr, uint8_t reg_addr,uint8_t *data, uint16_t len)
 {
     
     Cy_SCB_I2C_MasterSendStart(I2C_1_HW,dev_addr,CY_SCB_I2C_WRITE_XFER,0,&I2C_1_context);
@@ -191,7 +213,7 @@ static int8_t BMI160BurstWrite(uint8_t dev_addr, uint8_t reg_addr,uint8_t *data,
 }
 
 // This function supports the BMP180 library and read I2C Registers
-static int8_t BMI160BurstRead(uint8_t dev_addr, uint8_t reg_addr,uint8_t *data, uint16_t len)
+int8_t BMI160BurstRead(uint8_t dev_addr, uint8_t reg_addr,uint8_t *data, uint16_t len)
 {
     
     Cy_SCB_I2C_MasterSendStart(I2C_1_HW,dev_addr,CY_SCB_I2C_WRITE_XFER,0,&I2C_1_context);
@@ -234,8 +256,6 @@ static void sensorsDeviceInit(void)
       bmi160Dev.gyro_cfg.odr = BMI160_GYRO_ODR_800HZ;
       bmi160Dev.gyro_cfg.range = BMI160_GYRO_RANGE_125_DPS;
       bmi160Dev.gyro_cfg.bw = BMI160_GYRO_BW_OSR4_MODE;
-
-      /* Select the power mode of Gyroscope sensor */
       bmi160Dev.gyro_cfg.power = BMI160_GYRO_NORMAL_MODE;
 
       bmi160Dev.accel_cfg.odr = BMI160_ACCEL_ODR_1600HZ;
@@ -256,8 +276,11 @@ static void sensorsDeviceInit(void)
 void motionTask(void *arg)
 {
     (void)arg;
+    printf("Motion Task Started\r\n");
     I2C_1_Start();
     sensorsDeviceInit();
+    
+    
     struct bmi160_sensor_data acc;
     
     float m1,m2;
@@ -282,10 +305,9 @@ void motionTask(void *arg)
         iirm2 = m2 / 8.0 + iirm2*7.0/8.0;
         
         //printf("x=%4d y=%4d z=%4d m1=%3.0f m2=%2.0f IIR m1=%3.0f m2=%2.0f\r\n",acc.x,acc.y,acc.z,m1,m2,iirm1,iirm2);
-        writeMotor(1,m1);
-        //vTaskDelay(3);
-        writeMotor(2,m2);
-        vTaskDelay(3);
+        writeMotor(1,iirm1);
+        writeMotor(2,iirm2);
+        //vTaskDelay(1); 
     }
 }
 
@@ -297,7 +319,7 @@ int main(void)
     printf("Started Project\r\n");
     //xTaskCreate( capsenseTask, "CapSense Task",400,0,1,0);
     xTaskCreate(bleTask,"bleTask",4*1024,0,2,&bleTaskHandle);
-    //xTaskCreate( motionTask, "Motion Task",400,0,1,0);
+    xTaskCreate( motionTask, "Motion Task",400,0,1,0);
     vTaskStartScheduler();
  
 }

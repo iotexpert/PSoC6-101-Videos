@@ -2,6 +2,7 @@
 #include "project.h"
 #include "FreeRTOS.h"
 #include "task.h"
+TaskHandle_t bleTaskHandle;
 
 void customEventHandler(uint32_t event, void *eventParameter)
 {
@@ -49,18 +50,31 @@ void customEventHandler(uint32_t event, void *eventParameter)
             break;
     }
 }
+void bleInterruptNotify()
+{
+    BaseType_t xHigherPriorityTaskWoken;
+    xHigherPriorityTaskWoken = pdFALSE;
+    xTaskNotifyFromISR(bleTaskHandle, 0, eNoAction, &xHigherPriorityTaskWoken); 
+    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+}
 
 void bleTask(void *arg)
 {
     (void)arg;
+    uint32 flags = 0;
     
     Cy_BLE_Start(customEventHandler);
-    
-    PWM_DIM_Start();
-    
+  
+    while(Cy_BLE_GetState() != CY_BLE_STATE_ON)
+    {
+        Cy_BLE_ProcessEvents();
+    }
+    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+   
     for(;;)
     {
-         Cy_BLE_ProcessEvents();
+        xTaskNotifyWait(0, 0, &flags, portMAX_DELAY);
+        Cy_BLE_ProcessEvents();      
     }
 }
 
@@ -68,7 +82,7 @@ int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
 
-    xTaskCreate(bleTask,"bleTask",8*1024,0,1,0);
+    xTaskCreate(bleTask,"bleTask",8*1024,0,1,&bleTaskHandle);
     vTaskStartScheduler();
  
 }
