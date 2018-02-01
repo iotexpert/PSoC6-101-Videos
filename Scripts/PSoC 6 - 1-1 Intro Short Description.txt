@@ -1,0 +1,4 @@
+This is the introductory video for PSoC 6 101. 
+It details what training the video series will be providing, 
+the different lessons that will be covered in the video series 
+and provides details on the hardware that will be used for the video series.

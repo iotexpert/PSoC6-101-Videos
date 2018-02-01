@@ -1,0 +1,2 @@
+This video shows the viewer how to design a ÅgHello WorldÅh blinky LED project using PSoC Creator. 
+Using the peripherals of PSoC 6, the viewer will be trained on how to blink an LED with a dual-core twist

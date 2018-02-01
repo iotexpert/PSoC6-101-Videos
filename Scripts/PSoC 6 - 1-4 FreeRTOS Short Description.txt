@@ -1,0 +1,2 @@
+This training video shows users how to implement an RTOS in PSoC 6, the FreeRTOS. 
+This video will show you how to implement a ÅgHello WorldÅh blinky LED using the FreeRTOS environment. 
