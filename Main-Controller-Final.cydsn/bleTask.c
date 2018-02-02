@@ -9,6 +9,11 @@
 #include <project.h>
 #include "global.h"
 #include "pwmTask.h"
+#include "semphr.h"
+#include <stdio.h>
+
+SemaphoreHandle_t bleSemaphore;
+TaskHandle_t bleTaskHandle;
 
 /*******************************************************************************
 * Function Name: updateMotorsGatt
@@ -88,8 +93,7 @@ void updateMotorsGatt(motors_t motor,uint8_t percent,uint8_t flags)
 void customEventHandler(uint32_t event, void *eventParameter)
 {
     cy_stc_ble_gatts_write_cmd_req_param_t   *writeReqParameter;   
-    Cy_SCB_UART_PutString(UART_HW,"BLE Event\n");
-    
+     
     /* Take an action based on the current event */
     switch (event)
     {
@@ -97,16 +101,21 @@ void customEventHandler(uint32_t event, void *eventParameter)
         case CY_BLE_EVT_STACK_ON:
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED:
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
+            Cy_GPIO_Write(LED8_PORT,LED8_NUM,1);
+            printf("BLE: ON/Disconnect\n");
         break;
+         
 
         case CY_BLE_EVT_GATT_CONNECT_IND:
-          
+            printf("BLE: Connection\n");
+            Cy_GPIO_Write(LED8_PORT,LED8_NUM,0); 
             updateMotorsGatt(M1,getMotorPercent(M1),CY_BLE_GATT_DB_LOCALLY_INITIATED);
             updateMotorsGatt(M2,getMotorPercent(M2),CY_BLE_GATT_DB_LOCALLY_INITIATED);
         break;
         
         
         case CY_BLE_EVT_GATTS_WRITE_REQ:
+            
             writeReqParameter = (cy_stc_ble_gatts_write_cmd_req_param_t *) eventParameter;
    
             if(CY_BLE_MOTOR_M1_CHAR_HANDLE == writeReqParameter->handleValPair.attrHandle)
@@ -160,6 +169,28 @@ void customEventHandler(uint32_t event, void *eventParameter)
 }
 
 /*******************************************************************************
+* Function Name: bleInterruptNotify
+********************************************************************************
+*
+* This function is the ISR which is called when the BLE stack need to do somethign
+* All it does is unlock the semaphore to get the BLE processing events 
+*
+* \param 
+* void - None
+* \return
+* void - None
+*
+*******************************************************************************/
+
+void bleInterruptNotify()
+{
+    BaseType_t xHigherPriorityTaskWoken;
+    xHigherPriorityTaskWoken = pdFALSE;
+    xSemaphoreGiveFromISR(bleSemaphore, &xHigherPriorityTaskWoken); 
+    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+}
+
+/*******************************************************************************
 * Function Name: bleTask
 ********************************************************************************
 *
@@ -172,15 +203,26 @@ void customEventHandler(uint32_t event, void *eventParameter)
 * void - this function never returns
 *
 *******************************************************************************/
+
 void bleTask(void *arg)
 {
     (void)arg;
+    printf("Started BLE\n");
+
+    bleSemaphore = xSemaphoreCreateCounting(0xFFFFFFFF,0);
     
     Cy_BLE_Start(customEventHandler);
-    Cy_SCB_UART_PutString(UART_HW,"Started BLE\n");
-    
+    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+   
+    // Get the stack started...
+    while(Cy_BLE_GetState() != CY_BLE_STATE_ON)
+    {
+        Cy_BLE_ProcessEvents();
+    }
+
     for(;;)
     {
+        xSemaphoreTake(bleSemaphore,portMAX_DELAY);
         Cy_BLE_ProcessEvents();
         
         // If the PWM tasks says we need to update the GATT database and send out the motor percent
@@ -191,7 +233,5 @@ void bleTask(void *arg)
             updateMotorsGatt(M1,getMotorPercent(M1),CY_BLE_GATT_DB_LOCALLY_INITIATED);
             updateMotorsGatt(M2,getMotorPercent(M2),CY_BLE_GATT_DB_LOCALLY_INITIATED);
         }
-        //taskYIELD();
-        vTaskDelay(5); // not very happy about this 5.. not sure what the right thing to do is
     }
 }

@@ -31,4 +31,5 @@ extern EventGroupHandle_t pwmEventGroup;
 #define PWM_EVENT_ALL (PWM_EVENT_I2C | PWM_EVENT_BLE)    
 
 extern SemaphoreHandle_t uartSemaphore;
+extern  TaskHandle_t bleTaskHandle;
 #endif

@@ -3,7 +3,7 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="PSo6-Videos" persistent="PSo6-Videos.cywrk" platform="NOT_USED">
-<current_project name=".\RemoteControl.cydsn\RemoteControl.cyprj" />
+<current_project name=".\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
@@ -11,7 +11,7 @@
 <v>.\2-5-BasicCapsense.cydsn\2-5-BasicCapsense.cyprj</v>
 <v>.\2-5-CapsenseRTOS.cydsn\2-5-CapsenseRTOS.cyprj</v>
 <v>.\2-5-CapsenseMotor.cydsn\2-5-CapsenseMotor.cyprj</v>
-<v>.\UART_Interrupt.cydsn\UART_Interrupt.cyprj</v>
+<v>.\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj</v>
 <v>.\3-2-SimpleBLEPeripheral.cydsn\3-2-SimpleBLEPeripheral.cyprj</v>
 <v>.\2-3-BasicI2C.cydsn\2-3-BasicI2C.cyprj</v>
 <v>.\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj</v>
@@ -19,7 +19,7 @@
 <v>.\1-3-HelloWorldCM0p.cydsn\1-3-HelloWorldCM0p.cyprj</v>
 <v>.\1-4-HelloWorldFreeRTOS.cydsn\1-4-HelloWorldFreeRTOS.cyprj</v>
 <v>.\1-3-HelloWorldCM4.cydsn\1-3-HelloWorldCM4.cyprj</v>
-<v>.\2-6-BasicTracelyzer.cydsn\2-6-BasicTracelyzer.cyprj</v>
+<v>.\2-7-BasicTracelyzer.cydsn\2-7-BasicTracelyzer.cyprj</v>
 <v>.\3-3-SimpleBLECentral.cydsn\3-3-SimpleBLECentral.cyprj</v>
 <v>.\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj</v>
 <v>.\2-1-BasicUART.cydsn\2-1-BasicUART.cyprj</v>

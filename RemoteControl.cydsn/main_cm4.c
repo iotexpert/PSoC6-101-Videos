@@ -4,9 +4,14 @@
 #include <stdio.h>
 #include "bmi160.h"
 #include "semphr.h"
+#include "event_groups.h"
 
 TaskHandle_t bleTaskHandle;
 SemaphoreHandle_t bleSemaphore;
+EventGroupHandle_t systemInputMode;
+
+#define MODE_CAPSENSE    (1<<0)
+
 
 #define P6ROBOT_NAME "P6Robot"
 #define P6ROBOT_NAME_OFFET 5
@@ -61,29 +66,31 @@ void capsenseTask(void *arg)
 {
     (void)arg;
     
+    printf("Started CapSense Task\r\n");
     CapSense_Start();
     CapSense_ScanAllWidgets();
     int currentMotor = 1;
     
     for(;;)
     {
+        xEventGroupWaitBits(systemInputMode,MODE_CAPSENSE,pdFALSE,pdTRUE,portMAX_DELAY);
         if(!CapSense_IsBusy())
         {
             CapSense_ProcessAllWidgets();
             int pos;
             pos=CapSense_GetCentroidPos(CapSense_LINEARSLIDER0_WDGT_ID);
-            if(pos<0xFFFF)
+            if(pos<0xFFFF && (xEventGroupGetBits(systemInputMode) & MODE_CAPSENSE ) )
+            {
+                printf("CAP Motor=%d Pos=%d\r\n",currentMotor,pos);
                 writeMotor(currentMotor,pos);
-                
+            }   
             if(CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID))
             {
                 currentMotor = 1;
-            
             }
             if(CapSense_IsWidgetActive(CapSense_BUTTON1_WDGT_ID))
             {
                  currentMotor = 2;
-                
             }
                 
             CapSense_UpdateAllBaselines();
@@ -154,6 +161,10 @@ void customEventHandler(uint32_t event, void *eventParameter)
             Cy_GPIO_Write(LED8_PORT,LED8_0_NUM,0);
             printf("Discovery Complete\r\n" );
         break;
+            
+            case CY_BLE_EVT_GATTC_WRITE_RSP:
+                printf("Sucessful write\r\n");
+            break;
               
         default:
         break;
@@ -171,7 +182,6 @@ void bleInterruptNotify()
 void bleTask(void *arg)
 {
     (void)arg;
-    uint32 flags = 0;
     printf("Started BLE Task\r\n");
     bleSemaphore = xSemaphoreCreateCounting(0xFFFFFFFF,0);
 
@@ -279,13 +289,16 @@ void motionTask(void *arg)
     printf("Motion Task Started\r\n");
     I2C_1_Start();
     sensorsDeviceInit();
+    TickType_t lastMovement;
     
+    lastMovement = 0;
     
     struct bmi160_sensor_data acc;
     
     float m1,m2;
     float iirm1 = 50.0;
     float iirm2 = 50.0;
+    xEventGroupSetBits(systemInputMode,MODE_CAPSENSE);
     
     while(1)
     {
@@ -297,6 +310,8 @@ void motionTask(void *arg)
 
         acc.y = (acc.y>MAXACCEL)?MAXACCEL:acc.y;
         acc.y = (acc.y<-MAXACCEL)?-MAXACCEL:acc.y;
+        
+        
   
         m1 = acos((double)(acc.y)  / (double)MAXACCEL)*360/(2*3.14*1.8);
         m2 = acos((double)acc.x  / (double)MAXACCEL)*360/(2*3.14*1.8);
@@ -305,9 +320,30 @@ void motionTask(void *arg)
         iirm2 = m2 / 8.0 + iirm2*7.0/8.0;
         
         //printf("x=%4d y=%4d z=%4d m1=%3.0f m2=%2.0f IIR m1=%3.0f m2=%2.0f\r\n",acc.x,acc.y,acc.z,m1,m2,iirm1,iirm2);
-        writeMotor(1,iirm1);
-        writeMotor(2,iirm2);
-        //vTaskDelay(1); 
+ 
+        if( fabs(m1-50.0)>3.0 || fabs(m2-50.0) > 3.0)
+        {
+            lastMovement = xTaskGetTickCount();
+        }
+        
+        // if it has been more than a second then turn on capsense and LED
+        if( (xTaskGetTickCount() - lastMovement) > 1000)
+        {
+            xEventGroupSetBits(systemInputMode,MODE_CAPSENSE);
+            Cy_GPIO_Write(LED9_PORT,LED9_NUM,0);
+        }
+        else  
+        {
+            xEventGroupClearBits(systemInputMode,MODE_CAPSENSE);
+            Cy_GPIO_Write(LED9_PORT,LED9_NUM,1);
+        }
+      
+        
+        if(xEventGroupGetBits(systemInputMode)== 0)
+        {
+            writeMotor(1,iirm1);
+            writeMotor(2,iirm2);
+        }
     }
 }
 
@@ -317,7 +353,9 @@ int main(void)
     __enable_irq(); /* Enable global interrupts. */
     UART_1_Start();
     printf("Started Project\r\n");
-    //xTaskCreate( capsenseTask, "CapSense Task",400,0,1,0);
+    systemInputMode = xEventGroupCreate();
+    
+    xTaskCreate( capsenseTask, "CapSense Task",400,0,1,0);
     xTaskCreate(bleTask,"bleTask",4*1024,0,2,&bleTaskHandle);
     xTaskCreate( motionTask, "Motion Task",400,0,1,0);
     vTaskStartScheduler();
