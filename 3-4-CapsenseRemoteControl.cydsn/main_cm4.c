@@ -3,7 +3,9 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include <stdio.h>
+#include "semphr.h"
 
+SemaphoreHandle_t bleSemaphore;
 #define P6ROBOT_NAME "P6Robot"
 #define P6ROBOT_NAME_OFFET 5
 #define P6ROBOT_ATT_LEN 30
@@ -118,18 +120,40 @@ void customEventHandler(uint32_t event, void *eventParameter)
     }
 }
 
+void bleInterruptNotify()
+{
+    BaseType_t xHigherPriorityTaskWoken;
+    xHigherPriorityTaskWoken = pdFALSE;
+    xSemaphoreGiveFromISR(bleSemaphore, &xHigherPriorityTaskWoken); 
+    portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
+}
+
 void bleTask(void *arg)
 {
     (void)arg;
     printf("Started BLE Task\r\n");
-    Cy_BLE_Start(customEventHandler);
+    bleSemaphore = xSemaphoreCreateCounting(0xFFFFFFFF,0);
+
     
-    for(;;)
+    Cy_BLE_Start(customEventHandler);
+    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+
+    while(Cy_BLE_GetState() != CY_BLE_STATE_ON)
     {
         Cy_BLE_ProcessEvents();
-        vTaskDelay(5);
+    }
+ 
+    
+    Cy_BLE_GAPC_StartScan(CY_BLE_SCANNING_FAST,0);  
+   
+    for(;;)
+    {
+        xSemaphoreTake(bleSemaphore,portMAX_DELAY);
+        Cy_BLE_ProcessEvents();         
     }
 }
+
+
 
 int main(void)
 {

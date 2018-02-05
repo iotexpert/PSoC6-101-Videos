@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file cy_ipc_config.c
-* \version 1.10
+* \version 1.10.1
 *
 *  Description:
 *  This C file is not intended to be part of the IPC driver. It is the code

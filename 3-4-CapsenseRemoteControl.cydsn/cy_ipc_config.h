@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file cy_ipc_config.h
-* \version 1.10
+* \version 1.10.1
 *
 * \brief
 * This header file is not intended to be part of the IPC driver since it defines
