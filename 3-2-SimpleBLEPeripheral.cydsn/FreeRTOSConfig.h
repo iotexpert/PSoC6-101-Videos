@@ -81,6 +81,7 @@
 #include "syslib/cy_syslib.h"
 
 
+
 #define configUSE_PREEMPTION                    1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION 0
 #define configUSE_TICKLESS_IDLE                 0
@@ -94,7 +95,7 @@
 #define configUSE_TASK_NOTIFICATIONS            1
 #define configUSE_MUTEXES                       0
 #define configUSE_RECURSIVE_MUTEXES             0
-#define configUSE_COUNTING_SEMAPHORES           0
+#define configUSE_COUNTING_SEMAPHORES           1
 #define configQUEUE_REGISTRY_SIZE               10
 #define configUSE_QUEUE_SETS                    0
 #define configUSE_TIME_SLICING                  0
@@ -170,14 +171,8 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html
 #define configMAX_SYSCALL_INTERRUPT_PRIORITY    0xBF
 /* configMAX_API_CALL_INTERRUPT_PRIORITY is a new name for configMAX_SYSCALL_INTERRUPT_PRIORITY
  that is used by newer ports only. The two are equivalent. */
-#ifdef __NVIC_PRIO_BITS
-      /* __BVIC_PRIO_BITS will be specified when CMSIS is being used. */
-      #define configPRIO_BITS                   __NVIC_PRIO_BITS
-#else
-      #define configPRIO_BITS                   4        /* 15 priority levels */
-#endif    
+#define configMAX_API_CALL_INTERRUPT_PRIORITY 	configMAX_SYSCALL_INTERRUPT_PRIORITY
 
-#define configMAX_SYSCALL_INTERRUPT_PRIORITY    ( 1 << (8 - configPRIO_BITS) )  
 
 /* Set the following definitions to 1 to include the API function, or zero
 to exclude the API function. */

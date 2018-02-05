@@ -48,20 +48,16 @@ static void sensorsDeviceInit(void)
   vTaskDelay(500); // guess
 
   /* BMI160 */
-  // assign bus read function
   bmi160Dev.read = (bmi160_com_fptr_t)BMI160BurstRead;
-  // assign bus write function
   bmi160Dev.write = (bmi160_com_fptr_t)BMI160BurstWrite;
-  // assign delay function
   bmi160Dev.delay_ms = (bmi160_delay_fptr_t)vTaskDelay;
+  
   bmi160Dev.id = BMI160_I2C_ADDR;  // I2C device address
 
   rslt = bmi160_init(&bmi160Dev); // initialize the device
   if (rslt == 0)
     {
       printf("BMI160 I2C connection [OK].\n");
-      /* Select the Output data rate, range of Gyroscope sensor
-       * ~92Hz BW by OSR4 @ODR=800Hz */
       bmi160Dev.gyro_cfg.odr = BMI160_GYRO_ODR_800HZ;
       bmi160Dev.gyro_cfg.range = BMI160_GYRO_RANGE_125_DPS;
       bmi160Dev.gyro_cfg.bw = BMI160_GYRO_BW_OSR4_MODE;
@@ -75,7 +71,7 @@ static void sensorsDeviceInit(void)
       bmi160Dev.accel_cfg.power = BMI160_ACCEL_NORMAL_MODE;
 
       /* Set the sensor configuration */
-      rslt |= bmi160_set_sens_conf(&bmi160Dev);
+      bmi160_set_sens_conf(&bmi160Dev);
       bmi160Dev.delay_ms(50);
     }
   else

@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file system_psoc63_cm0plus.c
-* \version 2.0
+* \version 2.10
 *
 * The device system-source file.
 *

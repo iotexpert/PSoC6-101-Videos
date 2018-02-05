@@ -15,14 +15,8 @@ int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
   
-    #if 0
-    Cy_WDT_Unlock();
-    Cy_WDT_Disable();
-    #endif
     
-    Cy_BLE_Start(0);
-   
-    
+    //Cy_BLE_Start(0);
     
     /* Enable CM4.  CY_CORTEX_M4_APPL_ADDR must be updated if CM4 memory layout is changed. */
     Cy_SysEnableCM4(CY_CORTEX_M4_APPL_ADDR); 
@@ -30,7 +24,7 @@ int main(void)
 
     for(;;)
     {
-        Cy_BLE_ProcessEvents();
+        //Cy_BLE_ProcessEvents();
         
         
     }

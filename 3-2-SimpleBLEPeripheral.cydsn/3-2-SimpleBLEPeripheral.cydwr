@@ -10,22 +10,25 @@
     <Group key="Interrupt">
       <Data key="830c80d2-6874-4889-b9f4-b4733e20183e/5e509665-5bd3-4115-bbc0-fb65a49def9a" value="BLE_1_bless_isr" />
       <Data key="c04d0f68-0470-4d51-8e1b-74fa5cb746bf/5e509665-5bd3-4115-bbc0-fb65a49def9a" value="BLE_1_bless_isr" />
+      <Data key="e88ecc2a-44cf-42b0-8eda-25fbaf4a0dbf/9260d369-b684-4310-b925-f618d77b89d7" value="UART_1_SCB_IRQ" />
     </Group>
     <Group key="Pin">
       <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="M1" />
       <Data key="c7e18b69-2d01-4257-8671-cd6284f075d7" value="RED" />
       <Data key="e62b9b8d-ae05-44e0-8498-16f7f14af0ff" value="GREEN" />
+      <Data key="e88ecc2a-44cf-42b0-8eda-25fbaf4a0dbf/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_1_tx" />
+      <Data key="e88ecc2a-44cf-42b0-8eda-25fbaf4a0dbf/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_1_rx" />
     </Group>
   </Group>
   <Group key="Interrupt">
     <Group key="830c80d2-6874-4889-b9f4-b4733e20183e/5e509665-5bd3-4115-bbc0-fb65a49def9a">
       <Group key="CortexM0p">
-        <Data key="Assigned" value="True" />
+        <Data key="Assigned" value="False" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="3" />
       </Group>
       <Group key="CortexM4">
-        <Data key="Assigned" value="False" />
+        <Data key="Assigned" value="True" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="-1" />
       </Group>
@@ -613,6 +616,16 @@
     <Group key="e62b9b8d-ae05-44e0-8498-16f7f14af0ff">
       <Group key="0">
         <Data key="Port Format" value="1,1" />
+      </Group>
+    </Group>
+    <Group key="e88ecc2a-44cf-42b0-8eda-25fbaf4a0dbf/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f">
+      <Group key="0">
+        <Data key="Port Format" value="5,1" />
+      </Group>
+    </Group>
+    <Group key="e88ecc2a-44cf-42b0-8eda-25fbaf4a0dbf/b7e8018e-1ef7-49c0-b5a5-61641a03e31c">
+      <Group key="0">
+        <Data key="Port Format" value="5,0" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />
