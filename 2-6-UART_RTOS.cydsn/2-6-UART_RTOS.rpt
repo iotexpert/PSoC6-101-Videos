@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.851ms
+Loading plugins phase: Elapsed time ==> 0s.266ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 0s.582ms
+Elaboration phase: Elapsed time ==> 1s.588ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.131ms
+HDL generation phase: Elapsed time ==> 0s.084ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -23,35 +23,35 @@ HDL generation phase: Elapsed time ==> 0s.131ms
      | | | | | | |
 
 ======================================================================
-Compiling:  UART_Interrupt.v
+Compiling:  2-6-UART_RTOS.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -dcpsoc3 UART_Interrupt.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -dcpsoc3 2-6-UART_RTOS.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  UART_Interrupt.v
+Compiling:  2-6-UART_RTOS.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -dcpsoc3 UART_Interrupt.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -dcpsoc3 2-6-UART_RTOS.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  UART_Interrupt.v
+Compiling:  2-6-UART_RTOS.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -dcpsoc3 -verilog UART_Interrupt.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -dcpsoc3 -verilog 2-6-UART_RTOS.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Mon Jan 29 15:11:09 2018
+Fri Feb 09 11:38:50 2018
 
 
 ======================================================================
-Compiling:  UART_Interrupt.v
+Compiling:  2-6-UART_RTOS.v
 Program  :   vpp
-Options  :    -yv2 -q10 UART_Interrupt.v
+Options  :    -yv2 -q10 2-6-UART_RTOS.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Mon Jan 29 15:11:09 2018
+Fri Feb 09 11:38:50 2018
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -71,19 +71,19 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Using control file 'UART_Interrupt.ctl'.
+Using control file '2-6-UART_RTOS.ctl'.
 
 vlogfe:  No errors.
 
 
 ======================================================================
-Compiling:  UART_Interrupt.v
+Compiling:  2-6-UART_RTOS.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -dcpsoc3 -verilog UART_Interrupt.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -dcpsoc3 -verilog 2-6-UART_RTOS.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Mon Jan 29 15:11:09 2018
+Fri Feb 09 11:38:50 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -94,9 +94,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\codegentemp\UART_Interrupt.ctl'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\codegentemp\2-6-UART_RTOS.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\codegentemp\UART_Interrupt.v'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\codegentemp\2-6-UART_RTOS.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 
@@ -104,13 +104,13 @@ tovif:  No errors.
 
 
 ======================================================================
-Compiling:  UART_Interrupt.v
+Compiling:  2-6-UART_RTOS.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -dcpsoc3 -verilog UART_Interrupt.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -dcpsoc3 -verilog 2-6-UART_RTOS.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Mon Jan 29 15:11:09 2018
+Fri Feb 09 11:38:50 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -121,9 +121,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\codegentemp\UART_Interrupt.ctl'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\codegentemp\2-6-UART_RTOS.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\codegentemp\UART_Interrupt.v'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\codegentemp\2-6-UART_RTOS.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
@@ -175,16 +175,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -dcpsoc3 UART_Interrupt.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -dcpsoc3 2-6-UART_RTOS.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.670ms
+Warp synthesis phase: Elapsed time ==> 1s.180ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.607, Family: PSoC3, Started at: Monday, 29 January 2018 15:11:09
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\UART_Interrupt.cydsn\UART_Interrupt.cyprj -d CY8C6347BZI-BLD53 UART_Interrupt.v -verilog
+cyp3fit: V4.2.0.620, Family: PSoC3, Started at: Friday, 09 February 2018 11:38:51
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-UART_RTOS.cydsn\2-6-UART_RTOS.cyprj -d CY8C6347BZI-BLD53 2-6-UART_RTOS.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.247ms
+Design parsing phase: Elapsed time ==> 0s.283ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -196,8 +196,6 @@ Done removing unused cells.
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
-ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: \UART:rx(0)\, \UART:tx(0)\
-
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].uart_cts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].spi_select[0]. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[8].spi_select[0]. (App=cydsfit)
@@ -328,6 +326,9 @@ Design Equations
             pa_out => \UART:tx(0)\__PA ,
             pin_input => \UART:tx_wire\ ,
             pad => \UART:tx(0)_PAD\ );
+        Properties:
+        {
+        }
 
     Pin : Name = \UART:rx(0)\
         Attributes:
@@ -365,6 +366,9 @@ Design Equations
             pa_out => \UART:rx(0)\__PA ,
             fb => \UART:Net_1172\ ,
             pad => \UART:rx(0)_PAD\ );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -441,8 +445,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.455ms
-Tech Mapping phase: Elapsed time ==> 0s.671ms
+Technology Mapping: Elapsed time ==> 0s.362ms
+Tech Mapping phase: Elapsed time ==> 0s.562ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -452,24 +456,24 @@ Cell                                : Block
 =========================================================================
 CY_CPUSS_SWJ_SWCLK_TCLK(0)          : [IOP=(6)][IoId=(7)]                
 CY_CPUSS_SWJ_SWDIO_TMS(0)           : [IOP=(6)][IoId=(6)]                
+\UART:tx(0)\                        : [IOP=(5)][IoId=(1)]                
+\UART:rx(0)\                        : [IOP=(5)][IoId=(0)]                
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
-\UART:SCB\                          : SCB_[FFB(SCB,0)]                   
-\UART:tx(0)\                        : [IOP=(0)][IoId=(3)]                
-\UART:rx(0)\                        : [IOP=(0)][IoId=(2)]                
+\UART:SCB\                          : SCB_[FFB(SCB,5)]                   
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.4197033s
+Elapsed time ==> 0.3342857s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 1s.582ms
+Analog Placement phase: Elapsed time ==> 1s.369ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0064199 secs
+Route success=True, Iterations=1 Elapsed=0.0049801 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.015ms
+Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -480,26 +484,26 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.069ms
+Analog Code Generation phase: Elapsed time ==> 0s.084ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.5 sec.
+I2076: Total run-time: 0.4 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.016ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.121ms
+Partitioning: Elapsed time ==> 0s.083ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -529,7 +533,7 @@ UDB [UDB=(1,3)] is empty.
 UDB [UDB=(1,4)] is empty.
 UDB [UDB=(1,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
-  Intr@ [IntrContainer=(0)][IntrId=(41)] 
+  Intr@ [IntrContainer=(0)][IntrId=(46)] 
     interrupt: Name =SysInt_1
         PORT MAP (
             interrupt => Net_4 );
@@ -541,7 +545,9 @@ Intr container @ [IntrContainer=(0)]:
         }
 Drq container @ [DrqContainer=(0)]: empty
 Port 0 contains the following IO cells:
-[IoId=2]: 
+Port 1 contains the following IO cells:
+Port 5 contains the following IO cells:
+[IoId=0]: 
 Pin : Name = \UART:rx(0)\
     Attributes:
         In Group/Port: True
@@ -582,7 +588,7 @@ Pin : Name = \UART:rx(0)\
     {
     }
 
-[IoId=3]: 
+[IoId=1]: 
 Pin : Name = \UART:tx(0)\
     Attributes:
         In Group/Port: True
@@ -623,8 +629,6 @@ Pin : Name = \UART:tx(0)\
     {
     }
 
-Port 1 contains the following IO cells:
-Port 5 contains the following IO cells:
 Port 6 contains the following IO cells:
 [IoId=6]: 
 Pin : Name = CY_CPUSS_SWJ_SWDIO_TMS(0)
@@ -742,7 +746,7 @@ LCD group 0: empty
 Vref group 0: empty
 LPCOMP group 0: empty
 SCB group 0: 
-    SCB @ F(SCB,0): 
+    SCB @ F(SCB,5): 
     SCB: Name =\UART:SCB\
         PORT MAP (
             clock => \UART:Net_847_ff0\ ,
@@ -809,8 +813,8 @@ Port Configuration report
      |     |       | Interrupt |                  |                            | 
 Port | Pin | Fixed |      Type |       Drive Mode |                       Name | Connections
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-   0 |   2 |       |      NONE |      HI_Z_ANALOG |               \UART:rx(0)\ | FB(\UART:Net_1172\)
-     |   3 |       |      NONE |         CMOS_OUT |               \UART:tx(0)\ | In(\UART:tx_wire\)
+   5 |   0 |     * |      NONE |      HI_Z_ANALOG |               \UART:rx(0)\ | FB(\UART:Net_1172\)
+     |   1 |     * |      NONE |         CMOS_OUT |               \UART:tx(0)\ | In(\UART:tx_wire\)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
    6 |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
      |   7 |     * |      NONE |    RES_PULL_DOWN | CY_CPUSS_SWJ_SWCLK_TCLK(0) | FB(CPUSS_swj_swclk_tclk)
@@ -818,33 +822,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.184ms
-Digital Placement phase: Elapsed time ==> 8s.740ms
+Digital component placer commit/Report: Elapsed time ==> 0s.168ms
+Digital Placement phase: Elapsed time ==> 6s.980ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
-"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "UART_Interrupt_r.vh2" --pcf-path "UART_Interrupt.pco" --des-name "UART_Interrupt" --dsf-path "UART_Interrupt.dsf" --sdc-path "UART_Interrupt.sdc" --lib-path "UART_Interrupt_r.lib"
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "2-6-UART_RTOS_r.vh2" --pcf-path "2-6-UART_RTOS.pco" --des-name "2-6-UART_RTOS" --dsf-path "2-6-UART_RTOS.dsf" --sdc-path "2-6-UART_RTOS.sdc" --lib-path "2-6-UART_RTOS_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.469ms
+Digital Routing phase: Elapsed time ==> 1s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 1s.340ms
+Bitstream Generation phase: Elapsed time ==> 0s.853ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
-Timing report is in UART_Interrupt_timing.html.
-Static timing analysis phase: Elapsed time ==> 13s.183ms
+Timing report is in 2-6-UART_RTOS_timing.html.
+Static timing analysis phase: Elapsed time ==> 8s.999ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.015ms
+Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.279ms
+Design database save phase: Elapsed time ==> 0s.237ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 27s.690ms
+cydsfit: Elapsed time ==> 20s.552ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 27s.711ms
-API generation phase: Elapsed time ==> 2s.621ms
-Dependency generation phase: Elapsed time ==> 0s.037ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 20s.571ms
+API generation phase: Elapsed time ==> 1s.363ms
+Dependency generation phase: Elapsed time ==> 0s.015ms
+Cleanup phase: Elapsed time ==> 0s.022ms

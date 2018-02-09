@@ -6,7 +6,12 @@
     </Group>
   </Group>
   <Data key="DataVersionKey" value="2" />
-  <Group key="DWRInstGuidMapping" />
+  <Group key="DWRInstGuidMapping">
+    <Group key="Pin">
+      <Data key="55385e07-ebd6-4d69-a066-c0ebe10c70ac/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_tx" />
+      <Data key="55385e07-ebd6-4d69-a066-c0ebe10c70ac/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_rx" />
+    </Group>
+  </Group>
   <Group key="M0S8Clock">
     <Group key="SystemClks">
       <Group key="0A08FE05-F885-497B-A02E-BF29CD90D1E9">
@@ -560,6 +565,18 @@
         <Data key="src_clk_id" value="" />
         <Data key="src_clk_name" value="" />
         <Data key="start_on_reset" value="False" />
+      </Group>
+    </Group>
+  </Group>
+  <Group key="Pin2">
+    <Group key="55385e07-ebd6-4d69-a066-c0ebe10c70ac/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f">
+      <Group key="0">
+        <Data key="Port Format" value="5,1" />
+      </Group>
+    </Group>
+    <Group key="55385e07-ebd6-4d69-a066-c0ebe10c70ac/b7e8018e-1ef7-49c0-b5a5-61641a03e31c">
+      <Group key="0">
+        <Data key="Port Format" value="5,0" />
       </Group>
     </Group>
   </Group>
