@@ -1,6 +1,6 @@
 /***************************************************************************//**
-* \file cy8c6xx7_cm0plus.icf
-* \version 2.10
+* \file cy8c6xx7_cm4_dual.icf
+* \version 2.0
 *
 * Linker file for the IAR compiler.
 *
@@ -35,17 +35,19 @@ define symbol __ICFEDIT_intvec_start__ = 0x00000000;
  * Use these symbols to specify the memory regions available for allocation.
  */
 
-/* The following symbols control RAM and flash memory allocation for the CM0+ core.
+/* The following symbols control RAM and flash memory allocation for the CM4 core.
  * You can change the memory allocation by editing RAM and Flash symbols.
- * Your changes must be aligned with the corresponding symbols for CM4 core in 'xx_cm4_dual.icf',
- * where 'xx' is the device group; for example, 'cy8c6xx7_cm4_dual.icf'.
+ * Note that 2 KB of RAM (at the end of the RAM section) are reserved for system use.
+ * Using this memory region for other purposes will lead to unexpected behavior.
+ * Your changes must be aligned with the corresponding symbols for CM0+ core in 'xx_cm0plus.icf',
+ * where 'xx' is the device group; for example, 'cy8c6xx7_cm0plus.icf'.
  */
 /* RAM */
-define symbol __ICFEDIT_region_IRAM1_start__ = 0x08000000;
-define symbol __ICFEDIT_region_IRAM1_end__   = 0x08024000;
+define symbol __ICFEDIT_region_IRAM1_start__ = 0x08024000;
+define symbol __ICFEDIT_region_IRAM1_end__   = 0x08047800;
 /* Flash */
-define symbol __ICFEDIT_region_IROM1_start__ = 0x10000000;
-define symbol __ICFEDIT_region_IROM1_end__   = 0x10080000;
+define symbol __ICFEDIT_region_IROM1_start__ = 0x10080000;
+define symbol __ICFEDIT_region_IROM1_end__   = 0x10100000;
 
 /* The following symbols define a 32K flash region used for EEPROM emulation. 
  * This region can also be used as the general purpose flash.
@@ -113,7 +115,6 @@ if (!isdefinedsymbol(__HEAP_SIZE)) {
 }
 /**** End of ICF editor section. ###ICF###*/
 
-
 define memory mem with size = 4G;
 define region IROM1_region = mem:[from __ICFEDIT_region_IROM1_start__ to __ICFEDIT_region_IROM1_end__];
 define region IROM2_region = mem:[from __ICFEDIT_region_IROM2_start__ to __ICFEDIT_region_IROM2_end__];
@@ -140,8 +141,8 @@ do not initialize  { section .noinit, section .intvec_ram };
 /*-Placement-*/
 
 /* Flash */
-".cy_app_header" : place at start of IROM1_region  { section .cy_app_header };
-place in          IROM1_region  { block RO };
+place at start of IROM1_region  { block RO };
+".cy_app_signature" : place at address (__ICFEDIT_region_IROM1_end__ - 0x200) { section .cy_app_signature };
 
 /* Emulated EEPROM Flash area */
 ".cy_em_eeprom" : place at start of IROM2_region  { section .cy_em_eeprom };
@@ -176,7 +177,7 @@ place at end   of IRAM1_region  { block HSTACK };
 ".cymeta" : place at address mem : 0x90500000 { readonly section .cymeta };
 
 
-keep {  section .cy_app_header,
+keep {  section .cy_app_signature,
         section .cy_em_eeprom,
         section .cy_sflash_user_data,
         section .cy_sflash_nar,
