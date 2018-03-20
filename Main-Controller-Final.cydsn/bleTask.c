@@ -212,7 +212,7 @@ void bleTask(void *arg)
     bleSemaphore = xSemaphoreCreateCounting(0xFFFFFFFF,0);
     
     Cy_BLE_Start(customEventHandler);
-    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+    Cy_BLE_RegisterAppHostCallback(bleInterruptNotify);
    
     // Get the stack started...
     while(Cy_BLE_GetState() != CY_BLE_STATE_ON)

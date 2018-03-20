@@ -62,6 +62,38 @@ void writeMotor(uint8_t motor, uint8_t pos)
       
 }
 
+typedef struct  {
+    char *name;
+    int name_len;
+    uint8_t *serviceUUID;
+    uint8 servUUID_len;
+} advInfo_t;
+
+advInfo_t currentAdvInfo;
+
+int findAdvInfo(uint8_t *adv,uint8_t len)
+{
+    memset(&currentAdvInfo,0,sizeof(currentAdvInfo));
+    
+    for(uint8_t i=0;i<len;)
+    {
+        switch(adv[i+1])
+        {
+            case 7: // Service UUID
+                currentAdvInfo.serviceUUID = &adv[i+2];
+                currentAdvInfo.servUUID_len = adv[i]-1;
+            break;
+            
+            case 9: // Name
+                currentAdvInfo.name = (char *)&adv[i+2];
+                currentAdvInfo.name_len = adv[i]-1;
+            break;
+        }
+        i = i + adv[i]+1;
+    }
+    return (currentAdvInfo.name_len > 0 && currentAdvInfo.serviceUUID > 0);
+}
+
 void capsenseTask(void *arg)
 {
     (void)arg;
@@ -123,13 +155,40 @@ void customEventHandler(uint32_t event, void *eventParameter)
         case CY_BLE_EVT_GAPC_SCAN_PROGRESS_RESULT:
             // Print Out Information about the Device that was found
             scanProgressParam = (cy_stc_ble_gapc_adv_report_param_t  *)eventParameter;
-            printf("Found Device %d\r\n",scanProgressParam->dataLen);
+            findAdvInfo(scanProgressParam->data,scanProgressParam->dataLen);
+            printf("Device ");
+            if(currentAdvInfo.name_len)
+            {
+                printf(" Name=");
+                for(int i=0;i<currentAdvInfo.name_len;i++)
+                {
+                    putchar(currentAdvInfo.name[i]);
+                }
+            }
             
+            if(currentAdvInfo.servUUID_len)
+            {
+                printf(" UUID=");
+                for(int i=0;i<currentAdvInfo.servUUID_len;i++)
+                {
+                    printf("%02X",currentAdvInfo.serviceUUID[i]);
+                }
+            }
+            
+            printf("\r\n");
+            
+            if(currentAdvInfo.servUUID_len>0 &&
+                memcmp(cy_ble_customCServ [CY_BLE_CUSTOMC_MOTOR_SERVICE_INDEX].uuid,currentAdvInfo.serviceUUID,16) == 0)
+            {
+                   
+                
+ #if 0           
             // If it is the P6LED then make a connection and stop scanning
             if(scanProgressParam->dataLen == P6ROBOT_ATT_LEN 
                && strncmp(P6ROBOT_NAME,(const char *)&scanProgressParam->data[P6ROBOT_NAME_OFFET],strlen(P6ROBOT_NAME)) == 0 
                && memcmp(cy_ble_customCServ [CY_BLE_CUSTOMC_MOTOR_SERVICE_INDEX].uuid,&scanProgressParam->data[P6ROBOT_SERVICE_OFFSET],16) == 0)
             {
+#endif
                 printf("Found %s\r\n",P6ROBOT_NAME);
                 
                 memcpy(&connectAddr.bdAddr[0], &scanProgressParam->peerBdAddr[0] , CY_BLE_BD_ADDR_SIZE);
@@ -187,7 +246,7 @@ void bleTask(void *arg)
 
     
     Cy_BLE_Start(customEventHandler);
-    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+    Cy_BLE_RegisterAppHostCallback(bleInterruptNotify);
 
     while(Cy_BLE_GetState() != CY_BLE_STATE_ON)
     {
