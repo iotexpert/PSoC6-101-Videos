@@ -9,4 +9,5 @@ Backup
 Archive
 *.cydsn/*.old
 *.cydsn/*.old.*
-
+*.old*
+~*
