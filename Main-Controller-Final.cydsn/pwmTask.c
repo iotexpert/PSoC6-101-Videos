@@ -2,7 +2,6 @@
 #include "pwmTask.h"
 #include "global.h"
 
-
 static int inline compareToPercent(int compare)
 {
     return (compare - 2400)/30;
@@ -62,11 +61,11 @@ void pwmTask(void *arg)
         
         }
     
-        if(pwmMessage.percent == -1) // they want a percent change
+        if(pwmMessage.changeType == POS_RELATIVE) 
         {
             compareTmp = Cy_TCPWM_PWM_GetCompare0(hw,cntrNum);
             percentTmp = compareToPercent(compareTmp);
-            percentTmp += pwmMessage.percentChange;
+            percentTmp += pwmMessage.percent;
         
             if(percentTmp < 0)
                 percentTmp = 0;

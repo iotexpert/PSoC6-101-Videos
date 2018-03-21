@@ -56,13 +56,19 @@
 #endif /* (SRSS_ALTLF_PRESENT == 1U) || defined(CY_DOXYGEN) */
 
 
-/** Holds the FastClk system core clock, which is the system clock frequency supplied to the SysTick timer and the
-* processor core clock. This variable can be used by debuggers to query the frequency of the debug timer or to configure
-* the trace clock speed.
+/*
+* Holds the FastClk system core clock, which is the system clock frequency 
+* supplied to the SysTick timer and the processor core clock.
+* This variable implements CMSIS Core global variable.
+* Refer to the [CMSIS documentation]
+* (http://www.keil.com/pack/doc/CMSIS/Core/html/group__system__init__gr.html "System and Clock Configuration") 
+* for more details.
+* This variable can be used by debuggers to query the frequency 
+* of the debug timer or to configure the trace clock speed.
 *
-* \attention Compilers must be configured to avoid removing this variable in case the application program is not using
-* it. Debugging systems require the variable to be physically present in memory so that it can be examined to configure
-* the debugger. */
+* \attention Compilers must be configured to avoid removing this variable in case
+* the application program is not using it. Debugging systems require the variable
+* to be physically present in memory so that it can be examined to configure the debugger. */
 uint32_t SystemCoreClock = CY_CLK_SYSTEM_FREQ_HZ_DEFAULT;
 
 /** Holds the HFClk0 clock frequency. Updated by \ref SystemCoreClockUpdate(). */
@@ -139,14 +145,13 @@ uint32_t cy_delay32kMs    = CY_DELAY_MS_OVERFLOW_THRESHOLD *
 /*******************************************************************************
 * Function Name: SystemInit
 ****************************************************************************//**
-*
+* \cond
 * Initializes the system:
-* - Cortex-M4 core:
-* -# Restores FLL registers to the default state for single core devices.
-* -# Unlocks and disables WDT.
-* -# Calls the Cy_SystemInit() function, if compiled from PSoC Creator.
-* -# Calls \ref SystemCoreClockUpdate().
-*
+* - Restores FLL registers to the default state for single core devices.
+* - Unlocks and disables WDT.
+* - Calls the Cy_SystemInit() function, if compiled from PSoC Creator.
+* - Calls \ref SystemCoreClockUpdate().
+* \endcond
 *******************************************************************************/
 void SystemInit(void)
 {

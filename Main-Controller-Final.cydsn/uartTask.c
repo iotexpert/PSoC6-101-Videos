@@ -1,14 +1,14 @@
 #include <project.h>
 #include "FreeRTOS.h"
-#include "global.h"
 #include "semphr.h"
 #include "pwmTask.h"
 #include <stdio.h>
+#include "global.h"
 
-static char buff[128];
+SemaphoreHandle_t uartSemaphore;
 
 // This ISR is called by the command line UART when a key is pressed
-void UART_Isr()
+static void UART_Isr()
 {
     // Disable the interrupt
     // read the interrupt mask
@@ -34,7 +34,7 @@ void uartTask(void *arg)
     PWM_Message_t myMessage;
     UART_Start();
     
-    UART_PutString("Started UART\r\n");
+    printf("Started UART\r\n");
     
     //(void) Cy_SCB_UART_Init(UART_HW, &UART_config, &UART_context);
 
@@ -62,30 +62,29 @@ void uartTask(void *arg)
                 break;
                   
                 case 's':
-                    sprintf(buff,"M1=%d M2=%d\n",getMotorPercent(M1),getMotorPercent(M2));
-                    Cy_SCB_UART_PutString(UART_HW,buff);
+                    printf("M1=%d M2=%d\n",getMotorPercent(M1),getMotorPercent(M2));
                       
                 break;
                     
                 case 'p': // Make Motor 1 +10%
-                    myMessage.motor = M1; myMessage.percent=-1; myMessage.percentChange=10;
+                    myMessage.motor = M1; myMessage.changeType = POS_RELATIVE; myMessage.percent=10;
                     xQueueSend(pwmQueue,&myMessage,0);
                     
                 break;
             
                 case 'o':
-                    myMessage.motor = M1; myMessage.percent=-1; myMessage.percentChange=-10;
+                    myMessage.motor = M1; myMessage.changeType = POS_RELATIVE; myMessage.percent=-10;
                     xQueueSend(pwmQueue,&myMessage,0);
                 break;
                     
                 case 'l': // Make Motor 2 +10%
-                    myMessage.motor = M2; myMessage.percent=-1; myMessage.percentChange=10;
+                    myMessage.motor = M2; myMessage.changeType = POS_RELATIVE; myMessage.percent =10;
                     xQueueSend(pwmQueue,&myMessage,0);
                     
                 break;
             
                 case 'k':
-                    myMessage.motor = M2; myMessage.percent=-1; myMessage.percentChange=-10;
+                    myMessage.motor = M2; myMessage.changeType = POS_RELATIVE; myMessage.percent=-10;
                     xQueueSend(pwmQueue,&myMessage,0);
                 break;
         
@@ -98,12 +97,12 @@ void uartTask(void *arg)
                 break;
                     
                 case '?':
-                    Cy_SCB_UART_PutString(UART_HW,"o\tM1 -10%\n");
-                    Cy_SCB_UART_PutString(UART_HW,"p\tM1 +10%\n");
-                    Cy_SCB_UART_PutString(UART_HW,"k\tM2 -10%\n");
-                    Cy_SCB_UART_PutString(UART_HW,"l\tM2 +10%\n");
-                    Cy_SCB_UART_PutString(UART_HW,"s\tStatus\n");
-                    Cy_SCB_UART_PutString(UART_HW,"5\tM1=50% M2=50%\n");
+                    printf("o\tM1 -10%%\n");
+                    printf("p\tM1 +10%%\n");
+                    printf("k\tM2 -10%%\n");
+                    printf("l\tM2 +10%%\n");
+                    printf("s\tStatus\n");
+                    printf("5\tM1=50%% M2=50%%\n");
                 break;
             }
         }

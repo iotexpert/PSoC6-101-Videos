@@ -1,9 +1,9 @@
 
 #include "project.h"
 #include "FreeRTOS.h"
-#include "global.h"
 #include "pwmTask.h"
 
+#include "global.h"
 
 void ezi2cTask(void *arg)
 {

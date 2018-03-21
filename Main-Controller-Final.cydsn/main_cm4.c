@@ -1,22 +1,17 @@
 #include "project.h"
-
 #include "pwmTask.h"
-#include "global.h"
-
+#include "uartTask.h"
+#include "ezi2cTask.h"
+#include "capsenseTask.h"
+#include "bleTask.h"
 #include <stdio.h>
 
-SemaphoreHandle_t updateEZI2CSemaphore;
-SemaphoreHandle_t uartSemaphore;
+TaskHandle_t bleTaskHandle;
+
 QueueHandle_t pwmQueue;
+SemaphoreHandle_t updateEZI2CSemaphore;
 EventGroupHandle_t pwmEventGroup;
-
-
-// These forward declarations are 
-extern void uartTask(void *arg);       // uartTask.c
-extern void pwmTask(void *arg);        // pwmTask.c
-extern void ezi2cTask(void *arg);      // ezi2cTask.c
-extern void capsenseTask(void *arg);   // capsenseTask.c
-extern void bleTask(void *arg);        // bleTask.c
+SemaphoreHandle_t updateEZI2CSemaphore;;
 
 int main(void)
 {
@@ -31,8 +26,7 @@ int main(void)
     
     pwmQueue = xQueueCreate(4, sizeof(PWM_Message_t));  
     updateEZI2CSemaphore = xSemaphoreCreateBinary();
-    uartSemaphore = xSemaphoreCreateBinary();
-    
+    uartSemaphore = xSemaphoreCreateBinary();    
     pwmEventGroup = xEventGroupCreate();
   
     Cy_GPIO_Write(BLUE_PORT,BLUE_NUM,1);

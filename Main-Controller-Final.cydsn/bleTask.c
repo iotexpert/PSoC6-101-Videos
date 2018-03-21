@@ -7,13 +7,13 @@
 *
 *******************************************************************************/
 #include <project.h>
-#include "global.h"
 #include "pwmTask.h"
 #include "semphr.h"
 #include <stdio.h>
+#include "global.h"
 
 SemaphoreHandle_t bleSemaphore;
-TaskHandle_t bleTaskHandle;
+
 
 /*******************************************************************************
 * Function Name: updateMotorsGatt
@@ -66,6 +66,7 @@ void updateMotorsGatt(motors_t motor,uint8_t percent,uint8_t flags)
         PWM_Message_t myMessage;
         myMessage.motor = motor;
         myMessage.percent = percent;
+        myMessage.changeType = POS_ABSOLUTE;
         xQueueSend(pwmQueue,&myMessage,0); /// ARH might think about a different timeout  
     }
     else
@@ -132,8 +133,8 @@ void customEventHandler(uint32_t event, void *eventParameter)
             {
                 PWM_Message_t myMessage;
                 myMessage.motor = M1;
-                myMessage.percent = -1;
-                myMessage.percentChange = (uint8_t)writeReqParameter->handleValPair.value.val[0];
+                myMessage.changeType = POS_RELATIVE;
+                myMessage.percent = (uint8_t)writeReqParameter->handleValPair.value.val[0];
                 xQueueSend(pwmQueue,&myMessage,0); /// ARH might think about a different timeout            
             }
             
@@ -141,8 +142,8 @@ void customEventHandler(uint32_t event, void *eventParameter)
             {     
                 PWM_Message_t myMessage;
                 myMessage.motor = M2;
-                myMessage.percent = -1;
-                myMessage.percentChange = (uint8_t)writeReqParameter->handleValPair.value.val[0];
+                myMessage.changeType = POS_RELATIVE;
+                myMessage.percent = (uint8_t)writeReqParameter->handleValPair.value.val[0];
                 xQueueSend(pwmQueue,&myMessage,0);            
             }
             

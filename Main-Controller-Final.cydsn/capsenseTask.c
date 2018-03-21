@@ -1,6 +1,6 @@
 #include "project.h"
-#include "global.h"
 #include "pwmTask.h"
+#include "global.h"
 
 void capsenseTask(void *arg)
 {
