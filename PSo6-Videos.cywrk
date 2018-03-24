@@ -3,11 +3,11 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="PSo6-Videos" persistent="PSo6-Videos.cywrk" platform="NOT_USED">
-<current_project name=".\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj" />
+<current_project name=".\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
-<v>.\Main-Controller-Final.cydsn\Main-Controller-Final.cyprj</v>
+<v>.\MainController.cydsn\MainController.cyprj</v>
 <v>.\2-5-BasicCapsense.cydsn\2-5-BasicCapsense.cyprj</v>
 <v>.\2-5-CapsenseRTOS.cydsn\2-5-CapsenseRTOS.cyprj</v>
 <v>.\2-5-CapsenseMotor.cydsn\2-5-CapsenseMotor.cyprj</v>
@@ -32,6 +32,12 @@
 <v>.\4-3-AFEShieldAmbientLight.cydsn\4-3-AFEShieldAmbientLight.cyprj</v>
 <v>.\4-4-AFESensorHub.cydsn\4-4-AFESensorHub.cyprj</v>
 <v>.\RemoteControl.cydsn\RemoteControl.cyprj</v>
+<v>.\MC-2-1-uart.cydsn\MC-2-1-uart.cyprj</v>
+<v>.\MC-2-2-PWM.cydsn\MC-2-2-PWM.cyprj</v>
+<v>.\MC-2-3-I2C.cydsn\MC-2-3-I2C.cyprj</v>
+<v>.\MC-2-4-KillSwitch.cydsn\MC-2-4-KillSwitch.cyprj</v>
+<v>.\MC-2-5-CapSense.cydsn\MC-2-5-CapSense.cyprj</v>
+<v>.\0-blank.cydsn\0-blank.cyprj</v>
 </projects>
 <workspace_id v="968ac9b5-7e7b-44cd-b2be-3c9b3ad59fa9" />
 <WriteAppVersionLastSavedWith v="4.2.0.641" />

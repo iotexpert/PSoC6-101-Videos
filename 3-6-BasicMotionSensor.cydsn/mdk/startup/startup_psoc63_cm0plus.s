@@ -154,7 +154,6 @@ Cy_OnResetUser PROC
 ; Reset Handler
 Reset_Handler   PROC
                 EXPORT  Reset_Handler               [WEAK]
-                IMPORT  SystemInit
                 IMPORT  __main
 
                 ; Define strong function for startup customization
@@ -188,18 +187,6 @@ Vectors_Copy
                 ; Should never get here
                 B       .
 
-                ENDP
-
-; $Sub$$main
-|$Sub$$main|    PROC
-                EXPORT  |$Sub$$main|
-                IMPORT  |$Super$$main|
-
-                LDR     R0, =SystemInit
-                BLX     R0
-
-                LDR     R0, =|$Super$$main|
-                BX      R0
                 ENDP
 
 ; Dummy Exception Handlers (infinite loops which can be modified)

@@ -1,12 +1,12 @@
 /***************************************************************************//**
 * \file system_psoc63.h
-* \version 2.0
+* \version 2.10
 *
 * \brief Device system header file.
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2017, Cypress Semiconductor Corporation.  All rights reserved.
+* Copyright 2016-2018, Cypress Semiconductor Corporation.  All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -172,19 +172,7 @@
 *
 * \subsubsection group_system_config_single_core_device_initialization Single-Core Devices
 * The Cortex-M0+ core is not user-accessible on these devices. In this case the
-* Flash Boot handles setup of the CM0+ core and starts the Cortex-M4 core. 
-*
-* CM0+ NVIC IRQn channels 26-31 are reserved for system use. Other IRQn channels
-* are available to the user application. The pre-built application configures:
-* * IRQn 26-27 for the IPC driver
-* * IRQn 28-30 for the Crypto driver
-* * IRQn 31 for system communication
-*
-* The Cortex-M0+ application image performs the following tasks:
-* * Enables global interrupts on the Cortex-M0+ core.
-* * Starts the crypto server. See [Cryptography (Crypto)](\ref group_crypto) for details.
-* * Enables the Cortex-M4 core by calling \ref Cy_SysEnableCM4().
-* * Requests Deep Sleep mode entry with wakeup on interrupt in the infinite loop.
+* Flash Boot handles setup of the CM0+ core and starts the Cortex-M4 core.  
 *
 * \subsection group_system_config_heap_stack_config Heap and Stack Configuration
 * There are two ways to adjust heap and stack configurations:
@@ -293,7 +281,21 @@
 * more details.
 *
 * \section group_system_config_MISRA MISRA Compliance
-*  The Startup driver does not have any specific deviations.
+*
+* <table class="doxtable">
+*   <tr>
+*     <th>MISRA Rule</th>
+*     <th>Rule Class (Required/Advisory)</th>
+*     <th>Rule Description</th>
+*     <th>Description of Deviation(s)</th>
+*   </tr>
+*   <tr>
+*     <td>2.3</td>
+*     <td>R</td>
+*     <td>The character sequence // shall not be used within a comment.</td>
+*     <td>The comments provide a useful WEB link to the documentation.</td>
+*   </tr>
+* </table>
 *
 * \section group_system_config_changelog Changelog
 *   <table class="doxtable">
@@ -303,9 +305,23 @@
 *       <th>Reason for Change</th>
 *    </tr>
 *   <tr>
+*     <td rowspan="2"> 2.10</td>
+*     <td>Added constructor attribute to SystemInit() function declaration for ARM MDK compiler. \n
+*         Removed $Sub$$main symbol for ARM MDK compiler.
+*     </td>
+*     <td>uVision Debugger support.</td>
+*   </tr>
+*   <tr>
+*     <td>Updated description of the Startup behavior for Single-Core Devices. \n
+*         Added note about WDT disabling by SystemInit() function.
+*     </td>
+*     <td>Documentation improvement.</td>
+*   </tr>
+*   <tr>
 *     <td rowspan="4"> 2.0</td>
-*     <td>Added restoring of FLL registers to the default state in SystemInit() API for single core devices.</td>
-*     <td>Single core device support.</td>
+*     <td>Added restoring of FLL registers to the default state in SystemInit() API for single core devices.
+*         Single core device support.
+*     </td>
 *   </tr>
 *   <tr>
 *     <td>Added Normal Access Restrictions, Public Key, TOC part2 and TOC part2 copy to Supervisory flash linker memory regions. \n
@@ -342,6 +358,17 @@
 * \}
 * \defgroup group_system_config_globals Global Variables
 *
+* \}
+*/
+
+/**
+* \addtogroup group_system_config_system_functions
+* \{
+*   \details
+*   The following system functions implement CMSIS Core functions.
+*   Refer to the [CMSIS documentation]
+*   (http://www.keil.com/pack/doc/CMSIS/Core/html/group__system__init__gr.html "System and Clock Configuration") 
+*   for more details.
 * \}
 */
 
@@ -451,12 +478,12 @@ extern "C" {
 #if (CY_SYSTEM_CPU_CM0P == 1UL) || defined(CY_DOXYGEN)
     /** The Cortex-M0+ startup driver identifier */
     #define CY_STARTUP_M0P_ID               ((uint32_t)((uint32_t)((0x0Eu) & 0x3FFFu) << 18u))
-#endif
+#endif /* (CY_SYSTEM_CPU_CM0P == 1UL) */
 
 #if (CY_SYSTEM_CPU_CM0P != 1UL) || defined(CY_DOXYGEN)
     /** The Cortex-M4 startup driver identifier */
     #define CY_STARTUP_M4_ID        ((uint32_t)((uint32_t)((0x0Fu) & 0x3FFFu) << 18u))
-#endif
+#endif /* (CY_SYSTEM_CPU_CM0P != 1UL) */
 
 /** \} group_system_config_system_macro */
 
@@ -465,7 +492,12 @@ extern "C" {
 * \addtogroup group_system_config_system_functions
 * \{
 */
-extern void SystemInit(void);
+#if defined(__ARMCC_VERSION)
+    extern void SystemInit(void) __attribute__((constructor));
+#else
+    extern void SystemInit(void);
+#endif /* (__ARMCC_VERSION) */
+
 extern void SystemCoreClockUpdate(void);
 /** \} group_system_config_system_functions */
 
@@ -508,7 +540,7 @@ extern uint32_t cy_delay32kMs;
 #define CY_SYS_CM4_STATUS_RESET     (1u)    /**< The Cortex-M4 core is in the Reset mode: clock off, no isolated, no retain and reset. */
 /** \} group_system_config_cm4_status_macro */
 
-#endif
+#endif /* (CY_SYSTEM_CPU_CM0P == 1UL) */
 
 /** \addtogroup group_system_config_globals
 * \{
