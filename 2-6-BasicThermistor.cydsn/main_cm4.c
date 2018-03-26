@@ -11,22 +11,7 @@
 */
 #include "project.h"
 #include <stdio.h>
-#include <math.h>
-
-/* Reference resistor in series with the thermistor is of 10 KOhm */
-#define R_REFERENCE         (float)(10000)
-
-/* Beta constant of this thermistor is 3380 Kelvin. See the thermistor
-   (NCP18XH103F03RB) data sheet for more details. */
-#define B_CONSTANT          (float)(3380)
-
-/* Resistance of the thermistor is 10K at 25 degrees C (from data sheet)
-   Therefore R0 = 10000 Ohm, and T0 = 298.15 Kelvin, which gives
-   R_INFINITY = R0 e^(-B_CONSTANT / T0) = 0.1192855 */
-#define R_INFINITY          (float)(0.1192855)
-
-/* Zero Kelvin in degree C */
-#define ABSOLUTE_ZERO       (float)(-273.15)
+#include "Thermistor.h"
 
 float GetTemperature(void)
 {   
@@ -34,7 +19,7 @@ float GetTemperature(void)
     /* Variables used to store ADC counts, thermistor resistance and
        the temperature */
     int16_t countThermistor, countReference;
-    float rThermistor, temperature;
+
 
     ADC_IsEndConversion(CY_SAR_WAIT_FOR_RESULT);
     
@@ -44,12 +29,11 @@ float GetTemperature(void)
    
     v1 = Cy_SAR_CountsTo_Volts(ADC_SAR__HW,0,countReference);
     v2 = Cy_SAR_CountsTo_Volts(ADC_SAR__HW,1,countThermistor);
-    
-    /* Calculate the thermistor resistance and the corresponding temperature */
-    rThermistor = (R_REFERENCE*countThermistor)/countReference;    
-    temperature = (B_CONSTANT/(logf(rThermistor/R_INFINITY)))+ABSOLUTE_ZERO;
-
-     printf("V1 = %fv V2=%fv Vtot =%fv T=%fC T=%fF\r\n",v1,v2,v1+v2,temperature,9.0/5.0*temperature + 32.0);
+ 
+    uint32 resT = Thermistor_GetResistance(countReference, countThermistor);
+    float temperature = (float)Thermistor_GetTemperature(resT) / 100.0 ;
+ 
+    printf("V1 = %fv V2=%fv Vtot =%fv T=%fC T=%fF\r\n",v1,v2,v1+v2,temperature,9.0/5.0*temperature + 32.0);
 
     
     /* Return the temperature value */
@@ -67,6 +51,7 @@ int main(void)
     UART_1_Start();
     Opamp_1_Start();
     
+    printf("Started\r\n");
     float temperature;
     Cy_GPIO_Write(A0_PORT,A0_NUM,1);
     Cy_GPIO_Write(A3_PORT,A3_NUM,0);
@@ -76,13 +61,8 @@ int main(void)
     
     for(;;)
     {
-        if(Cy_SCB_UART_GetNumInRxFifo(UART_1_HW))
-        {
-            c = Cy_SCB_UART_Get(UART_1_HW);
-            temperature = GetTemperature();
-            
-        }
-        
+        GetTemperature();
+        CyDelay(200);
     }
 }
 
