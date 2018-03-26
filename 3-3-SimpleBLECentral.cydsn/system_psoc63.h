@@ -6,7 +6,7 @@
 *
 ********************************************************************************
 * \copyright
-* Copyright 2016-2017, Cypress Semiconductor Corporation.  All rights reserved.
+* Copyright 2016-2018, Cypress Semiconductor Corporation.  All rights reserved.
 * You may use this file only in accordance with the license, terms, conditions,
 * disclaimers, and limitations in the end user license agreement accompanying
 * the software package with which this file was provided.
@@ -281,7 +281,21 @@
 * more details.
 *
 * \section group_system_config_MISRA MISRA Compliance
-*  The Startup driver does not have any specific deviations.
+*
+* <table class="doxtable">
+*   <tr>
+*     <th>MISRA Rule</th>
+*     <th>Rule Class (Required/Advisory)</th>
+*     <th>Rule Description</th>
+*     <th>Description of Deviation(s)</th>
+*   </tr>
+*   <tr>
+*     <td>2.3</td>
+*     <td>R</td>
+*     <td>The character sequence // shall not be used within a comment.</td>
+*     <td>The comments provide a useful WEB link to the documentation.</td>
+*   </tr>
+* </table>
 *
 * \section group_system_config_changelog Changelog
 *   <table class="doxtable">
@@ -344,6 +358,17 @@
 * \}
 * \defgroup group_system_config_globals Global Variables
 *
+* \}
+*/
+
+/**
+* \addtogroup group_system_config_system_functions
+* \{
+*   \details
+*   The following system functions implement CMSIS Core functions.
+*   Refer to the [CMSIS documentation]
+*   (http://www.keil.com/pack/doc/CMSIS/Core/html/group__system__init__gr.html "System and Clock Configuration") 
+*   for more details.
 * \}
 */
 

@@ -3,11 +3,13 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+#include <stdio.h>
+#include <limits.h>
 
 TaskHandle_t bleTaskHandle;
 SemaphoreHandle_t bleSemaphore;
 
-void customEventHandler(uint32_t event, void *eventParameter)
+void genericEventHandler(uint32_t event, void *eventParameter)
 {
     cy_stc_ble_gatts_write_cmd_req_param_t   *writeReqParameter;
     
@@ -35,9 +37,10 @@ void customEventHandler(uint32_t event, void *eventParameter)
             writeReqParameter = (cy_stc_ble_gatts_write_cmd_req_param_t *)eventParameter;
         
             if(CY_BLE_LED_GREEN_CHAR_HANDLE == writeReqParameter->handleValPair.attrHandle)
-            {
-                uint32_t val = ((uint32_t)(writeReqParameter->handleValPair.value.val[0]) > Cy_TCPWM_PWM_GetPeriod0(PWM_DIM_HW,PWM_DIM_CNT_NUM))?
-                Cy_TCPWM_PWM_GetPeriod0(PWM_DIM_HW,PWM_DIM_CNT_NUM):writeReqParameter->handleValPair.value.val[0];     
+            {              
+                uint32_t val = writeReqParameter->handleValPair.value.val[0];
+                if(val>100) val = 100;
+
                 Cy_TCPWM_PWM_SetCompare0(PWM_DIM_HW,PWM_DIM_CNT_NUM,  val);
             }
                      
@@ -48,6 +51,16 @@ void customEventHandler(uint32_t event, void *eventParameter)
             break;
     }
 }
+
+/*****************************************************************************\
+ * Function:    bleInterruptNotify
+ * Input:       void (it is called inside of the ISR)
+ * Returns:     void
+ * Description: 
+ *   This is called back in the BLE ISR when an event has occured and needs to
+ *   be processed.  It will then set/give the sempahore to tell the BLE task to
+ *   process events.
+\*****************************************************************************/
 void bleInterruptNotify()
 {
     BaseType_t xHigherPriorityTaskWoken;
@@ -56,38 +69,57 @@ void bleInterruptNotify()
     portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
 }
 
+/*****************************************************************************\
+ * Function:    bleTask
+ * Input:       A FreeRTOS Task - void * that is unused
+ * Returns:     void
+ * Description: 
+ *  This task starts the BLE stack... and processes events when the bleSempahore
+ *  is set by the ISR.
+\*****************************************************************************/
+
 void bleTask(void *arg)
 {
     (void)arg;
     
+    printf("BLE Task Started\r\n");
 
-    bleSemaphore = xSemaphoreCreateCounting(0xFFFFFFFF,0);
+    bleSemaphore = xSemaphoreCreateCounting(UINT_MAX,0);
     
-    Cy_BLE_Start(customEventHandler);
-    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
-    //Cy_BLE_RegisterInterruptCallback(0xFFFFFFFF,bleInterruptNotify);
-   
-    // Get the stack started...
-    while(Cy_BLE_GetState() != CY_BLE_STATE_ON)
+    Cy_BLE_Start(genericEventHandler);
+    
+    
+    while(Cy_BLE_GetState() != CY_BLE_STATE_ON) // Get the stack going
     {
         Cy_BLE_ProcessEvents();
     }
+    
+    Cy_BLE_RegisterAppHostCallback(bleInterruptNotify);
     
     for(;;)
     {
         xSemaphoreTake(bleSemaphore,portMAX_DELAY);
         Cy_BLE_ProcessEvents();
-        //vTaskDelay(5);
     }
 }
 
+// Starts the system
 int main(void)
 {
-    __enable_irq(); /* Enable global interrupts. */
+    __enable_irq(); 
+    
+    UART_1_Start();
+    setvbuf( stdin, NULL, _IONBF, 0 ); 
+    setvbuf( stdout, NULL, _IONBF, 0 ); 
+    printf("System Started\r\n");
 
-    xTaskCreate(bleTask,"bleTask",8*1024,0,1,&bleTaskHandle);
+    PWM_DIM_Start();
+    PWM_BLINK_Start();
+    
+    xTaskCreate(bleTask,"bleTask",8*1024,0,2,&bleTaskHandle);
+    
     vTaskStartScheduler();
- 
+    for(;;)
+    {
+    }
 }
-
-/* [] END OF FILE */

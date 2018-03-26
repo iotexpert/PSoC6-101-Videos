@@ -13,7 +13,9 @@
       <Data key="1fde6c01-6ac5-4465-beb9-9e9181c31262/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_1_tx" />
       <Data key="1fde6c01-6ac5-4465-beb9-9e9181c31262/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_1_rx" />
       <Data key="7cc7bc6d-9605-4f31-b19e-9827306063d8" value="led9" />
+      <Data key="57112ac4-9fc6-43fc-9f18-1b4ae9ec7b21" value="green" />
       <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="red" />
+      <Data key="b1fb4da7-ca8b-46ae-9b5c-82c90d5555a2" value="blue" />
     </Group>
   </Group>
   <Group key="Interrupt">
@@ -629,9 +631,19 @@
         <Data key="Port Format" value="13,7" />
       </Group>
     </Group>
+    <Group key="57112ac4-9fc6-43fc-9f18-1b4ae9ec7b21">
+      <Group key="0">
+        <Data key="Port Format" value="1,1" />
+      </Group>
+    </Group>
     <Group key="a61270bc-07ec-447d-ac9e-34cfe85c30e9">
       <Group key="0">
         <Data key="Port Format" value="0,3" />
+      </Group>
+    </Group>
+    <Group key="b1fb4da7-ca8b-46ae-9b5c-82c90d5555a2">
+      <Group key="0">
+        <Data key="Port Format" value="11,1" />
       </Group>
     </Group>
   </Group>

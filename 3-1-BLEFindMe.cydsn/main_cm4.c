@@ -3,7 +3,6 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
-#include "event_groups.h"
 #include "limits.h"
 
 #define LED_ON  0
@@ -13,65 +12,15 @@
 SemaphoreHandle_t bleSemaphore;
 TaskHandle_t bleTaskHandle;
 
-// These BITs are used to set the state of the red LED
-EventGroupHandle_t alertState;
-#define ALERT_NO_MASK   1<<0
-#define ALERT_MILD_MASK 1<<1
-#define ALERT_HIGH_MASK 1<<2
-
 /*****************************************************************************\
- * Function:    alertTask
- * Input:       FreeRTOS Template - unused argument
- * Returns:     void
- * Description: 
- *     This funtion is the mainloop for the alertTask.  It manages the state of
- *     the RED led.  Other tasks communitcate with this task using the alertState
- *     event bits.
-\*****************************************************************************/
-void alertTask(void *arg)
-{
-    (void)arg;
-    printf("Alert Task Started\r\n");
-    TickType_t delay=portMAX_DELAY;
-    EventBits_t currentBits;
-    
-    alertState = xEventGroupCreate();
-    xEventGroupSetBits(alertState,ALERT_NO_MASK);
-   
-    Cy_GPIO_Write(red_PORT,red_NUM,LED_OFF);
-    
-    while(1)
-    {
-        currentBits = xEventGroupWaitBits(alertState,ALERT_HIGH_MASK|ALERT_MILD_MASK|ALERT_NO_MASK,
-            pdTRUE,pdFALSE,delay);
-        switch(currentBits)
-        {
-            case ALERT_NO_MASK:
-                delay = portMAX_DELAY;
-                Cy_GPIO_Write(red_PORT,red_NUM,LED_OFF);
-            break;
-            case ALERT_HIGH_MASK:
-                delay = portMAX_DELAY;
-                Cy_GPIO_Write(red_PORT,red_NUM,LED_ON);
-            break;
-            case 0: // case 0 means timer expired & no bits set.   
-            case ALERT_MILD_MASK:
-                delay = 500;
-                Cy_GPIO_Inv(red_PORT,red_NUM);
-            break;
-        }   
-    }
-}
-
-/*****************************************************************************\
- * Function:    customEventHandler
+ * Function:    genericEventHandler
  * Input:       Cy_BLE Event Handler event and eventParameter
  * Returns:     void
  * Description: 
  *   This funtion is the BLE Event Handler function.  It is called by the BLE
  *   stack when an event occurs 
 \*****************************************************************************/
-void customEventHandler(uint32_t event, void *eventParameter)
+void genericEventHandler(uint32_t event, void *eventParameter)
 {
     (void)eventParameter; // not used
     switch (event)
@@ -81,16 +30,17 @@ void customEventHandler(uint32_t event, void *eventParameter)
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
         break;
 
+        case CY_BLE_EVT_GATT_CONNECT_IND:
+            printf("Connected\r\n");
+            Cy_GPIO_Write(led9_PORT,led9_NUM,LED_ON); // Turn the LED9 On             
+        break;
+
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED:
             printf("Disconnected\r\n");
             Cy_GPIO_Write(led9_PORT,led9_NUM,LED_OFF); // Turn the LED9 Off
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
         break;
 
-        case CY_BLE_EVT_GATT_CONNECT_IND:
-            printf("Connected\r\n");
-            Cy_GPIO_Write(led9_PORT,led9_NUM,LED_ON); // Turn the LED9 On             
-        break;
                 
         default:
         break;
@@ -98,7 +48,7 @@ void customEventHandler(uint32_t event, void *eventParameter)
 }
 
 /*****************************************************************************\
- * Function:    iasCallback
+ * Function:    iasEventHandler
  * Input:       BLE IAS Service Handler Function: 
  *      - eventCode (which only can be CY_BLE_EVT_IASS_WRITE_CHAR_CMD
  *      - eventParam which is a pointer to  (and unused)
@@ -109,7 +59,7 @@ void customEventHandler(uint32_t event, void *eventParameter)
  *   for the alert.  The function figures out the state of the alert then
  *   sends a message to the alertTask usign the EventGroup alterState
 \*****************************************************************************/
-void iasCallback(uint32_t eventCode, void *eventParam)
+void iasEventHandler(uint32_t eventCode, void *eventParam)
 {
     (void)eventParam;
     uint8_t alertLevel;
@@ -123,16 +73,23 @@ void iasCallback(uint32_t eventCode, void *eventParam)
         switch(alertLevel)
         {
             case CY_BLE_NO_ALERT:
-                printf("No alert\n");
-                xEventGroupSetBits(alertState,ALERT_NO_MASK);               
+                printf("No alert\r\n");
+                Cy_GPIO_Write(red_PORT,red_NUM,LED_OFF);
+                Cy_GPIO_Write(green_PORT,green_NUM,LED_ON);
+                Cy_GPIO_Write(blue_PORT,blue_NUM,LED_OFF);
             break;
             case CY_BLE_MILD_ALERT:
-                printf("Medium alert\n");
-                xEventGroupSetBits(alertState,ALERT_MILD_MASK);               
+                printf("Medium alert\r\n");
+                Cy_GPIO_Write(red_PORT,red_NUM,LED_OFF);
+                Cy_GPIO_Write(green_PORT,green_NUM,LED_OFF);
+                Cy_GPIO_Write(blue_PORT,blue_NUM,LED_ON);
+                
             break;
             case CY_BLE_HIGH_ALERT:        
-                printf("High alert\n");
-                xEventGroupSetBits(alertState,ALERT_HIGH_MASK);               
+                printf("High alert\r\n");
+                Cy_GPIO_Write(red_PORT,red_NUM,LED_ON);
+                Cy_GPIO_Write(green_PORT,green_NUM,LED_OFF);
+                Cy_GPIO_Write(blue_PORT,blue_NUM,LED_OFF);               
             break;
         }   
     }   
@@ -168,19 +125,20 @@ void bleTask(void *arg)
 {
     (void)arg;
     
-    printf("BLE Task Started\n");
+    printf("BLE Task Started\r\n");
 
     bleSemaphore = xSemaphoreCreateCounting(UINT_MAX,0);
     
-    Cy_BLE_Start(customEventHandler);
-    Cy_BLE_IPC_RegisterAppHostCallback(bleInterruptNotify);
+    Cy_BLE_Start(genericEventHandler);
+    
     
     while(Cy_BLE_GetState() != CY_BLE_STATE_ON) // Get the stack going
     {
         Cy_BLE_ProcessEvents();
     }
     
-    Cy_BLE_IAS_RegisterAttrCallback (iasCallback);
+    Cy_BLE_RegisterAppHostCallback(bleInterruptNotify);
+    Cy_BLE_IAS_RegisterAttrCallback (iasEventHandler);
     for(;;)
     {
         xSemaphoreTake(bleSemaphore,portMAX_DELAY);
@@ -199,7 +157,6 @@ int main(void)
     printf("System Started\r\n");
 
     xTaskCreate(bleTask,"bleTask",8*1024,0,2,&bleTaskHandle);
-    xTaskCreate(alertTask,"AlertTask",configMINIMAL_STACK_SIZE,0,1,0);
     
     vTaskStartScheduler();
     for(;;)

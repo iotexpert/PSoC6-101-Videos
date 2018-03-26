@@ -13,7 +13,7 @@
     <Group key="Pin">
       <Data key="1846d2ee-81b5-4df6-8eb4-a63a5ecb3d13/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_1_tx" />
       <Data key="1846d2ee-81b5-4df6-8eb4-a63a5ecb3d13/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_1_rx" />
-      <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="M1" />
+      <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="LED9" />
       <Data key="c7e18b69-2d01-4257-8671-cd6284f075d7" value="RED" />
       <Data key="e62b9b8d-ae05-44e0-8498-16f7f14af0ff" value="GREEN" />
     </Group>
@@ -601,7 +601,7 @@
     </Group>
     <Group key="a61270bc-07ec-447d-ac9e-34cfe85c30e9">
       <Group key="0">
-        <Data key="Port Format" value="5,0" />
+        <Data key="Port Format" value="13,7" />
       </Group>
     </Group>
     <Group key="c7e18b69-2d01-4257-8671-cd6284f075d7">
