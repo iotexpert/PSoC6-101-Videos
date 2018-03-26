@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.140ms
+Loading plugins phase: Elapsed time ==> 0s.156ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 2s.906ms
+Elaboration phase: Elapsed time ==> 2s.843ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.124ms
+HDL generation phase: Elapsed time ==> 0s.140ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -23,35 +23,35 @@ HDL generation phase: Elapsed time ==> 0s.124ms
      | | | | | | |
 
 ======================================================================
-Compiling:  3-5-BasicThermistor.v
+Compiling:  2-6-BasicThermistor.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -dcpsoc3 3-5-BasicThermistor.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -dcpsoc3 2-6-BasicThermistor.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  3-5-BasicThermistor.v
+Compiling:  2-6-BasicThermistor.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -dcpsoc3 3-5-BasicThermistor.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -dcpsoc3 2-6-BasicThermistor.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  3-5-BasicThermistor.v
+Compiling:  2-6-BasicThermistor.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -dcpsoc3 -verilog 3-5-BasicThermistor.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -dcpsoc3 -verilog 2-6-BasicThermistor.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Sat Mar 24 15:30:14 2018
+Mon Mar 26 15:13:46 2018
 
 
 ======================================================================
-Compiling:  3-5-BasicThermistor.v
+Compiling:  2-6-BasicThermistor.v
 Program  :   vpp
-Options  :    -yv2 -q10 3-5-BasicThermistor.v
+Options  :    -yv2 -q10 2-6-BasicThermistor.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Sat Mar 24 15:30:14 2018
+Mon Mar 26 15:13:46 2018
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Bus_Connect_v2_50\Bus_Connect_v2_50.v'
@@ -77,19 +77,19 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Using control file '3-5-BasicThermistor.ctl'.
+Using control file '2-6-BasicThermistor.ctl'.
 
 vlogfe:  No errors.
 
 
 ======================================================================
-Compiling:  3-5-BasicThermistor.v
+Compiling:  2-6-BasicThermistor.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -dcpsoc3 -verilog 3-5-BasicThermistor.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -dcpsoc3 -verilog 2-6-BasicThermistor.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Sat Mar 24 15:30:16 2018
+Mon Mar 26 15:13:48 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -100,9 +100,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\codegentemp\3-5-BasicThermistor.ctl'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\codegentemp\2-6-BasicThermistor.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\codegentemp\3-5-BasicThermistor.v'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\codegentemp\2-6-BasicThermistor.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Bus_Connect_v2_50\Bus_Connect_v2_50.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
@@ -116,13 +116,13 @@ tovif:  No errors.
 
 
 ======================================================================
-Compiling:  3-5-BasicThermistor.v
+Compiling:  2-6-BasicThermistor.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -dcpsoc3 -verilog 3-5-BasicThermistor.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -dcpsoc3 -verilog 2-6-BasicThermistor.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Sat Mar 24 15:30:16 2018
+Mon Mar 26 15:13:48 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -133,9 +133,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\codegentemp\3-5-BasicThermistor.ctl'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\codegentemp\2-6-BasicThermistor.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\codegentemp\3-5-BasicThermistor.v'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\codegentemp\2-6-BasicThermistor.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Bus_Connect_v2_50\Bus_Connect_v2_50.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
@@ -212,16 +212,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -dcpsoc3 3-5-BasicThermistor.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -dcpsoc3 2-6-BasicThermistor.v -verilog
 </CYPRESSTAG>
 Warp synthesis phase: Elapsed time ==> 3s.281ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Saturday, 24 March 2018 15:30:17
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-5-BasicThermistor.cydsn\3-5-BasicThermistor.cyprj -d CY8C6347BZI-BLD53 3-5-BasicThermistor.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Monday, 26 March 2018 15:13:49
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj -d CY8C6347BZI-BLD53 2-6-BasicThermistor.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.437ms
+Design parsing phase: Elapsed time ==> 0s.422ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -653,8 +653,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    1 :    0 :    1 : 100.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.421ms
-Tech Mapping phase: Elapsed time ==> 0s.515ms
+Technology Mapping: Elapsed time ==> 0s.452ms
+Tech Mapping phase: Elapsed time ==> 0s.546ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -681,15 +681,15 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.2737744s
+Elapsed time ==> 0.2796311s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 1s.344ms
+Analog Placement phase: Elapsed time ==> 1s.218ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0321639 secs
+Route success=True, Iterations=1 Elapsed=0.0321847 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.030ms
+Analog Routing phase: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 Warning: apr.M0042: Bonded pin(s) "P9[3]" are not used in your current design but have been connected in order to route the design. (App=cydsfit)
@@ -829,7 +829,7 @@ Mux Info {
     }
   }
 }
-Analog Code Generation phase: Elapsed time ==> 0s.078ms
+Analog Code Generation phase: Elapsed time ==> 0s.203ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -1440,32 +1440,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.296ms
-Digital Placement phase: Elapsed time ==> 6s.640ms
+Digital Placement phase: Elapsed time ==> 10s.359ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
-"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "3-5-BasicThermistor_r.vh2" --pcf-path "3-5-BasicThermistor.pco" --des-name "3-5-BasicThermistor" --dsf-path "3-5-BasicThermistor.dsf" --sdc-path "3-5-BasicThermistor.sdc" --lib-path "3-5-BasicThermistor_r.lib"
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "2-6-BasicThermistor_r.vh2" --pcf-path "2-6-BasicThermistor.pco" --des-name "2-6-BasicThermistor" --dsf-path "2-6-BasicThermistor.dsf" --sdc-path "2-6-BasicThermistor.sdc" --lib-path "2-6-BasicThermistor_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.296ms
+Digital Routing phase: Elapsed time ==> 1s.203ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.781ms
+Bitstream Generation phase: Elapsed time ==> 0s.703ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.015ms
+Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
-Timing report is in 3-5-BasicThermistor_timing.html.
-Static timing analysis phase: Elapsed time ==> 9s.140ms
+Timing report is in 2-6-BasicThermistor_timing.html.
+Static timing analysis phase: Elapsed time ==> 8s.796ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.187ms
+Design database save phase: Elapsed time ==> 0s.203ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 20s.547ms
+cydsfit: Elapsed time ==> 23s.750ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 20s.547ms
-API generation phase: Elapsed time ==> 1s.343ms
-Dependency generation phase: Elapsed time ==> 0s.031ms
-Cleanup phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 23s.750ms
+API generation phase: Elapsed time ==> 1s.281ms
+Dependency generation phase: Elapsed time ==> 0s.015ms
+Cleanup phase: Elapsed time ==> 0s.000ms
