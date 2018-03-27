@@ -17,17 +17,14 @@ int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
     UART_1_Start();
-    printf("Started\r\n");
     ADC_1_Start();
-    ADC_1_StartConvert();
-
+    Cy_SAR_StartConvert(SAR,CY_SAR_START_CONVERT_CONTINUOUS);
+    
     for(;;)
     {
         float v1,v2;
         int16_t countThermistor, countReference;
 
-        Cy_SAR_IsEndConversion(SAR,CY_SAR_WAIT_FOR_RESULT);
-    
         /* Read the ADC count values */
         countReference  = Cy_SAR_GetResult16(SAR,0);
         countThermistor = Cy_SAR_GetResult16(SAR,1);

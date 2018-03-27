@@ -16,20 +16,19 @@
 int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
-    ADC_1_Start();
+    
     Opamp_1_Start();
     UART_1_Start();
+    ADC_1_Start();
     Cy_SAR_StartConvert(SAR,CY_SAR_START_CONVERT_CONTINUOUS);
     for(;;)
     {
         float v1,v2;
         int16_t countThermistor, countReference;
 
-        Cy_SAR_IsEndConversion(SAR,CY_SAR_WAIT_FOR_RESULT);
-    
         /* Read the ADC count values */
-        countReference  = Cy_SAR_GetResult16(SAR,0);
-        countThermistor = Cy_SAR_GetResult16(SAR,1);
+        countReference  = Cy_SAR_GetResult16(SAR,0); // Channel 0 is the reference resistor
+        countThermistor = Cy_SAR_GetResult16(SAR,1); // Channel 1 is the thermistor
    
         v1 = Cy_SAR_CountsTo_Volts(SAR,0,countReference);
         v2 = Cy_SAR_CountsTo_Volts(SAR,1,countThermistor);
