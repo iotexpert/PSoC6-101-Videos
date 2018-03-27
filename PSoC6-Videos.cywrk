@@ -3,7 +3,7 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="PSoC6-Videos" persistent="PSoC6-Videos.cywrk" platform="NOT_USED">
-<current_project name=".\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj" />
+<current_project name=".\2-6-ADC_VREF_OPAMP.cydsn\2-6-ADC_VREF_OPAMP.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
@@ -20,7 +20,6 @@
 <v>.\1-3-HelloWorldCM4.cydsn\1-3-HelloWorldCM4.cyprj</v>
 <v>.\2-7-BasicTracelyzer.cydsn\2-7-BasicTracelyzer.cyprj</v>
 <v>.\3-3-SimpleBLECentral.cydsn\3-3-SimpleBLECentral.cyprj</v>
-<v>.\2-6-BasicThermistor.cydsn\2-6-BasicThermistor.cyprj</v>
 <v>.\2-1-BasicUART.cydsn\2-1-BasicUART.cyprj</v>
 <v>.\2-4-BasicKillSwitch.cydsn\2-4-BasicKillSwitch.cyprj</v>
 <v>.\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cyprj</v>
@@ -40,6 +39,8 @@
 <v>.\MC-3-2-BLE.cydsn\MC-3-2-BLE.cyprj</v>
 <v>.\RC3-3B-Uart.cydsn\RC3-3B-Uart.cyprj</v>
 <v>.\0-p4therm.cydsn\0-p4therm.cyprj</v>
+<v>.\2-6-ADC.cydsn\2-6-ADC.cyprj</v>
+<v>.\2-6-ADC_VREF_OPAMP.cydsn\2-6-ADC_VREF_OPAMP.cyprj</v>
 </projects>
 <workspace_id v="968ac9b5-7e7b-44cd-b2be-3c9b3ad59fa9" />
 <WriteAppVersionLastSavedWith v="4.2.0.641" />
