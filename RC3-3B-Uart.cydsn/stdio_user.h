@@ -152,8 +152,8 @@
 /* Must remain uncommented to use this utility */
 #define IO_STDOUT_ENABLE
 #define IO_STDIN_ENABLE
-#define IO_STDOUT_UART      UART_1_HW
-#define IO_STDIN_UART       UART_1_HW
+#define IO_STDOUT_UART      UART_HW
+#define IO_STDIN_UART       UART_HW
 
 #if defined(IO_STDOUT_ENABLE) || defined(IO_STDIN_ENABLE)
 #if defined(IO_STDOUT_UART) || defined(IO_STDIN_UART)
