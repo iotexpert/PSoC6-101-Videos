@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.338ms
+Loading plugins phase: Elapsed time ==> 0s.312ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.205ms
+Elaboration phase: Elapsed time ==> 3s.984ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.153ms
+HDL generation phase: Elapsed time ==> 0s.093ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -23,35 +23,35 @@ HDL generation phase: Elapsed time ==> 0s.153ms
      | | | | | | |
 
 ======================================================================
-Compiling:  RemoteControl.v
+Compiling:  RC3-5b-Motion.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -dcpsoc3 RemoteControl.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -dcpsoc3 RC3-5b-Motion.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  RemoteControl.v
+Compiling:  RC3-5b-Motion.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -dcpsoc3 RemoteControl.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -dcpsoc3 RC3-5b-Motion.v -verilog
 ======================================================================
 
 ======================================================================
-Compiling:  RemoteControl.v
+Compiling:  RC3-5b-Motion.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -dcpsoc3 -verilog RemoteControl.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -dcpsoc3 -verilog RC3-5b-Motion.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Feb 15 11:40:38 2018
+Wed Mar 28 17:08:40 2018
 
 
 ======================================================================
-Compiling:  RemoteControl.v
+Compiling:  RC3-5b-Motion.v
 Program  :   vpp
-Options  :    -yv2 -q10 RemoteControl.v
+Options  :    -yv2 -q10 RC3-5b-Motion.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Feb 15 11:40:39 2018
+Wed Mar 28 17:08:40 2018
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -72,19 +72,19 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Using control file 'RemoteControl.ctl'.
+Using control file 'RC3-5b-Motion.ctl'.
 
 vlogfe:  No errors.
 
 
 ======================================================================
-Compiling:  RemoteControl.v
+Compiling:  RC3-5b-Motion.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -dcpsoc3 -verilog RemoteControl.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -dcpsoc3 -verilog RC3-5b-Motion.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Feb 15 11:40:39 2018
+Wed Mar 28 17:08:41 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -95,9 +95,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\codegentemp\RemoteControl.ctl'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\codegentemp\RC3-5b-Motion.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\codegentemp\RemoteControl.v'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\codegentemp\RC3-5b-Motion.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
@@ -106,13 +106,13 @@ tovif:  No errors.
 
 
 ======================================================================
-Compiling:  RemoteControl.v
+Compiling:  RC3-5b-Motion.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -dcpsoc3 -verilog RemoteControl.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -dcpsoc3 -verilog RC3-5b-Motion.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Feb 15 11:40:40 2018
+Wed Mar 28 17:08:41 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -123,9 +123,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\codegentemp\RemoteControl.ctl'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\codegentemp\RC3-5b-Motion.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\codegentemp\RemoteControl.v'.
+Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\codegentemp\RC3-5b-Motion.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
@@ -135,17 +135,17 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\l
 Detecting unused logic.
 ----------------------------------------------------------
     User names
-	\UART_1:Net_22\
-	\UART_1:Net_23\
-	Net_2
-	Net_3
-	Net_4
-	Net_9
-	Net_10
-	\I2C_1:Net_224\
-	\I2C_1:Net_223\
+	\UART:Net_22\
+	\UART:Net_23\
+	Net_46
+	Net_47
+	Net_48
+	Net_53
+	Net_54
 	\CapSense:Net_608\
 	\CapSense:Net_610\
+	\I2C_1:Net_224\
+	\I2C_1:Net_223\
 
 
 Deleted 11 User equations/components.
@@ -154,13 +154,7 @@ Deleted 0 Synthesized equations/components.
 ------------------------------------------------------
 Alias Detection
 ------------------------------------------------------
-Aliasing \UART_1:cts_wire\ to zero
-Aliasing \I2C_1:Net_283\ to zero
-Aliasing \I2C_1:Net_282\ to zero
-Aliasing \I2C_1:Net_281\ to zero
-Aliasing \I2C_1:Net_280\ to zero
-Aliasing \I2C_1:Net_279\ to zero
-Aliasing \I2C_1:Net_278\ to zero
+Aliasing \UART:cts_wire\ to zero
 Aliasing \CapSense:Net_589\ to zero
 Aliasing \CapSense:Net_45\ to zero
 Aliasing \CapSense:Net_46\ to zero
@@ -173,28 +167,34 @@ Aliasing \CapSense:Net_639\ to zero
 Aliasing \CapSense:Net_1423\ to zero
 Aliasing \CapSense:Net_44\ to zero
 Aliasing \CapSense:Net_851\ to zero
-Removing Lhs of wire \UART_1:clock_wire\[2] = \UART_1:Net_847\[1]
-Removing Lhs of wire \UART_1:rx_wire\[16] = \UART_1:Net_1172\[13]
-Removing Lhs of wire \UART_1:cts_wire\[17] = zero[12]
-Removing Rhs of wire \I2C_1:clock_wire\[41] = \I2C_1:Net_847\[66]
-Removing Lhs of wire \I2C_1:Net_283\[42] = zero[12]
-Removing Lhs of wire \I2C_1:Net_282\[45] = zero[12]
-Removing Lhs of wire \I2C_1:Net_281\[50] = zero[12]
-Removing Lhs of wire \I2C_1:Net_280\[55] = zero[12]
-Removing Lhs of wire \I2C_1:Net_279\[57] = zero[12]
-Removing Lhs of wire \I2C_1:Net_278\[58] = zero[12]
-Removing Lhs of wire \CapSense:Net_589\[94] = zero[12]
-Removing Lhs of wire \CapSense:Net_45\[107] = zero[12]
-Removing Lhs of wire \CapSense:Net_46\[108] = zero[12]
-Removing Lhs of wire \CapSense:Net_47\[109] = zero[12]
-Removing Lhs of wire \CapSense:Net_48\[110] = zero[12]
-Removing Lhs of wire \CapSense:Net_636\[113] = zero[12]
-Removing Lhs of wire \CapSense:Net_637\[114] = zero[12]
-Removing Lhs of wire \CapSense:Net_638\[115] = zero[12]
-Removing Lhs of wire \CapSense:Net_639\[116] = zero[12]
-Removing Lhs of wire \CapSense:Net_1423\[117] = zero[12]
-Removing Lhs of wire \CapSense:Net_44\[120] = zero[12]
-Removing Lhs of wire \CapSense:Net_851\[162] = zero[12]
+Aliasing \I2C_1:Net_283\ to zero
+Aliasing \I2C_1:Net_282\ to zero
+Aliasing \I2C_1:Net_281\ to zero
+Aliasing \I2C_1:Net_280\ to zero
+Aliasing \I2C_1:Net_279\ to zero
+Aliasing \I2C_1:Net_278\ to zero
+Removing Lhs of wire \UART:clock_wire\[14] = \UART:Net_847\[13]
+Removing Lhs of wire \UART:rx_wire\[26] = \UART:Net_1172\[23]
+Removing Lhs of wire \UART:cts_wire\[27] = zero[8]
+Removing Lhs of wire \CapSense:Net_589\[63] = zero[8]
+Removing Lhs of wire \CapSense:Net_45\[76] = zero[8]
+Removing Lhs of wire \CapSense:Net_46\[77] = zero[8]
+Removing Lhs of wire \CapSense:Net_47\[78] = zero[8]
+Removing Lhs of wire \CapSense:Net_48\[79] = zero[8]
+Removing Lhs of wire \CapSense:Net_636\[82] = zero[8]
+Removing Lhs of wire \CapSense:Net_637\[83] = zero[8]
+Removing Lhs of wire \CapSense:Net_638\[84] = zero[8]
+Removing Lhs of wire \CapSense:Net_639\[85] = zero[8]
+Removing Lhs of wire \CapSense:Net_1423\[86] = zero[8]
+Removing Lhs of wire \CapSense:Net_44\[89] = zero[8]
+Removing Lhs of wire \CapSense:Net_851\[131] = zero[8]
+Removing Rhs of wire \I2C_1:clock_wire\[156] = \I2C_1:Net_847\[181]
+Removing Lhs of wire \I2C_1:Net_283\[157] = zero[8]
+Removing Lhs of wire \I2C_1:Net_282\[160] = zero[8]
+Removing Lhs of wire \I2C_1:Net_281\[165] = zero[8]
+Removing Lhs of wire \I2C_1:Net_280\[170] = zero[8]
+Removing Lhs of wire \I2C_1:Net_279\[172] = zero[8]
+Removing Lhs of wire \I2C_1:Net_278\[173] = zero[8]
 
 ------------------------------------------------------
 Aliased 0 equations, 22 wires.
@@ -219,23 +219,23 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -dcpsoc3 RemoteControl.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -dcpsoc3 RC3-5b-Motion.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 2s.249ms
+Warp synthesis phase: Elapsed time ==> 2s.640ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.637, Family: PSoC3, Started at: Thursday, 15 February 2018 11:40:40
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\RemoteControl.cydsn\RemoteControl.cyprj -d CY8C6347BZI-BLD53 RemoteControl.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 28 March 2018 17:08:42
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\Projects\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj -d CY8C6347BZI-BLD53 RC3-5b-Motion.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.757ms
+Design parsing phase: Elapsed time ==> 0s.859ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Fixed Function Clock 43: Automatic-assigning  clock 'CapSense_ModClk'. Signal=\CapSense:Net_611_ff43\
     Fixed Function Clock 0: Automatic-assigning  clock 'I2C_1_SCBCLK'. Signal=\I2C_1:clock_wire_ff0\
-    Fixed Function Clock 1: Automatic-assigning  clock 'UART_1_SCBCLK'. Signal=\UART_1:Net_847_ff1\
+    Fixed Function Clock 1: Automatic-assigning  clock 'UART_SCBCLK'. Signal=\UART:Net_847_ff1\
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
@@ -341,7 +341,7 @@ Design Equations
             pa_out => CY_CPUSS_SWJ_SWDIO_TMS(0)__PA ,
             fb => CPUSS_swj_swdio_tms );
 
-    Pin : Name = \UART_1:tx(0)\
+    Pin : Name = LED9(0)
         Attributes:
             In Group/Port: True
             In Sync Option: AUTO
@@ -374,14 +374,53 @@ Design Equations
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
-            pa_out => \UART_1:tx(0)\__PA ,
-            pin_input => \UART_1:tx_wire\ ,
-            pad => \UART_1:tx(0)_PAD\ );
+            pa_out => LED9(0)__PA ,
+            pad => LED9(0)_PAD );
         Properties:
         {
         }
 
-    Pin : Name = \UART_1:rx(0)\
+    Pin : Name = \UART:tx(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \UART:tx(0)\__PA ,
+            pin_input => \UART:tx_wire\ ,
+            pad => \UART:tx(0)_PAD\ );
+        Properties:
+        {
+        }
+
+    Pin : Name = \UART:rx(0)\
         Attributes:
             In Group/Port: True
             In Sync Option: NOSYNC
@@ -414,89 +453,9 @@ Design Equations
             Initial Value: 1
             IO Voltage: 0
         PORT MAP (
-            pa_out => \UART_1:rx(0)\__PA ,
-            fb => \UART_1:Net_1172\ ,
-            pad => \UART_1:rx(0)_PAD\ );
-        Properties:
-        {
-        }
-
-    Pin : Name = \I2C_1:scl(0)\
-        Attributes:
-            In Group/Port: True
-            In Sync Option: NOSYNC
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: OPEN_DRAIN_LO
-            VTrip: CMOS
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: INP_DIS_HI_Z
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilities: DIGITAL
-            Initial Value: 1
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => \I2C_1:scl(0)\__PA ,
-            fb => Net_12 ,
-            pad => \I2C_1:scl(0)_PAD\ );
-        Properties:
-        {
-        }
-
-    Pin : Name = \I2C_1:sda(0)\
-        Attributes:
-            In Group/Port: True
-            In Sync Option: NOSYNC
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: OPEN_DRAIN_LO
-            VTrip: CMOS
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: INP_DIS_HI_Z
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilities: DIGITAL
-            Initial Value: 1
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => \I2C_1:sda(0)\__PA ,
-            fb => Net_13 ,
-            pad => \I2C_1:sda(0)_PAD\ );
+            pa_out => \UART:rx(0)\__PA ,
+            fb => \UART:Net_1172\ ,
+            pad => \UART:rx(0)_PAD\ );
         Properties:
         {
         }
@@ -950,6 +909,86 @@ Design Equations
         {
         }
 
+    Pin : Name = \I2C_1:scl(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: OPEN_DRAIN_LO
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \I2C_1:scl(0)\__PA ,
+            fb => Net_58 ,
+            pad => \I2C_1:scl(0)_PAD\ );
+        Properties:
+        {
+        }
+
+    Pin : Name = \I2C_1:sda(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: OPEN_DRAIN_LO
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \I2C_1:sda(0)\__PA ,
+            fb => Net_59 ,
+            pad => \I2C_1:sda(0)_PAD\ );
+        Properties:
+        {
+        }
+
     Pin : Name = LED8(0)
         Attributes:
             In Group/Port: True
@@ -988,45 +1027,6 @@ Design Equations
         Properties:
         {
         }
-
-    Pin : Name = LED9(0)
-        Attributes:
-            In Group/Port: True
-            In Sync Option: AUTO
-            Out Sync Option: NOSYNC
-            Interrupt generated: False
-            Interrupt mode: NONE
-            Drive mode: CMOS_OUT
-            VTrip: CMOS
-            Slew: FAST
-            Input Sync needed: False
-            Output Sync needed: False
-            SC shield enabled: False
-            POR State: INP_DIS_HI_Z
-            LCD Mode: COMMON
-            Register Mode: RegComb
-            CaSense Mode: NEITHER
-            Treat as pin: True
-            Is OE Registered: False
-            Uses Analog: False
-            Can contain Digital: True
-            Is SIO: False
-            SIO Output Buf: NONREGULATED
-            SIO Input Buf: SINGLE_ENDED
-            SIO HiFreq: LOW
-            SIO Hyst: DISABLED
-            SIO Vtrip: MULTIPLIER_0_5
-            SIO Multiplier Index: 0
-            SIO RefSel: VCC_IO
-            Required Capabilities: DIGITAL
-            Initial Value: 1
-            IO Voltage: 0
-        PORT MAP (
-            pa_out => LED9(0)__PA ,
-            pad => LED9(0)_PAD );
-        Properties:
-        {
-        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -1050,9 +1050,29 @@ Design Equations
     Interrupt listing
     ------------------------------------------------------------
 
-    interrupt: Name =\UART_1:SCB_IRQ\
+    interrupt: Name =\BLE_1:bless_isr\
         PORT MAP (
-            interrupt => \UART_1:intr_wire\ );
+            interrupt => \BLE_1:Net_1\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 1
+            int_type = "10"
+        }
+
+    interrupt: Name =\UART:SCB_IRQ\
+        PORT MAP (
+            interrupt => \UART:intr_wire\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+
+    interrupt: Name =\CapSense:ISR\
+        PORT MAP (
+            interrupt => \CapSense:Net_849\ );
         Properties:
         {
             cy_registers = ""
@@ -1063,26 +1083,6 @@ Design Equations
     interrupt: Name =\I2C_1:SCB_IRQ\
         PORT MAP (
             interrupt => \I2C_1:intr_wire\ );
-        Properties:
-        {
-            cy_registers = ""
-            deepsleep_required = 0
-            int_type = "10"
-        }
-
-    interrupt: Name =\BLE:bless_isr\
-        PORT MAP (
-            interrupt => \BLE:Net_1\ );
-        Properties:
-        {
-            cy_registers = ""
-            deepsleep_required = 1
-            int_type = "10"
-        }
-
-    interrupt: Name =\CapSense:ISR\
-        PORT MAP (
-            interrupt => \CapSense:Net_849\ );
         Properties:
         {
             cy_registers = ""
@@ -1133,8 +1133,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.879ms
-Tech Mapping phase: Elapsed time ==> 1s.064ms
+Technology Mapping: Elapsed time ==> 0s.859ms
+Tech Mapping phase: Elapsed time ==> 0s.984ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -1144,10 +1144,9 @@ Cell                                : Block
 =========================================================================
 CY_CPUSS_SWJ_SWCLK_TCLK(0)          : [IOP=(6)][IoId=(7)]                
 CY_CPUSS_SWJ_SWDIO_TMS(0)           : [IOP=(6)][IoId=(6)]                
-\UART_1:tx(0)\                      : [IOP=(5)][IoId=(1)]                
-\UART_1:rx(0)\                      : [IOP=(5)][IoId=(0)]                
-\I2C_1:scl(0)\                      : [IOP=(6)][IoId=(0)]                
-\I2C_1:sda(0)\                      : [IOP=(6)][IoId=(1)]                
+LED9(0)                             : [IOP=(13)][IoId=(7)]               
+\UART:tx(0)\                        : [IOP=(5)][IoId=(1)]                
+\UART:rx(0)\                        : [IOP=(5)][IoId=(0)]                
 \CapSense:Cmod(0)\                  : [IOP=(7)][IoId=(7)]                
 \CapSense:Rx(0)\                    : [IOP=(8)][IoId=(1)]                
 \CapSense:Rx(1)\                    : [IOP=(8)][IoId=(2)]                
@@ -1159,29 +1158,30 @@ CY_CPUSS_SWJ_SWDIO_TMS(0)           : [IOP=(6)][IoId=(6)]
 \CapSense:Sns(3)\                   : [IOP=(8)][IoId=(6)]                
 \CapSense:Sns(4)\                   : [IOP=(8)][IoId=(7)]                
 \CapSense:Tx(0)\                    : [IOP=(1)][IoId=(0)]                
+\I2C_1:scl(0)\                      : [IOP=(6)][IoId=(0)]                
+\I2C_1:sda(0)\                      : [IOP=(6)][IoId=(1)]                
 LED8(0)                             : [IOP=(1)][IoId=(5)]                
-LED9(0)                             : [IOP=(13)][IoId=(7)]               
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
-\UART_1:SCB\                        : SCB_[FFB(SCB,5)]                   
-\I2C_1:SCB\                         : SCB_[FFB(SCB,3)]                   
-\BLE:cy_mxs40_ble\                  : BLE_[FFB(BLE,0)]                   
+\BLE_1:cy_mxs40_ble\                : BLE_[FFB(BLE,0)]                   
+\UART:SCB\                          : SCB_[FFB(SCB,5)]                   
 \CapSense:CSD\                      : CSD_[FFB(CSD,0)]                   
+\I2C_1:SCB\                         : SCB_[FFB(SCB,3)]                   
 \CapSense:IDACMod\                  : CSIDAC7_[FFB(CSIDAC7,0)]           
 \CapSense:IDACComp\                 : CSIDAC7_[FFB(CSIDAC7,1)]           
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.5443502s
+Elapsed time ==> 0.3717065s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 2s.280ms
+Analog Placement phase: Elapsed time ==> 2s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0578174 secs
+Route success=True, Iterations=1 Elapsed=0.0152915 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.052ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1278,7 +1278,7 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.131ms
+Analog Code Generation phase: Elapsed time ==> 0s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -1290,14 +1290,14 @@ I2076: Total run-time: 0.4 sec.
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.084ms
+Partitioning: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1328,9 +1328,9 @@ UDB [UDB=(1,4)] is empty.
 UDB [UDB=(1,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
   Intr@ [IntrContainer=(0)][IntrId=(24)] 
-    interrupt: Name =\BLE:bless_isr\
+    interrupt: Name =\BLE_1:bless_isr\
         PORT MAP (
-            interrupt => \BLE:Net_1\ );
+            interrupt => \BLE_1:Net_1\ );
         Properties:
         {
             cy_registers = ""
@@ -1348,9 +1348,9 @@ Intr container @ [IntrContainer=(0)]:
             int_type = "10"
         }
   Intr@ [IntrContainer=(0)][IntrId=(46)] 
-    interrupt: Name =\UART_1:SCB_IRQ\
+    interrupt: Name =\UART:SCB_IRQ\
         PORT MAP (
-            interrupt => \UART_1:intr_wire\ );
+            interrupt => \UART:intr_wire\ );
         Properties:
         {
             cy_registers = ""
@@ -1454,7 +1454,7 @@ Pin : Name = LED8(0)
 
 Port 5 contains the following IO cells:
 [IoId=0]: 
-Pin : Name = \UART_1:rx(0)\
+Pin : Name = \UART:rx(0)\
     Attributes:
         In Group/Port: True
         In Sync Option: NOSYNC
@@ -1487,15 +1487,15 @@ Pin : Name = \UART_1:rx(0)\
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
-        pa_out => \UART_1:rx(0)\__PA ,
-        fb => \UART_1:Net_1172\ ,
-        pad => \UART_1:rx(0)_PAD\ );
+        pa_out => \UART:rx(0)\__PA ,
+        fb => \UART:Net_1172\ ,
+        pad => \UART:rx(0)_PAD\ );
     Properties:
     {
     }
 
 [IoId=1]: 
-Pin : Name = \UART_1:tx(0)\
+Pin : Name = \UART:tx(0)\
     Attributes:
         In Group/Port: True
         In Sync Option: AUTO
@@ -1528,9 +1528,9 @@ Pin : Name = \UART_1:tx(0)\
         Initial Value: 1
         IO Voltage: 0
     PORT MAP (
-        pa_out => \UART_1:tx(0)\__PA ,
-        pin_input => \UART_1:tx_wire\ ,
-        pad => \UART_1:tx(0)_PAD\ );
+        pa_out => \UART:tx(0)\__PA ,
+        pin_input => \UART:tx_wire\ ,
+        pad => \UART:tx(0)_PAD\ );
     Properties:
     {
     }
@@ -1571,7 +1571,7 @@ Pin : Name = \I2C_1:scl(0)\
         IO Voltage: 0
     PORT MAP (
         pa_out => \I2C_1:scl(0)\__PA ,
-        fb => Net_12 ,
+        fb => Net_58 ,
         pad => \I2C_1:scl(0)_PAD\ );
     Properties:
     {
@@ -1612,7 +1612,7 @@ Pin : Name = \I2C_1:sda(0)\
         IO Voltage: 0
     PORT MAP (
         pa_out => \I2C_1:sda(0)\__PA ,
-        fb => Net_13 ,
+        fb => Net_59 ,
         pad => \I2C_1:sda(0)_PAD\ );
     Properties:
     {
@@ -2186,7 +2186,7 @@ Clock group 0:
             lfclk => ClockBlock_LFClk ,
             ff_div_43 => \CapSense:Net_611_ff43\ ,
             ff_div_0 => \I2C_1:clock_wire_ff0\ ,
-            ff_div_1 => \UART_1:Net_847_ff1\ );
+            ff_div_1 => \UART:Net_847_ff1\ );
         Properties:
         {
         }
@@ -2200,12 +2200,12 @@ SCB group 0:
             clock => \I2C_1:clock_wire_ff0\ ,
             uart_tx => \I2C_1:Net_1062\ ,
             uart_rts => \I2C_1:Net_1053\ ,
-            i2c_scl => Net_12 ,
-            i2c_sda => Net_13 ,
+            i2c_scl => Net_58 ,
+            i2c_sda => Net_59 ,
             interrupt => \I2C_1:intr_wire\ ,
             tr_tx_req => \I2C_1:Net_162\ ,
             tr_rx_req => \I2C_1:Net_163\ ,
-            tr_i2c_scl_filtered => Net_14 );
+            tr_i2c_scl_filtered => Net_60 );
         Properties:
         {
             cy_registers = ""
@@ -2214,16 +2214,16 @@ SCB group 0:
             requires_io_preconfigure = 1
         }
     SCB @ F(SCB,5): 
-    SCB: Name =\UART_1:SCB\
+    SCB: Name =\UART:SCB\
         PORT MAP (
-            clock => \UART_1:Net_847_ff1\ ,
-            uart_rx => \UART_1:Net_1172\ ,
-            uart_tx => \UART_1:tx_wire\ ,
-            uart_rts => \UART_1:rts_wire\ ,
-            interrupt => \UART_1:intr_wire\ ,
-            tr_tx_req => Net_7 ,
-            tr_rx_req => Net_6 ,
-            tr_i2c_scl_filtered => \UART_1:Net_161\ );
+            clock => \UART:Net_847_ff1\ ,
+            uart_rx => \UART:Net_1172\ ,
+            uart_tx => \UART:tx_wire\ ,
+            uart_rts => \UART:rts_wire\ ,
+            interrupt => \UART:intr_wire\ ,
+            tr_tx_req => Net_51 ,
+            tr_rx_req => Net_50 ,
+            tr_i2c_scl_filtered => \UART:Net_161\ );
         Properties:
         {
             cy_registers = ""
@@ -2315,12 +2315,12 @@ LPCOMPBLOCK group 0: empty
 PASSBLOCK group 0: empty
 BLE group 0: 
     Bluetooth Low Energy @ F(BLE,0): 
-    BLE: Name =\BLE:cy_mxs40_ble\
+    BLE: Name =\BLE_1:cy_mxs40_ble\
         PORT MAP (
-            ext_pa_lna_chip_en_out => Net_17 ,
-            ext_lna_rx_ctl_out => Net_16 ,
-            ext_pa_tx_ctl_out => Net_15 ,
-            interrupt => \BLE:Net_1\ );
+            ext_pa_lna_chip_en_out => Net_3 ,
+            ext_lna_rx_ctl_out => Net_2 ,
+            ext_pa_tx_ctl_out => Net_1 ,
+            interrupt => \BLE_1:Net_1\ );
         Properties:
         {
             cy_registers = ""
@@ -2361,11 +2361,11 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
    1 |   0 |     * |      NONE |      HI_Z_ANALOG |           \CapSense:Tx(0)\ | Analog(\CapSense:Net_847_0\)
      |   5 |     * |      NONE |         CMOS_OUT |                    LED8(0) | 
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------
-   5 |   0 |     * |      NONE |      HI_Z_ANALOG |             \UART_1:rx(0)\ | FB(\UART_1:Net_1172\)
-     |   1 |     * |      NONE |         CMOS_OUT |             \UART_1:tx(0)\ | In(\UART_1:tx_wire\)
+   5 |   0 |     * |      NONE |      HI_Z_ANALOG |               \UART:rx(0)\ | FB(\UART:Net_1172\)
+     |   1 |     * |      NONE |         CMOS_OUT |               \UART:tx(0)\ | In(\UART:tx_wire\)
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------
-   6 |   0 |     * |      NONE |    OPEN_DRAIN_LO |             \I2C_1:scl(0)\ | FB(Net_12)
-     |   1 |     * |      NONE |    OPEN_DRAIN_LO |             \I2C_1:sda(0)\ | FB(Net_13)
+   6 |   0 |     * |      NONE |    OPEN_DRAIN_LO |             \I2C_1:scl(0)\ | FB(Net_58)
+     |   1 |     * |      NONE |    OPEN_DRAIN_LO |             \I2C_1:sda(0)\ | FB(Net_59)
      |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
      |   7 |     * |      NONE |    RES_PULL_DOWN | CY_CPUSS_SWJ_SWCLK_TCLK(0) | FB(CPUSS_swj_swclk_tclk)
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------
@@ -2386,33 +2386,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.533ms
-Digital Placement phase: Elapsed time ==> 7s.261ms
+Digital component placer commit/Report: Elapsed time ==> 0s.578ms
+Digital Placement phase: Elapsed time ==> 8s.562ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
-"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "RemoteControl_r.vh2" --pcf-path "RemoteControl.pco" --des-name "RemoteControl" --dsf-path "RemoteControl.dsf" --sdc-path "RemoteControl.sdc" --lib-path "RemoteControl_r.lib"
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "RC3-5b-Motion_r.vh2" --pcf-path "RC3-5b-Motion.pco" --des-name "RC3-5b-Motion" --dsf-path "RC3-5b-Motion.dsf" --sdc-path "RC3-5b-Motion.sdc" --lib-path "RC3-5b-Motion_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.016ms
+Digital Routing phase: Elapsed time ==> 1s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.867ms
+Bitstream Generation phase: Elapsed time ==> 0s.828ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.015ms
+Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
-Timing report is in RemoteControl_timing.html.
-Static timing analysis phase: Elapsed time ==> 9s.059ms
+Timing report is in RC3-5b-Motion_timing.html.
+Static timing analysis phase: Elapsed time ==> 12s.062ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.199ms
+Design database save phase: Elapsed time ==> 0s.234ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 22s.806ms
+cydsfit: Elapsed time ==> 26s.750ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 22s.806ms
-API generation phase: Elapsed time ==> 3s.249ms
-Dependency generation phase: Elapsed time ==> 0s.037ms
+Fitter phase: Elapsed time ==> 26s.750ms
+API generation phase: Elapsed time ==> 3s.109ms
+Dependency generation phase: Elapsed time ==> 0s.031ms
 Cleanup phase: Elapsed time ==> 0s.015ms
