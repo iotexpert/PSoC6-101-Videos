@@ -3,7 +3,7 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="PSoC6-Videos" persistent="PSoC6-Videos.cywrk" platform="NOT_USED">
-<current_project name=".\RC3-4-CapSense.cydsn\RC3-4-CapSense.cyprj" />
+<current_project name=".\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
@@ -23,12 +23,11 @@
 <v>.\2-1-BasicUART.cydsn\2-1-BasicUART.cyprj</v>
 <v>.\2-4-BasicKillSwitch.cydsn\2-4-BasicKillSwitch.cyprj</v>
 <v>.\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cyprj</v>
-<v>.\3-6-BasicMotionSensor.cydsn\3-6-BasicMotionSensor.cyprj</v>
+<v>.\3-5-BasicMotionSensor.cydsn\3-5-BasicMotionSensor.cyprj</v>
 <v>.\4-1-AFEShieldPot.cydsn\4-1-AFEShieldPot.cyprj</v>
 <v>.\4-2-AFEShieldOLED.cydsn\4-2-AFEShieldOLED.cyprj</v>
 <v>.\4-3-AFEShieldAmbientLight.cydsn\4-3-AFEShieldAmbientLight.cyprj</v>
 <v>.\4-4-AFESensorHub.cydsn\4-4-AFESensorHub.cyprj</v>
-<v>.\RemoteControl.cydsn\RemoteControl.cyprj</v>
 <v>.\MC-2-1-uart.cydsn\MC-2-1-uart.cyprj</v>
 <v>.\MC-2-2-PWM.cydsn\MC-2-2-PWM.cyprj</v>
 <v>.\MC-2-3-I2C.cydsn\MC-2-3-I2C.cyprj</v>
@@ -41,6 +40,7 @@
 <v>.\2-6-ADC.cydsn\2-6-ADC.cyprj</v>
 <v>.\2-6-ADC_VREF_OPAMP.cydsn\2-6-ADC_VREF_OPAMP.cyprj</v>
 <v>.\RC3-4-CapSense.cydsn\RC3-4-CapSense.cyprj</v>
+<v>.\RC3-5b-Motion.cydsn\RC3-5b-Motion.cyprj</v>
 </projects>
 <workspace_id v="968ac9b5-7e7b-44cd-b2be-3c9b3ad59fa9" />
 <WriteAppVersionLastSavedWith v="4.2.0.641" />

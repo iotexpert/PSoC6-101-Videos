@@ -13,11 +13,11 @@
 #define CYAPICALLBACKS_H
     
 
-#if CY_CPU_CORTEX_M0P
-    /*Define your Cortex-M0P macro callbacks here */
+#ifdef CPU_CORTEX_M0p
+    /*Define your Cortex-M0p macro callbacks here */
 #endif
 
-#if CY_CPU_CORTEX_M4
+#ifdef CPU_CORTEX_M4
     /*Define your Cortex-M4 macro callbacks here */
 #endif
 
