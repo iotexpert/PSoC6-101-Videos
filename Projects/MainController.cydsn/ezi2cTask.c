@@ -1,6 +1,4 @@
-
 #include "project.h"
-#include "FreeRTOS.h"
 #include "pwmTask.h"
 
 #include "global.h"

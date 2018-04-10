@@ -1,4 +1,4 @@
---------------- Rebuild Started: 01/29/2018 15:07:38 Project: 2-6-BasicTracelyzer, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 04/04/2018 15:42:19 Project: 2-7-BasicTracelyzer, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o"
@@ -12,6 +12,7 @@ Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_flash.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o"
@@ -24,54 +25,14 @@ Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_profile.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_prot.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o"
-Deleting file ".\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer.hex"
-Deleting file ".\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer.elf"
-Deleting file ".\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer.map"
-Deleting file ".\2-6-BasicTracelyzer.cycdx"
-Deleting file ".\2-6-BasicTracelyzer.rpt"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer.hex"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer.elf"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer.map"
+Deleting file ".\2-7-BasicTracelyzer.cycdx"
+Deleting file ".\2-7-BasicTracelyzer.rpt"
+Deleting file ".\2-7-BasicTracelyzer_timing.html"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\main_cm4.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\system_psoc63_cm4.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\trcKernelPort.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\trcSnapshotRecorder.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\trcStreamingRecorder.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\SEGGER_RTT.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\SEGGER_RTT_Printf.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cymetadata.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysint.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysclk.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_wdt.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_flash.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_gpio.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysanalog.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syspm.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syslib.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_trigmux.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_systick.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_profile.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_prot.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_lvd.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\croutine.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\event_groups.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\list.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\queue.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\tasks.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\timers.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\port.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\heap_1.o"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\2-6-BasicTracelyzer.hex"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\2-6-BasicTracelyzer.elf"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\2-6-BasicTracelyzer.map"
-Deleting file ".\CortexM4\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
-cydsfit.exe -.appdatapath "C:\Users\arh\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicTracelyzer.cydsn\2-6-BasicTracelyzer.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicTracelyzer.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit.exe -.appdatapath "C:\Users\gjl\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Git\PSoC6-101-Videos\Projects\2-7-BasicTracelyzer.cydsn\2-7-BasicTracelyzer.cyprj -d CY8C6347BZI-BLD53 -s C:\Git\PSoC6-101-Videos\Projects\2-7-BasicTracelyzer.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
 Synthesis...
@@ -100,6 +61,7 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_ipc_pipe.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\ipc\cy_ipc_pipe.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_sysclk.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\sysclk\cy_sysclk.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_wdt.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\wdt\cy_wdt.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_efuse.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\efuse\cy_efuse.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_flash.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\flash\cy_flash.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_gpio.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\gpio\cy_gpio.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_sysanalog.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\sysanalog\cy_sysanalog.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o
@@ -111,34 +73,10 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_profile.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\profile\cy_profile.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_prot.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\prot\cy_prot.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_lvd.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\lvd\cy_lvd.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_efuse.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\drivers\peripheral\efuse\cy_efuse.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_ble_clk.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_clk.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
-arm-none-eabi-gcc.exe -Wl,--start-group -o \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer_link.elf .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o .\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_config.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o -mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC6 -Wl,-Map,.\CortexM0p\ARM_GCC_541\Debug/2-6-BasicTracelyzer.map -T cy8c6xx7_cm0plus.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
-"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --sign \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer_link.elf --output \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer.elf --hex \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-6-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-6-BasicTracelyzer.hex
+arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Git\PSoC6-101-Videos\Projects\2-7-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer_link.elf .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o .\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_config.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o -mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC6 -Wl,-Map,.\CortexM0p\ARM_GCC_541\Debug/2-7-BasicTracelyzer.map -T cy8c6xx7_cm0plus.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --sign C:\Git\PSoC6-101-Videos\Projects\2-7-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer_link.elf --output C:\Git\PSoC6-101-Videos\Projects\2-7-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer.elf --hex C:\Git\PSoC6-101-Videos\Projects\2-7-BasicTracelyzer.cydsn\CortexM0p\ARM_GCC_541\Debug\2-7-BasicTracelyzer.hex
 No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
-arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I..\..\TraceRecorder\include -I..\..\TraceRecorder\streamports\Jlink_RTT\include -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/main_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c main_cm4.c -o .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-main_cm4.c: In function 'ledTask':
-main_cm4.c:12:9: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
-         vTaskDelay(500);
-         ^
-main_cm4.c: In function 'main':
-main_cm4.c:21:5: warning: implicit declaration of function 'vTraceEnable' [-Wimplicit-function-declaration]
-     vTraceEnable(TRC_START);
-     ^
-main_cm4.c:21:18: error: 'TRC_START' undeclared (first use in this function)
-     vTraceEnable(TRC_START);
-                  ^
-main_cm4.c:21:18: note: each undeclared identifier is reported only once for each function it appears in
-main_cm4.c:23:5: warning: implicit declaration of function 'xTaskCreate' [-Wimplicit-function-declaration]
-     xTaskCreate(ledTask,"LED Task",configMINIMAL_STACK_SIZE,0,1,0);
-     ^
-main_cm4.c:23:36: error: 'configMINIMAL_STACK_SIZE' undeclared (first use in this function)
-     xTaskCreate(ledTask,"LED Task",configMINIMAL_STACK_SIZE,0,1,0);
-                                    ^
-main_cm4.c:24:5: warning: implicit declaration of function 'vTaskStartScheduler' [-Wimplicit-function-declaration]
-     vTaskStartScheduler();
-     ^
-The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
---------------- Rebuild Failed: 01/29/2018 15:09:51 ---------------
+--------------- Rebuild Failed: 04/04/2018 15:43:29 ---------------

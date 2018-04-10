@@ -1,10 +1,9 @@
 #include "project.h"
-#include "uartTask.h"
-#include "FreeRTOS.h"
+#include "global.h"
 #include "task.h"
+#include "uartTask.h"
 #include "pwmTask.h"
 #include "ezi2cTask.h"
-#include "event_groups.h"
 
 QueueHandle_t pwmQueue;
 SemaphoreHandle_t updateEZI2CSemaphore;

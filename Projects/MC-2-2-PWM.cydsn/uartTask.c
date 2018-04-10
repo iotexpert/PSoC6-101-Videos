@@ -1,8 +1,5 @@
 #include "project.h"
-#include "FreeRTOS.h"
-#include "semphr.h"
 #include <stdio.h>
-
 #include "pwmTask.h"
 #include "uartTask.h"
 #include "global.h"

@@ -1,13 +1,16 @@
-Loading plugins phase: Elapsed time ==> 1s.828ms
+Loading plugins phase: Elapsed time ==> 0s.515ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -d CY8C6347BZI-BLD53 -s C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
+ADD: fit.M0067: information: Clock Information: (The WCO is enabled. Chip startup will be slower because clock configuration cannot continue until the WCO is ready. See the device datasheet for WCO startup timing. If WCO is not required during startup, consider starting it in main() for faster chip startup.).
+ * C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cydwr (WCO)
+
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 14s.296ms
+Elaboration phase: Elapsed time ==> 5s.047ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.390ms
+HDL generation phase: Elapsed time ==> 0s.156ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +28,23 @@ HDL generation phase: Elapsed time ==> 0s.390ms
 ======================================================================
 Compiling:  MainController.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -dcpsoc3 MainController.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -dcpsoc3 MainController.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  MainController.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -dcpsoc3 MainController.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -dcpsoc3 MainController.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  MainController.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -dcpsoc3 -verilog MainController.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -dcpsoc3 -verilog MainController.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Mar 23 11:35:10 2018
+Wed Apr 04 15:09:18 2018
 
 
 ======================================================================
@@ -51,7 +54,7 @@ Options  :    -yv2 -q10 MainController.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Mar 23 11:35:10 2018
+Wed Apr 04 15:09:19 2018
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -84,11 +87,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  MainController.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -dcpsoc3 -verilog MainController.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -dcpsoc3 -verilog MainController.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Mar 23 11:35:12 2018
+Wed Apr 04 15:09:20 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -99,9 +102,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\codegentemp\MainController.ctl'.
+Linking 'C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\codegentemp\MainController.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\codegentemp\MainController.v'.
+Linking 'C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\codegentemp\MainController.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_tff_v1_0\cy_tff_v1_0.v'.
@@ -116,11 +119,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  MainController.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -dcpsoc3 -verilog MainController.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -dcpsoc3 -verilog MainController.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Mar 23 11:35:14 2018
+Wed Apr 04 15:09:21 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -131,9 +134,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\codegentemp\MainController.ctl'.
+Linking 'C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\codegentemp\MainController.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\codegentemp\MainController.v'.
+Linking 'C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\codegentemp\MainController.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_tff_v1_0\cy_tff_v1_0.v'.
@@ -296,16 +299,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -dcpsoc3 MainController.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -dcpsoc3 MainController.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 5s.812ms
+Warp synthesis phase: Elapsed time ==> 3s.812ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Friday, 23 March 2018 11:35:15
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\MainController.cydsn\MainController.cyprj -d CY8C6347BZI-BLD53 MainController.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 04 April 2018 15:09:22
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\MainController.cydsn\MainController.cyprj -d CY8C6347BZI-BLD53 MainController.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 1s.593ms
+Design parsing phase: Elapsed time ==> 1s.187ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -327,7 +330,17 @@ Done removing unused cells.
         Enable Signal: True
 </CYPRESSTAG>
 </CYPRESSTAG>
-Warning: pft.M0127: When a BLE component is configured for DeepSleep, either the WCO or the PILO must be enabled and selected as the source of LFCLK. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: TCPWM[0].line. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: TCPWM[8].line. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: CSD[0].csd_tx. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: CSD[0].csd_tx_n. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: SCB[0].spi_select[1]. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: TCPWM[0].line_compl. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: TCPWM[8].line_compl. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: CSD[0].csd_tx. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: CSD[0].csd_tx_n. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: SCB[0].spi_select[2]. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: CPUSS[0].swj_trstn. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: TCPWM[3].line_compl. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: TCPWM[19].line_compl. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: CSD[0].csd_tx. (App=cydsfit)
@@ -335,6 +348,7 @@ Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prev
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].uart_cts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].spi_select[0]. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[8].spi_select[0]. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SRSS[0].swd_clk. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: TCPWM[3].line. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: TCPWM[19].line. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: CSD[0].csd_tx. (App=cydsfit)
@@ -342,6 +356,7 @@ Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] preve
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SCB[6].uart_rts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SCB[6].spi_clk. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SCB[8].spi_clk. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SRSS[0].swd_data. (App=cydsfit)
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -360,6 +375,78 @@ Design Equations
     ------------------------------------------------------------
     Pin listing
     ------------------------------------------------------------
+
+    Pin : Name = CY_SRSS_WCO_IN(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: NONE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => CY_SRSS_WCO_IN(0)__PA ,
+            analog_term => SRSS_wco_in );
+
+    Pin : Name = CY_SRSS_WCO_OUT(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: True
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: NONE
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => CY_SRSS_WCO_OUT(0)__PA ,
+            analog_term => SRSS_wco_out );
 
     Pin : Name = CY_CPUSS_SWJ_SWCLK_TCLK(0)
         Attributes:
@@ -1470,7 +1557,7 @@ Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
 Interrupts [CM0+]             :    6 :   26 :   32 : 18.75 %
 Interrupts [CM4]              :    3 :  144 :  147 :  2.04 %
-IO                            :   25 :   53 :   78 : 32.05 %
+IO                            :   27 :   51 :   78 : 34.62 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
 MCWDT                         :    0 :    2 :    2 :  0.00 %
 CapSense                      :    1 :    0 :    1 : 100.00 %
@@ -1500,8 +1587,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 1s.124ms
-Tech Mapping phase: Elapsed time ==> 1s.327ms
+Technology Mapping: Elapsed time ==> 0s.171ms
+Tech Mapping phase: Elapsed time ==> 0s.296ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -1509,6 +1596,8 @@ Tech Mapping phase: Elapsed time ==> 1s.327ms
 
 Cell                                : Block                              
 =========================================================================
+CY_SRSS_WCO_IN(0)                   : [IOP=(0)][IoId=(0)]                
+CY_SRSS_WCO_OUT(0)                  : [IOP=(0)][IoId=(1)]                
 CY_CPUSS_SWJ_SWCLK_TCLK(0)          : [IOP=(6)][IoId=(7)]                
 CY_CPUSS_SWJ_SWDIO_TMS(0)           : [IOP=(6)][IoId=(6)]                
 \UART:tx(0)\                        : [IOP=(5)][IoId=(1)]                
@@ -1535,6 +1624,7 @@ M1(0)                               : [IOP=(0)][IoId=(2)]
 LED8(0)                             : [IOP=(1)][IoId=(5)]                
 LED9(0)                             : [IOP=(13)][IoId=(7)]               
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
+SRSS                                : SRSS_[FFB(SRSS,0)]                 
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
 \UART:SCB\                          : SCB_[FFB(SCB,5)]                   
 \CapSense:CSD\                      : CSD_[FFB(CSD,0)]                   
@@ -1549,20 +1639,30 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.3855506s
+Elapsed time ==> 0.4007899s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 2s.546ms
+Analog Placement phase: Elapsed time ==> 3s.344ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0545537 secs
+Route success=True, Iterations=1 Elapsed=0.0157836 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.062ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
 Dump of CyAnalogRoutingResultsDB
 Map of net to items {
+  Net: SRSS_wco_in {
+    p0_0
+    swh_3
+    Net_44761
+  }
+  Net: SRSS_wco_out {
+    Net_44763
+    swh_4
+    p0_1
+  }
   Net: \CapSense:Net_34\ {
   }
   Net: \CapSense:Net_847_0\ {
@@ -1611,6 +1711,12 @@ Map of net to items {
   }
 }
 Map of item to net {
+  p0_0                                             -> SRSS_wco_in
+  swh_3                                            -> SRSS_wco_in
+  Net_44761                                        -> SRSS_wco_in
+  Net_44763                                        -> SRSS_wco_out
+  swh_4                                            -> SRSS_wco_out
+  p0_1                                             -> SRSS_wco_out
   CSD0_sense_internal                              -> \CapSense:Net_847_0\
   CSD0_source_v                                    -> \CapSense:Net_847_0\
   CSD0_sense                                       -> \CapSense:Net_847_0\
@@ -1654,12 +1760,12 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.124ms
+Analog Code Generation phase: Elapsed time ==> 0s.046ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.7 sec.
+I2076: Total run-time: 0.6 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1683,14 +1789,14 @@ PLD Packing Summary
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.031ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.109ms
+Partitioning: Elapsed time ==> 0s.046ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1808,6 +1914,86 @@ Intr container @ [IntrContainer=(0)]:
         }
 Drq container @ [DrqContainer=(0)]: empty
 Port 0 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = CY_SRSS_WCO_IN(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: NONE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => CY_SRSS_WCO_IN(0)__PA ,
+        analog_term => SRSS_wco_in );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = CY_SRSS_WCO_OUT(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: True
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: NONE
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => CY_SRSS_WCO_OUT(0)__PA ,
+        analog_term => SRSS_wco_out );
+    Properties:
+    {
+    }
+
 [IoId=2]: 
 Pin : Name = M1(0)
     Attributes:
@@ -3080,7 +3266,15 @@ SMIF group 0: empty
 SmartIO group 0: empty
 CRYPTO group 0: empty
 PROFILE group 0: empty
-SRSS group 0: empty
+SRSS group 0: 
+    SRSS @ F(SRSS,0): 
+    SRSS: Name =SRSS
+        PORT MAP (
+            wco_in => SRSS_wco_in ,
+            wco_out => SRSS_wco_out );
+        Properties:
+        {
+        }
 CPUSS group 0: 
     CPUSS Block @ F(CPUSS,0): 
     CPUSS: Name =CPUSS
@@ -3108,7 +3302,9 @@ Port Configuration report
      |     |       | Interrupt |                  |                            | 
 Port | Pin | Fixed |      Type |       Drive Mode |                       Name | Connections
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------
-   0 |   2 |     * |      NONE |         CMOS_OUT |                      M1(0) | In(Net_22)
+   0 |   0 |     * |      NONE |      HI_Z_ANALOG |          CY_SRSS_WCO_IN(0) | Analog(SRSS_wco_in)
+     |   1 |     * |      NONE |      HI_Z_ANALOG |         CY_SRSS_WCO_OUT(0) | Analog(SRSS_wco_out)
+     |   2 |     * |      NONE |         CMOS_OUT |                      M1(0) | In(Net_22)
      |   3 |     * |      NONE |         CMOS_OUT |                     RED(0) | In(Net_205)
      |   4 |     * |      NONE |      RES_PULL_UP |                      SW(0) | FB(Net_139)
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------
@@ -3144,33 +3340,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.953ms
-Digital Placement phase: Elapsed time ==> 9s.093ms
+Digital component placer commit/Report: Elapsed time ==> 0s.093ms
+Digital Placement phase: Elapsed time ==> 8s.125ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "MainController_r.vh2" --pcf-path "MainController.pco" --des-name "MainController" --dsf-path "MainController.dsf" --sdc-path "MainController.sdc" --lib-path "MainController_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.281ms
+Digital Routing phase: Elapsed time ==> 1s.422ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 1s.000ms
+Bitstream Generation phase: Elapsed time ==> 0s.703ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in MainController_timing.html.
-Static timing analysis phase: Elapsed time ==> 10s.265ms
+Static timing analysis phase: Elapsed time ==> 11s.501ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.015ms
+Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.312ms
+Design database save phase: Elapsed time ==> 0s.218ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 27s.734ms
+cydsfit: Elapsed time ==> 26s.924ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 27s.749ms
-API generation phase: Elapsed time ==> 4s.062ms
-Dependency generation phase: Elapsed time ==> 0s.046ms
-Cleanup phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 26s.924ms
+API generation phase: Elapsed time ==> 3s.578ms
+Dependency generation phase: Elapsed time ==> 0s.031ms
+Cleanup phase: Elapsed time ==> 0s.000ms

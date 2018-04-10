@@ -7,9 +7,8 @@
 *
 *******************************************************************************/
 #include <project.h>
-#include "pwmTask.h"
-#include "semphr.h"
 #include <stdio.h>
+#include "pwmTask.h"
 #include "global.h"
 
 SemaphoreHandle_t bleSemaphore;

@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.453ms
+Loading plugins phase: Elapsed time ==> 0s.578ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -d CY8C6347BZI-BLD53 -s C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.342ms
+Elaboration phase: Elapsed time ==> 1s.437ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.084ms
+HDL generation phase: Elapsed time ==> 0s.046ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.084ms
 ======================================================================
 Compiling:  2-2-BasicTCPWM.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 2-2-BasicTCPWM.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 2-2-BasicTCPWM.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  2-2-BasicTCPWM.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 2-2-BasicTCPWM.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 2-2-BasicTCPWM.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  2-2-BasicTCPWM.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 -verilog 2-2-BasicTCPWM.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 -verilog 2-2-BasicTCPWM.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Mon Jan 29 15:22:53 2018
+Wed Apr 04 15:04:35 2018
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 2-2-BasicTCPWM.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Mon Jan 29 15:22:53 2018
+Wed Apr 04 15:04:36 2018
 
 
 vpp:  No errors.
@@ -76,11 +76,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  2-2-BasicTCPWM.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 -verilog 2-2-BasicTCPWM.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 -verilog 2-2-BasicTCPWM.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Mon Jan 29 15:22:53 2018
+Wed Apr 04 15:04:36 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -91,7 +91,7 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\codegentemp\2-2-BasicTCPWM.ctl'.
+Linking 'C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\codegentemp\2-2-BasicTCPWM.ctl'.
 
 tovif:  No errors.
 
@@ -99,11 +99,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  2-2-BasicTCPWM.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 -verilog 2-2-BasicTCPWM.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 -verilog 2-2-BasicTCPWM.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Mon Jan 29 15:22:53 2018
+Wed Apr 04 15:04:36 2018
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -114,7 +114,7 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking '\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\codegentemp\2-2-BasicTCPWM.ctl'.
+Linking 'C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\codegentemp\2-2-BasicTCPWM.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
 
 ----------------------------------------------------------
@@ -158,16 +158,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 2-2-BasicTCPWM.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -dcpsoc3 2-2-BasicTCPWM.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.348ms
+Warp synthesis phase: Elapsed time ==> 1s.406ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.607, Family: PSoC3, Started at: Monday, 29 January 2018 15:22:53
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=\\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -d CY8C6347BZI-BLD53 2-2-BasicTCPWM.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 04 April 2018 15:04:36
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Git\PSoC6-101-Videos\Projects\2-2-BasicTCPWM.cydsn\2-2-BasicTCPWM.cyprj -d CY8C6347BZI-BLD53 2-2-BasicTCPWM.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.169ms
+Design parsing phase: Elapsed time ==> 0s.093ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -372,8 +372,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.285ms
-Tech Mapping phase: Elapsed time ==> 0s.502ms
+Technology Mapping: Elapsed time ==> 0s.031ms
+Tech Mapping phase: Elapsed time ==> 0s.140ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -391,13 +391,13 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.3387659s
+Elapsed time ==> 0.3292131s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 1s.402ms
+Analog Placement phase: Elapsed time ==> 1s.281ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0051524 secs
+Route success=True, Iterations=1 Elapsed=0.0009885 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
@@ -410,26 +410,26 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.084ms
+Analog Code Generation phase: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.3 sec.
+I2076: Total run-time: 0.7 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.078ms
+Partitioning: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -699,33 +699,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.131ms
-Digital Placement phase: Elapsed time ==> 6s.544ms
+Digital component placer commit/Report: Elapsed time ==> 0s.015ms
+Digital Placement phase: Elapsed time ==> 7s.703ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "2-2-BasicTCPWM_r.vh2" --pcf-path "2-2-BasicTCPWM.pco" --des-name "2-2-BasicTCPWM" --dsf-path "2-2-BasicTCPWM.dsf" --sdc-path "2-2-BasicTCPWM.sdc" --lib-path "2-2-BasicTCPWM_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.088ms
+Digital Routing phase: Elapsed time ==> 1s.281ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.851ms
+Bitstream Generation phase: Elapsed time ==> 0s.906ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in 2-2-BasicTCPWM_timing.html.
-Static timing analysis phase: Elapsed time ==> 11s.342ms
+Static timing analysis phase: Elapsed time ==> 13s.188ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.019ms
+Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.200ms
+Design database save phase: Elapsed time ==> 0s.171ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 22s.239ms
+cydsfit: Elapsed time ==> 24s.846ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 22s.239ms
-API generation phase: Elapsed time ==> 0s.935ms
-Dependency generation phase: Elapsed time ==> 0s.015ms
+Fitter phase: Elapsed time ==> 24s.846ms
+API generation phase: Elapsed time ==> 2s.078ms
+Dependency generation phase: Elapsed time ==> 0s.031ms
 Cleanup phase: Elapsed time ==> 0s.015ms

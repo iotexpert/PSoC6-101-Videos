@@ -1,6 +1,3 @@
-#ifndef BLETASK_H
-#define BLETASK_H
+#pragma once
 
 void bleTask(void *arg);
-
-#endif

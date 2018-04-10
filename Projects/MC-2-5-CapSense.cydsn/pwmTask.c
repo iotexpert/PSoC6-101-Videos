@@ -1,7 +1,8 @@
 #include <project.h>
+#include <stdio.h>
 #include "pwmTask.h"
 #include "global.h"
-#include <stdio.h>
+
 
 // Range of pulses for Servo Motor in uS
 #define MIN_US 1000

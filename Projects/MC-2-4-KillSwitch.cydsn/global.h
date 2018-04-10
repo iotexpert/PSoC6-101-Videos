@@ -1,8 +1,7 @@
 #pragma once
 
 #include "FreeRTOS.h"
-#include "event_groups.h"
-    
+#include "event_groups.h"  
 #include "semphr.h"
 
 extern QueueHandle_t pwmQueue;

@@ -1,5 +1,3 @@
-#ifndef UARTTASK_H
-    #define UARTTASK_H
+#pragma once
     
-    void uartTask(void *arg);
-#endif
+void uartTask(void *arg);
