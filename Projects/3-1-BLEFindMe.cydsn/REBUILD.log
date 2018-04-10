@@ -1,8 +1,81 @@
---------------- Rebuild Started: 02/10/2018 08:58:27 Project: 3-1-BLEFindMe, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Rebuild Started: 04/04/2018 15:29:38 Project: 3-1-BLEFindMe, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\stdio_user.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_config.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cymetadata.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\BLE.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\BLE_config.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\BLE_ias_config.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\UART_1.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_flash.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_systick.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_profile.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_prot.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_hal_int.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_hal_pvt.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_gap.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_gatt.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_event_handler.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ancs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ans.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_aios.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_bas.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_bcs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_bls.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_bms.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_bts.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_cgms.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_cps.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_cscs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_cts.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_custom.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_dis.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ess.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_gls.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_hids.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_hps.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_hrs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_hts.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ias.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ips.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_lls.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_lns.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_ndcs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_plxs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_pass.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_rscs.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_rtus.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_scps.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_tps.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_uds.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_wpts.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_wss.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o"
+Deleting file ".\CortexM0p\ARM_GCC_541\Debug\retarget.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.hex"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.elf"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.map"
@@ -14,22 +87,108 @@ Deleting file ".\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\main_cm4.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\system_psoc63_cm4.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\stdio_user.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cymetadata.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\BLE.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\BLE_config.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\BLE_ias_config.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\UART_1.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysint.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysclk.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_wdt.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_scb_ezi2c.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_scb_spi.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_efuse.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_flash.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_gpio.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_sysanalog.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syspm.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syslib.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_trigmux.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_systick.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_profile.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_prot.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_lvd.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_int.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ancs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ans.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_aios.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_bcs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_bls.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_bms.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_bts.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_cgms.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_cps.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_cscs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_cts.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_dis.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ess.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_gls.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_hids.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_hps.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_hrs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_hts.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ias.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ips.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_lls.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_lns.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_ndcs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_plxs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_pass.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_rscs.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_rtus.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_scps.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_tps.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_uds.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_wpts.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_wss.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\croutine.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\event_groups.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\list.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\queue.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\tasks.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\timers.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\port.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\heap_4.o"
+Deleting file ".\CortexM4\ARM_GCC_541\Debug\retarget.o"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.hex"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.elf"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.map"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
-cydsfit.exe -.appdatapath "C:\Users\arh\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cyprj -d CY8C6347BZI-BLD53 -s \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit.exe -.appdatapath "C:\Users\gjl\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cyprj -d CY8C6347BZI-BLD53 -s C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+ADD: fit.M0067: information: Clock Information: (The WCO is enabled. Chip startup will be slower because clock configuration cannot continue until the WCO is ready. See the device datasheet for WCO startup timing. If WCO is not required during startup, consider starting it in main() for faster chip startup.).
+ * C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\3-1-BLEFindMe.cydwr (WCO)
 Elaborating Design...
 HDL Generation...
 Synthesis...
 Tech Mapping...
-Warning: pft.M0127: When a BLE component is configured for DeepSleep, either the WCO or the PILO must be enabled and selected as the source of LFCLK. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_IN(0) at location P0[0] prevents usage of special purposes: SCB[0].spi_select[1]. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: SCB[0].spi_select[2]. (App=cydsfit)
+Info: plm.M0038: The pin named CY_SRSS_WCO_OUT(0) at location P0[1] prevents usage of special purposes: CPUSS[0].swj_trstn. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].uart_cts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[6].spi_select[0]. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SCB[8].spi_select[0]. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWCLK_TCLK(0) at location P6[7] prevents usage of special purposes: SRSS[0].swd_clk. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SCB[6].uart_rts. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SCB[6].spi_clk. (App=cydsfit)
 Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SCB[8].spi_clk. (App=cydsfit)
+Info: plm.M0038: The pin named CY_CPUSS_SWJ_SWDIO_TMS(0) at location P6[6] prevents usage of special purposes: SRSS[0].swd_data. (App=cydsfit)
 Analog Placement...
 Analog Routing...
 Analog Code Generation...
@@ -118,21 +277,13 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_ble_wss.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_wss.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_wss.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/cy_ble_clk.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\middleware\ble\cy_ble_clk.c -o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM0p\ARM_GCC_541\Debug/retarget.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\utilities\retarget_io\retarget.c -o .\CortexM0p\ARM_GCC_541\Debug\retarget.o
-arm-none-eabi-gcc.exe -Wl,--start-group -o \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_radio_max_cm0p.a Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_controller_ipc_cm0p.a .\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o .\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\stdio_user.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_config.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o .\CortexM0p\ARM_GCC_541\Debug\BLE.o .\CortexM0p\ARM_GCC_541\Debug\BLE_config.o .\CortexM0p\ARM_GCC_541\Debug\BLE_ias_config.o .\CortexM0p\ARM_GCC_541\Debug\UART_1.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hal_int.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hal_pvt.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_gap.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_gatt.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_event_handler.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ancs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ans.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_aios.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bas.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bcs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bls.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bms.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cgms.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cscs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_custom.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_dis.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ess.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_gls.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hids.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hrs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ias.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ips.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_lls.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_lns.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ndcs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_plxs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_pass.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_rscs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_rtus.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_scps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_tps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_uds.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_wpts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_wss.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o .\CortexM0p\ARM_GCC_541\Debug\retarget.o -mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC6 -Wl,-Map,.\CortexM0p\ARM_GCC_541\Debug/3-1-BLEFindMe.map -T cy8c6xx7_cm0plus.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
-"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --sign \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf --output \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.elf --hex \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.hex
+arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_radio_max_cm0p.a Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_controller_ipc_cm0p.a .\CortexM0p\ARM_GCC_541\Debug\startup_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o .\CortexM0p\ARM_GCC_541\Debug\system_psoc63_cm0plus.o .\CortexM0p\ARM_GCC_541\Debug\stdio_user.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_config.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0p\ARM_GCC_541\Debug\cymetadata.o .\CortexM0p\ARM_GCC_541\Debug\BLE.o .\CortexM0p\ARM_GCC_541\Debug\BLE_config.o .\CortexM0p\ARM_GCC_541\Debug\BLE_ias_config.o .\CortexM0p\ARM_GCC_541\Debug\UART_1.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysint.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_drv.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_sema.o .\CortexM0p\ARM_GCC_541\Debug\cy_ipc_pipe.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysclk.o .\CortexM0p\ARM_GCC_541\Debug\cy_wdt.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_common.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_i2c.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_ezi2c.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_spi.o .\CortexM0p\ARM_GCC_541\Debug\cy_scb_uart.o .\CortexM0p\ARM_GCC_541\Debug\cy_efuse.o .\CortexM0p\ARM_GCC_541\Debug\cy_flash.o .\CortexM0p\ARM_GCC_541\Debug\cy_gpio.o .\CortexM0p\ARM_GCC_541\Debug\cy_sysanalog.o .\CortexM0p\ARM_GCC_541\Debug\cy_syspm.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib.o .\CortexM0p\ARM_GCC_541\Debug\cy_syslib_gcc.o .\CortexM0p\ARM_GCC_541\Debug\cy_trigmux.o .\CortexM0p\ARM_GCC_541\Debug\cy_systick.o .\CortexM0p\ARM_GCC_541\Debug\cy_profile.o .\CortexM0p\ARM_GCC_541\Debug\cy_prot.o .\CortexM0p\ARM_GCC_541\Debug\cy_lvd.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hal_int.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hal_pvt.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_gap.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_gatt.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_event_handler.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ancs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ans.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_aios.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bas.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bcs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bls.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bms.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_bts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cgms.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cscs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_cts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_custom.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_dis.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ess.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_gls.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hids.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hrs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_hts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ias.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ips.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_lls.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_lns.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_ndcs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_plxs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_pass.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_rscs.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_rtus.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_scps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_tps.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_uds.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_wpts.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_wss.o .\CortexM0p\ARM_GCC_541\Debug\cy_ble_clk.o .\CortexM0p\ARM_GCC_541\Debug\retarget.o -mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC6 -Wl,-Map,.\CortexM0p\ARM_GCC_541\Debug/3-1-BLEFindMe.map -T cy8c6xx7_cm0plus.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --sign C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf --output C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.elf --hex C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.hex
 No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/startup_psoc63_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c armgcc\startup\startup_psoc63_cm4.S -o .\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/main_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c main_cm4.c -o .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-In file included from main_cm4.c:5:0:
-main_cm4.c: In function 'bleTask':
-main_cm4.c:127:46: warning: suggest parentheses around arithmetic in operand of '^' [-Wparentheses]
-     bleSemaphore = xSemaphoreCreateCounting(2^32-1,0);
-                                              ^
-Generated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/semphr.h:1040:98: note: in definition of macro 'xSemaphoreCreateCounting'
-  #define xSemaphoreCreateCounting( uxMaxCount, uxInitialCount ) xQueueCreateCountingSemaphore( ( uxMaxCount ), ( uxInitialCount ) )
-                                                                                                  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/system_psoc63_cm4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c system_psoc63_cm4.c -o .\CortexM4\ARM_GCC_541\Debug\system_psoc63_cm4.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/stdio_user.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c stdio_user.c -o .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/cy_ipc_config.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c cy_ipc_config.c -o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o
@@ -215,14 +366,14 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthu
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/port.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\portable\GCC\CM4F\port.c -o .\CortexM4\ARM_GCC_541\Debug\port.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/heap_4.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\rtos\FreeRTOS\9.0.0\Source\portable\MemMang\heap_4.c -o .\CortexM4\ARM_GCC_541\Debug\heap_4.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -I. -IGenerated_Source\PSoC6 -IGenerated_Source\PSoC6\pdl\cmsis/include/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/ip/ -IGenerated_Source\PSoC6\pdl\devices/psoc6/psoc63/include/ -IGenerated_Source\PSoC6\pdl\drivers/peripheral/ -IGenerated_Source\PSoC6\pdl\middleware/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/include/ -IGenerated_Source\PSoC6\pdl\rtos/FreeRTOS/9.0.0/Source/portable/GCC/CM4F/ -IGenerated_Source\PSoC6\pdl\utilities/ -Wa,-alh=.\CortexM4\ARM_GCC_541\Debug/retarget.lst -g -D DEBUG -D CY_CORE_ID=0 -D CY_PSOC_CREATOR_USED=1 -D CY8C6347BZI_BLD53 -Wall -ffunction-sections -ffat-lto-objects -Og -c Generated_Source\PSoC6\pdl\utilities\retarget_io\retarget.c -o .\CortexM4\ARM_GCC_541\Debug\retarget.o
-arm-none-eabi-gcc.exe -Wl,--start-group -o \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a .\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o .\CortexM4\ARM_GCC_541\Debug\main_cm4.o .\CortexM4\ARM_GCC_541\Debug\system_psoc63_cm4.o .\CortexM4\ARM_GCC_541\Debug\stdio_user.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o .\CortexM4\ARM_GCC_541\Debug\cymetadata.o .\CortexM4\ARM_GCC_541\Debug\BLE.o .\CortexM4\ARM_GCC_541\Debug\BLE_config.o .\CortexM4\ARM_GCC_541\Debug\BLE_ias_config.o .\CortexM4\ARM_GCC_541\Debug\UART_1.o .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o .\CortexM4\ARM_GCC_541\Debug\cy_sysclk.o .\CortexM4\ARM_GCC_541\Debug\cy_wdt.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_ezi2c.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_spi.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o .\CortexM4\ARM_GCC_541\Debug\cy_efuse.o .\CortexM4\ARM_GCC_541\Debug\cy_flash.o .\CortexM4\ARM_GCC_541\Debug\cy_gpio.o .\CortexM4\ARM_GCC_541\Debug\cy_sysanalog.o .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o .\CortexM4\ARM_GCC_541\Debug\cy_trigmux.o .\CortexM4\ARM_GCC_541\Debug\cy_systick.o .\CortexM4\ARM_GCC_541\Debug\cy_profile.o .\CortexM4\ARM_GCC_541\Debug\cy_prot.o .\CortexM4\ARM_GCC_541\Debug\cy_lvd.o .\CortexM4\ARM_GCC_541\Debug\cy_ble.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_int.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ancs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ans.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_aios.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bcs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bls.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bms.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cgms.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cscs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_dis.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ess.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_gls.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hids.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hrs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ias.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ips.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_lls.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_lns.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ndcs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_plxs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_pass.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_rscs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_rtus.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_scps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_tps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_uds.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_wpts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_wss.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o .\CortexM4\ARM_GCC_541\Debug\croutine.o .\CortexM4\ARM_GCC_541\Debug\event_groups.o .\CortexM4\ARM_GCC_541\Debug\list.o .\CortexM4\ARM_GCC_541\Debug\queue.o .\CortexM4\ARM_GCC_541\Debug\tasks.o .\CortexM4\ARM_GCC_541\Debug\timers.o .\CortexM4\ARM_GCC_541\Debug\port.o .\CortexM4\ARM_GCC_541\Debug\heap_4.o .\CortexM4\ARM_GCC_541\Debug\retarget.o -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -L Generated_Source\PSoC6 -Wl,-Map,.\CortexM4\ARM_GCC_541\Debug/3-1-BLEFindMe.map -T cy8c6xx7_cm4_dual.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
-"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --sign \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf --output \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_signed.elf --hex \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_signed.hex
+arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a .\CortexM4\ARM_GCC_541\Debug\startup_psoc63_cm4.o .\CortexM4\ARM_GCC_541\Debug\main_cm4.o .\CortexM4\ARM_GCC_541\Debug\system_psoc63_cm4.o .\CortexM4\ARM_GCC_541\Debug\stdio_user.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_config.o .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o .\CortexM4\ARM_GCC_541\Debug\cymetadata.o .\CortexM4\ARM_GCC_541\Debug\BLE.o .\CortexM4\ARM_GCC_541\Debug\BLE_config.o .\CortexM4\ARM_GCC_541\Debug\BLE_ias_config.o .\CortexM4\ARM_GCC_541\Debug\UART_1.o .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o .\CortexM4\ARM_GCC_541\Debug\cy_sysclk.o .\CortexM4\ARM_GCC_541\Debug\cy_wdt.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_ezi2c.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_spi.o .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o .\CortexM4\ARM_GCC_541\Debug\cy_efuse.o .\CortexM4\ARM_GCC_541\Debug\cy_flash.o .\CortexM4\ARM_GCC_541\Debug\cy_gpio.o .\CortexM4\ARM_GCC_541\Debug\cy_sysanalog.o .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o .\CortexM4\ARM_GCC_541\Debug\cy_trigmux.o .\CortexM4\ARM_GCC_541\Debug\cy_systick.o .\CortexM4\ARM_GCC_541\Debug\cy_profile.o .\CortexM4\ARM_GCC_541\Debug\cy_prot.o .\CortexM4\ARM_GCC_541\Debug\cy_lvd.o .\CortexM4\ARM_GCC_541\Debug\cy_ble.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_int.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ancs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ans.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_aios.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bas.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bcs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bls.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bms.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_bts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cgms.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cscs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_cts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_dis.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ess.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_gls.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hids.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hrs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_hts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ias.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ips.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_lls.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_lns.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_ndcs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_plxs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_pass.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_rscs.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_rtus.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_scps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_tps.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_uds.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_wpts.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_wss.o .\CortexM4\ARM_GCC_541\Debug\cy_ble_clk.o .\CortexM4\ARM_GCC_541\Debug\croutine.o .\CortexM4\ARM_GCC_541\Debug\event_groups.o .\CortexM4\ARM_GCC_541\Debug\list.o .\CortexM4\ARM_GCC_541\Debug\queue.o .\CortexM4\ARM_GCC_541\Debug\tasks.o .\CortexM4\ARM_GCC_541\Debug\timers.o .\CortexM4\ARM_GCC_541\Debug\port.o .\CortexM4\ARM_GCC_541\Debug\heap_4.o .\CortexM4\ARM_GCC_541\Debug\retarget.o -mcpu=cortex-m4 -mfloat-abi=softfp -mfpu=fpv4-sp-d16 -mthumb -L Generated_Source\PSoC6 -Wl,-Map,.\CortexM4\ARM_GCC_541\Debug/3-1-BLEFindMe.map -T cy8c6xx7_cm4_dual.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
+"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --sign C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_link.elf --output C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_signed.elf --hex C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_signed.hex
 No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
-"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --merge \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_signed.elf \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.elf --output \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.elf --hex \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.hex
+"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" --merge C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe_signed.elf C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM0p\ARM_GCC_541\Debug\3-1-BLEFindMe.elf --output C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.elf --hex C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.hex
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
-"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" -A \\Mac\Home\Documents\iotexpert-projects\PSoC6-Videos\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.elf
-code:203751	sram:66784
---------------- Rebuild Succeeded: 02/10/2018 09:02:46 ---------------
+"C:\Program Files (x86)\Cypress\PDL\3.0.1\tools\win\elf\cymcuelftool.exe" -A C:\Git\PSoC6-101-Videos\Projects\3-1-BLEFindMe.cydsn\CortexM4\ARM_GCC_541\Debug\3-1-BLEFindMe.elf
+code:192683	sram:65524
+--------------- Rebuild Succeeded: 04/04/2018 15:34:10 ---------------

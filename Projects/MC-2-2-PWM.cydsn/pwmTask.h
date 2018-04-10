@@ -1,6 +1,4 @@
 #pragma once
-#include "FreeRTOS.h"
-#include "semphr.h"
     
 typedef enum {
     M1,

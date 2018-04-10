@@ -1,10 +1,8 @@
 #include "project.h"
-#include "FreeRTOS.h"
+#include "global.h"
 #include "task.h"
-#include "semphr.h"
 #include <stdio.h>
 #include <limits.h>
-#include "global.h"
 #include "pwmTask.h"
 
 SemaphoreHandle_t bleSemaphore;

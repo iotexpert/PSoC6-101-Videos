@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <limits.h>
 
-TaskHandle_t bleTaskHandle;
 SemaphoreHandle_t bleSemaphore;
 
 void genericEventHandler(uint32_t event, void *eventParameter)
@@ -116,7 +115,7 @@ int main(void)
     PWM_DIM_Start();
     PWM_BLINK_Start();
     
-    xTaskCreate(bleTask,"bleTask",8*1024,0,2,&bleTaskHandle);
+    xTaskCreate(bleTask,"bleTask",8*1024,0,2,0);
     
     vTaskStartScheduler();
     for(;;)

@@ -1,9 +1,6 @@
-#ifndef UARTTASK_H
-#define UARTTASK_H
+#pragma once
 
-    #include "FreeRTOS.h"
-    #include "semphr.h"
-    
-    void uartTask(void *arg);
-    
-#endif
+#include "FreeRTOS.h"
+#include "semphr.h"
+
+void uartTask(void *arg);

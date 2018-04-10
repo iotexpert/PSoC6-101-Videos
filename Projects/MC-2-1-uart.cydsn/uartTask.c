@@ -1,7 +1,7 @@
 #include "project.h"
-#include "FreeRTOS.h"
-#include "semphr.h"
 #include <stdio.h>
+
+#include "global.h"
 
 static SemaphoreHandle_t uartSemaphore;
 

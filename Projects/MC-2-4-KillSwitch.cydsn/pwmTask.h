@@ -1,7 +1,4 @@
-#ifndef PWMTASK_H
-#define PWMTASK_H
-#include "FreeRTOS.h"
-#include "semphr.h"
+#pragma once
     
 typedef enum {
     M1,
@@ -22,6 +19,3 @@ typedef struct PWM_Message {
 int getMotorPercent(motors_t motor);
 
 void pwmTask(void *);
-
-
-#endif

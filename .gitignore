@@ -1,4 +1,6 @@
 *.arh
+*.gjl
+*.iym
 *~
 Projects/*.cydsn/Cortex*/*
 Projects/*.cydsn/Export/*

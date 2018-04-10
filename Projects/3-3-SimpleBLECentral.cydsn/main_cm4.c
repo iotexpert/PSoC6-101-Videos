@@ -76,14 +76,14 @@ void findAdvInfo(uint8_t *adv,uint8_t len)
 }
 
 /*****************************************************************************\
- * Function:  customEventHandler
+ * Function:  genericEventHandler
  * Input:     an event .... and a parameter for that event
  * Returns:   void... nothing
  * Description: 
  *   This is the main BLE event handler
  *    
 \*****************************************************************************/
-void customEventHandler(uint32_t event, void *eventParameter)
+void genericEventHandler(uint32_t event, void *eventParameter)
 {   
    
     switch (event)
@@ -164,7 +164,7 @@ void bleTask(void *arg)
     (void)arg;
     printf("Started BLE Task\r\n");
     
-    Cy_BLE_Start(customEventHandler);
+    Cy_BLE_Start(genericEventHandler);
     
     char c;
     uint8_t brightness = 0;
@@ -176,11 +176,11 @@ void bleTask(void *arg)
             c = getchar();
             switch(c)
             {
-                case '+': // Increase the brightness and then send it via BLE
-                    brightness += 10 % 100; 
+                case '+': // Increase the brightness and then send it via BLE - wrap around at 100
+                    brightness = (brightness + 10) % 100; 
                     writeLed(brightness);
                 break;
-                case '-': // Decrease the brightness and then send it via BLE
+                case '-': // Decrease the brightness and then send it via BLE - wrap around at 100
                     brightness -= 10;
                     if(brightness > 100) brightness = 100;
                     writeLed(brightness);

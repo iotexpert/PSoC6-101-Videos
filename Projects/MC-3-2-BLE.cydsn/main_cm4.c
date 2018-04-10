@@ -1,10 +1,9 @@
 #include "project.h"
+#include "global.h"
 #include "uartTask.h"
-#include "FreeRTOS.h"
 #include "task.h"
 #include "pwmTask.h"
 #include "ezi2cTask.h"
-#include "event_groups.h"
 #include "capsenseTask.h"
 #include "bleTask.h"
 

@@ -1,8 +1,5 @@
-#ifndef EZI2CTASK_H
-#define EZI2CTASK_H
+#pragma once
 #include "FreeRTOS.h"
 #include "semphr.h"
     
 void ezi2cTask(void *arg);
-
-#endif

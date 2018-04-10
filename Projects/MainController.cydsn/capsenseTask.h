@@ -1,4 +1,2 @@
-#ifndef CAPSENSETASK_H
-#define CAPSENSETASK_H
+#pragma once
 void capsenseTask(void *arg);
-#endif

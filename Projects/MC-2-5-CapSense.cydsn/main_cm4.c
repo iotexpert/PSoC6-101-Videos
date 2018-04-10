@@ -1,10 +1,10 @@
 #include "project.h"
-#include "uartTask.h"
-#include "FreeRTOS.h"
+#include "global.h"
 #include "task.h"
+#include "uartTask.h"
 #include "pwmTask.h"
 #include "ezi2cTask.h"
-#include "event_groups.h"
+
 #include "capsenseTask.h"
 
 QueueHandle_t pwmQueue;
