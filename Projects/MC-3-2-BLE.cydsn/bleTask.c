@@ -29,7 +29,7 @@ SemaphoreHandle_t bleSemaphore;
 * void
 *
 *******************************************************************************/
-void updateMotorsGatt(motors_t motor,uint8_t percent,uint8_t flags)
+void updateMotorsGatt(motors_t motor,int8_t percent,uint8_t flags)
 {    
     cy_stc_ble_gatt_handle_value_pair_t myHvp;
     

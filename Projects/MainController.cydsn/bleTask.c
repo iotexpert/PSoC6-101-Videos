@@ -108,7 +108,7 @@ void customEventHandler(uint32_t event, void *eventParameter)
 
         case CY_BLE_EVT_GATT_CONNECT_IND:
             printf("BLE: Connection\n");
-            Cy_GPIO_Write(LED8_PORT,LED8_NUM,0); 
+            Cy_GPIO_Write(LED9_PORT,LED9_NUM,0); 
             updateMotorsGatt(M1,getMotorPercent(M1),CY_BLE_GATT_DB_LOCALLY_INITIATED);
             updateMotorsGatt(M2,getMotorPercent(M2),CY_BLE_GATT_DB_LOCALLY_INITIATED);
         break;
@@ -225,7 +225,7 @@ void bleTask(void *arg)
         xSemaphoreTake(bleSemaphore,portMAX_DELAY);
         Cy_BLE_ProcessEvents();
         
-        // If the PWM tasks says we need to update the GATT database and send out the motor percent
+        // If the PWM task says we need to update the GATT database and sends out the motor percent
         // then do it.. 
         if(xEventGroupGetBits(pwmEventGroup) & PWM_EVENT_BLE)
         {
