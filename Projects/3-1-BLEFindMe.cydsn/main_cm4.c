@@ -8,9 +8,9 @@
 #define LED_ON  0
 #define LED_OFF 1
 
-// These are used to lock and unlock the BLE Task
+// This is used to lock and unlock the BLE Task
 SemaphoreHandle_t bleSemaphore;
-TaskHandle_t bleTaskHandle;
+
 
 /*****************************************************************************\
  * Function:    genericEventHandler
@@ -156,7 +156,7 @@ int main(void)
     setvbuf( stdout, NULL, _IONBF, 0 ); 
     printf("System Started\r\n");
 
-    xTaskCreate(bleTask,"bleTask",8*1024,0,2,&bleTaskHandle);
+    xTaskCreate(bleTask,"bleTask",8*1024,0,2,0);
     
     vTaskStartScheduler();
     for(;;)

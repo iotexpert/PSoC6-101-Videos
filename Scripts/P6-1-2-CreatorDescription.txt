@@ -1,3 +1,0 @@
-This video introduces the PSoC Creator Integrated Design Environment (IDE). 
-It covers how to start a new project, select your target device, draw your schematic using components, 
-write code, and build and program your project.
