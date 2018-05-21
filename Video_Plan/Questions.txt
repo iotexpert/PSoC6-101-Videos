@@ -1,0 +1,29 @@
+BMI driver about LITTLE_ENDIAN redefined
+  bmi160_defs.h: #define LITTLE_ENDIAN 1
+  4.2\psoc creator\import\gnu\arm\5.4.1\arm-none-eabi\include\machine\endian.h: #define LITTLE_ENDIAN _LITTLE_ENDIAN
+
+Warnings about replace templates during build?
+
+Warnings about cy_ble_clk_config.h and cy_ble_config.h files in some projects? Says have been removed from the project because they are no longer used by the design but are still on disk.
+
+P6-1-4: FreeRTOS code is not the same as the video - name of func, no
+(void), for instead of while - change capture?
+
+P6-2-1b-UART:
+     Explain the semphr.h include?
+
+P6-3-1-BLEIntro:
+- Heap is set to 4 in build settings. Need to explain.
+- Syscall priority is not explained at all.
+- Limits.h is used for the first time here. It should be explained.
+
+P6-3-2a-BLECustomService:
+- Metion heap = 4 again?
+- The WriteRsp is not explained.
+
+Motion sensor:
+- Intend to checkin Bosch files?
+- Why both build settings and include needed?
+- vTaskDelay(200) - script says 10ms
+
+
